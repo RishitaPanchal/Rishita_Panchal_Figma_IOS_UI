@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Helloworld_1.0'/>
+        <page name='Variables_2.1'/>
+        <page name='Variables_2.2'/>
+        <page name='Variables_2.3'/>
+        <page name='Operator_3.1'/>
+        <page name='Operators_3.2'/>
+        <page name='Operators_3.3'/>
+        <page name='WorkingWithText_4.1'/>
+        <page name='Array_6.1'/>
+        <page name='ControlFlow_5.1'/>
+        <page name='Optional_7.1'/>
+        <page name='Dictionary_6.2.2'/>
+        <page name='Dictionary_6.2.3'/>
+        <page name='Dictionary_6.2.4'/>
+        <page name='Dictionary_6.2.5'/>
+        <page name='Dictionary_6.2.6'/>
+        <page name='Dictionary_6.2.1'/>
+        <page name='LogicalPrograms'/>
+    </pages>
+</playground>
