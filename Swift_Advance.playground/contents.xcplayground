@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='CollectionTypes'/>
+        <page name='Properties'/>
+        <page name='Functions'/>
+        <page name='Enumeration'/>
+        <page name='Class'/>
+        <page name='StructVsClass'/>
+        <page name='Closures'/>
+        <page name='Methods'/>
+        <page name='Initialization'/>
+        <page name='Subscripts'/>
+        <page name='ErrorHandling'/>
+        <page name='TypeCasting'/>
+        <page name='NestedTypes'/>
+        <page name='Extensions'/>
+        <page name='Protocols'/>
+        <page name='RequiredConvinienceInit'/>
+        <page name='ARCDemo'/>
+        <page name='WeakSelf'/>
+        <page name='AcessControl'/>
+    </pages>
+</playground>

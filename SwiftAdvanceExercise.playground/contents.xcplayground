@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Class_1.1'/>
+        <page name='Class_1.2'/>
+        <page name='Class_1.3'/>
+        <page name='Class_1.4'/>
+        <page name='Class_1.5'/>
+        <page name='Class_1.6'/>
+        <page name='Class_1.7'/>
+        <page name='Class_1.8'/>
+        <page name='Class_1.9'/>
+        <page name='Class_1.10'/>
+        <page name='Structure_2.1'/>
+        <page name='Structure_2.2'/>
+        <page name='Structure_2.3'/>
+        <page name='Structure_2.4'/>
+        <page name='Structure_2.5'/>
+        <page name='Structure_2.6'/>
+        <page name='Structure_2.7'/>
+        <page name='Enumeration_3.1'/>
+        <page name='Enumeration_3.2'/>
+        <page name='Enumeration_3.3'/>
+        <page name='Enumeration_3.4'/>
+        <page name='Enumeration_3.5'/>
+        <page name='Enumeration_3.6'/>
+        <page name='Enumeration_3.7'/>
+        <page name='ErrorHandling_5.1'/>
+        <page name='ErrorHandling_5.2'/>
+    </pages>
+</playground>
