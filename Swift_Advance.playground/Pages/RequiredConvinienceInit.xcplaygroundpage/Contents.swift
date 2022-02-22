@@ -7,7 +7,7 @@ class A {
 }
 
 class B: A {
-    var b:Int
+    var b: Int
     required init() {
         b = 252
         print("B: \(b)")
