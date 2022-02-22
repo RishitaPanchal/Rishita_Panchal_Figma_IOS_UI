@@ -2,8 +2,12 @@
 
 import UIKit
 
-class ViewControllerSignUp: UIViewController {
-
+class ViewControllerSignUp: UIViewController, UITextFieldDelegate {
+    
+    // MARK: IBOutlets
+    @IBOutlet weak var fullName: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
     @IBOutlet weak var txtView2: UILabel!
     @IBOutlet weak var txtPrivacyPolicy: UITextView!
    
@@ -12,6 +16,7 @@ class ViewControllerSignUp: UIViewController {
         changeColortv(txtFeild: txtPrivacyPolicy, locStr1: 29, lenStr1: 18, locStr2: 51, lenStr2: 18)
     }
 
+    // MARK: Instance methods for appearance of label and textfeilds
     func changeColorLabel(txtFeild: UILabel, loc: Int, length: Int) {
         let myString: NSString = txtFeild.text! as NSString
         var myMutableString = NSMutableAttributedString()
@@ -33,4 +38,20 @@ class ViewControllerSignUp: UIViewController {
         txtFeild.textAlignment = .center
     }
 
+    func switchBasedNextTextFeilds(_ textField: UITextField) {
+        switch textField {
+            case self.fullName:
+                self.email.becomeFirstResponder()
+            case self.email:
+                self.password.becomeFirstResponder()
+            default:
+                self.password.resignFirstResponder()
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switchBasedNextTextFeilds(textField)
+        return true
+    }
+    
 }
