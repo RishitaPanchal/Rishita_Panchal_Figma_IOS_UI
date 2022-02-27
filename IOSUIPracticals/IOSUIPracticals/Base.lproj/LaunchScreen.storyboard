@@ -23,20 +23,11 @@
                                     <constraint firstAttribute="height" constant="150" id="vL3-hn-dSE"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJN-C7-ilc">
-                                <rect key="frame" x="169" y="524" width="76" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Bog-dr-VMk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3yP-zB-vye"/>
-                            <constraint firstItem="fJN-C7-ilc" firstAttribute="top" secondItem="Bog-dr-VMk" secondAttribute="bottom" constant="1" id="BAe-PN-bXe"/>
-                            <constraint firstItem="fJN-C7-ilc" firstAttribute="top" secondItem="Bog-dr-VMk" secondAttribute="bottom" constant="1" id="FcO-1c-KpP"/>
-                            <constraint firstItem="fJN-C7-ilc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aKH-he-dGJ"/>
                             <constraint firstItem="Bog-dr-VMk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tby-ak-LJl"/>
                         </constraints>
                     </view>
