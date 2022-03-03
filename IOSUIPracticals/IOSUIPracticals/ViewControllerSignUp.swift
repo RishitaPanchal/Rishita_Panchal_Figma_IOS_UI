@@ -9,7 +9,6 @@ class ViewControllerSignUp: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //changeColorLabel(txtFeild: txtView2, loc: 25, length: 6)
         changeColortv(txtFeild: txtPrivacyPolicy, locStr1: 29, lenStr1: 18, locStr2: 51, lenStr2: 18)
     }
 
