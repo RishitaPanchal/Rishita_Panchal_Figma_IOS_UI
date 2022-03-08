@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D07C53327D07BB900F31E5C /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D07C53227D07BB900F31E5C /* ScrollView.storyboard */; };
+		0D07C53527D09CD700F31E5C /* TableViewWIthCustomCell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D07C53427D09CD700F31E5C /* TableViewWIthCustomCell.storyboard */; };
+		0D07C53827D09D1200F31E5C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07C53627D09D1200F31E5C /* TableViewCell.swift */; };
+		0D07C53927D09D1200F31E5C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D07C53727D09D1200F31E5C /* TableViewCell.xib */; };
+		0D07C53B27D0A01900F31E5C /* ViewControllerTableViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07C53A27D0A01900F31E5C /* ViewControllerTableViewCustomCell.swift */; };
 		0D88EE3927C6279F005B66BA /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D88EE3827C6279F005B66BA /* ViewController1.swift */; };
 		0D88EE3B27C62F9E005B66BA /* ViewControllerSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D88EE3A27C62F9E005B66BA /* ViewControllerSignUp.swift */; };
-
 		0D04FB3527C7555D00F9C31D /* ViewControllerSizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04FB3427C7555D00F9C31D /* ViewControllerSizeClass.swift */; };
 		0D04FB3727C7A31000F9C31D /* SizeClass2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D04FB3627C7A31000F9C31D /* SizeClass2.storyboard */; };
 		0D88EE3D27C65350005B66BA /* HuggingPriorityContentCompression.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D88EE3C27C65350005B66BA /* HuggingPriorityContentCompression.storyboard */; };
 		0D88EE3F27C65B76005B66BA /* Sizeclass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D88EE3E27C65B76005B66BA /* Sizeclass.storyboard */; };
-
+		0DC2721027CCA5FD001A2C5B /* LoginSignupPractical1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC2720F27CCA5FD001A2C5B /* LoginSignupPractical1.storyboard */; };
+		0DC2721227CCC6B4001A2C5B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2721127CCC6B4001A2C5B /* PageViewController.swift */; };
 		0DD4E7EB27C4C61A0024EAC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4E7EA27C4C61A0024EAC4 /* AppDelegate.swift */; };
 		0DD4E7ED27C4C61A0024EAC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4E7EC27C4C61A0024EAC4 /* SceneDelegate.swift */; };
 		0DD4E7EF27C4C61A0024EAC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4E7EE27C4C61A0024EAC4 /* ViewController.swift */; };
@@ -24,6 +29,7 @@
 		0DD4E80C27C4C61D0024EAC4 /* IOSUIPracticalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4E80B27C4C61D0024EAC4 /* IOSUIPracticalsUITests.swift */; };
 		0DD4E80E27C4C61D0024EAC4 /* IOSUIPracticalsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4E80D27C4C61D0024EAC4 /* IOSUIPracticalsUITestsLaunchTests.swift */; };
 		0DD4E81B27C52BED0024EAC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD4E81A27C52BED0024EAC4 /* Main.storyboard */; };
+		0DFF83A427CE39C000DEA55B /* ViewControllerForSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF83A327CE39C000DEA55B /* ViewControllerForSignup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,14 @@
 
 		0D88EE3C27C65350005B66BA /* HuggingPriorityContentCompression.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HuggingPriorityContentCompression.storyboard; sourceTree = "<group>"; };
 		0D88EE3E27C65B76005B66BA /* Sizeclass.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sizeclass.storyboard; sourceTree = "<group>"; };
+		0D07C53227D07BB900F31E5C /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
+		0D07C53427D09CD700F31E5C /* TableViewWIthCustomCell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewWIthCustomCell.storyboard; sourceTree = "<group>"; };
+		0D07C53627D09D1200F31E5C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0D07C53727D09D1200F31E5C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		0D07C53A27D0A01900F31E5C /* ViewControllerTableViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCustomCell.swift; sourceTree = "<group>"; };
+		0D88EE3827C6279F005B66BA /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		0DC2720F27CCA5FD001A2C5B /* LoginSignupPractical1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSignupPractical1.storyboard; sourceTree = "<group>"; };
+		0DC2721127CCC6B4001A2C5B /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		0DD4E7E727C4C61A0024EAC4 /* IOSUIPracticals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSUIPracticals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD4E7EA27C4C61A0024EAC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DD4E7EC27C4C61A0024EAC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +79,7 @@
 		0DD4E80B27C4C61D0024EAC4 /* IOSUIPracticalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSUIPracticalsUITests.swift; sourceTree = "<group>"; };
 		0DD4E80D27C4C61D0024EAC4 /* IOSUIPracticalsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSUIPracticalsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0DD4E81A27C52BED0024EAC4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0DFF83A327CE39C000DEA55B /* ViewControllerForSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerForSignup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +143,14 @@
 				0D88EE3E27C65B76005B66BA /* Sizeclass.storyboard */,
 				0D04FB3427C7555D00F9C31D /* ViewControllerSizeClass.swift */,
 				0D04FB3627C7A31000F9C31D /* SizeClass2.storyboard */,
+				0DC2720F27CCA5FD001A2C5B /* LoginSignupPractical1.storyboard */,
+				0DC2721127CCC6B4001A2C5B /* PageViewController.swift */,
+				0DFF83A327CE39C000DEA55B /* ViewControllerForSignup.swift */,
+				0D07C53227D07BB900F31E5C /* ScrollView.storyboard */,
+				0D07C53427D09CD700F31E5C /* TableViewWIthCustomCell.storyboard */,
+				0D07C53627D09D1200F31E5C /* TableViewCell.swift */,
+				0D07C53727D09D1200F31E5C /* TableViewCell.xib */,
+				0D07C53A27D0A01900F31E5C /* ViewControllerTableViewCustomCell.swift */,
 			);
 			path = IOSUIPracticals;
 			sourceTree = "<group>";
@@ -259,6 +282,13 @@
 				0DD4E7F427C4C61D0024EAC4 /* Assets.xcassets in Resources */,
 				0D88EE3D27C65350005B66BA /* HuggingPriorityContentCompression.storyboard in Resources */,
 				0D04FB3727C7A31000F9C31D /* SizeClass2.storyboard in Resources */,
+				0DC2721027CCA5FD001A2C5B /* LoginSignupPractical1.storyboard in Resources */,
+				0DD4E81B27C52BED0024EAC4 /* Main.storyboard in Resources */,
+				0DD4E7F727C4C61D0024EAC4 /* LaunchScreen.storyboard in Resources */,
+				0DD4E7F427C4C61D0024EAC4 /* Assets.xcassets in Resources */,
+				0D07C53327D07BB900F31E5C /* ScrollView.storyboard in Resources */,
+				0D07C53927D09D1200F31E5C /* TableViewCell.xib in Resources */,
+				0D07C53527D09CD700F31E5C /* TableViewWIthCustomCell.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D07C53827D09D1200F31E5C /* TableViewCell.swift in Sources */,
+				0DC2721227CCC6B4001A2C5B /* PageViewController.swift in Sources */,
 				0D88EE3927C6279F005B66BA /* ViewController1.swift in Sources */,
 				0D88EE3B27C62F9E005B66BA /* ViewControllerSignUp.swift in Sources */,
 				0D04FB3527C7555D00F9C31D /* ViewControllerSizeClass.swift in Sources */,
 				0DD4E7EF27C4C61A0024EAC4 /* ViewController.swift in Sources */,
+				0DFF83A427CE39C000DEA55B /* ViewControllerForSignup.swift in Sources */,
+				0D07C53B27D0A01900F31E5C /* ViewControllerTableViewCustomCell.swift in Sources */,
 				0DD4E7EB27C4C61A0024EAC4 /* AppDelegate.swift in Sources */,
 				0DD4E7ED27C4C61A0024EAC4 /* SceneDelegate.swift in Sources */,
 			);
