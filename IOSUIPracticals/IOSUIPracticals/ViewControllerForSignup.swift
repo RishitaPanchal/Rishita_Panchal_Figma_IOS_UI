@@ -9,6 +9,7 @@ import UIKit
 
 class ViewControllerForSignup: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    // MARK: IBActions
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var imageAction: UIButton!
     @IBOutlet weak var imageHolder: UIImageView!
@@ -23,6 +24,8 @@ class ViewControllerForSignup: UIViewController, UIImagePickerControllerDelegate
 
     @IBOutlet var radioBtn: UIView!
     @IBOutlet weak var txtView: UITextView!
+    
+    //MARK: Overridden method
     override func viewDidLoad() {
         super.viewDidLoad()
         txtView.textColor = .gray
@@ -35,17 +38,18 @@ class ViewControllerForSignup: UIViewController, UIImagePickerControllerDelegate
     }
     
     //Profile picture
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        imageHolder.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        self.dismiss(animated: true, completion: nil)
+
+    }
+    
+    // MARK: IBActions
     @IBAction func chooseAnImage(_ sender: UIButton) {
         let myPickerController =  UIImagePickerController()
         myPickerController.delegate = self
         myPickerController.sourceType = .photoLibrary
         self.present(myPickerController, animated: true, completion: nil)
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        imageHolder.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
-        self.dismiss(animated: true, completion: nil)
-
     }
     
     @IBAction func slider(_ sender: UISlider) {

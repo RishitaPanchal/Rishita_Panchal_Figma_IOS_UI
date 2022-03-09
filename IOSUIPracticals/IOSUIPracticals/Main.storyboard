@@ -29,6 +29,26 @@
             </objects>
             <point key="canvasLocation" x="1185" y="-337"/>
         </scene>
+        <!--Sizeclass-->
+        <scene sceneID="DgY-6O-ZJe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Sizeclass" referencedIdentifier="Sizeclass" id="2X5-xW-o72" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AiB-px-hUD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QvV-bf-NFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1454" y="-338"/>
+        </scene>
+        <!--HuggingPriorityContentCompression-->
+        <scene sceneID="qfE-pp-q0Q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HuggingPriorityContentCompression" referencedIdentifier="HuggingPriorityContentCompression" id="Ugk-Uz-6BL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yiN-rn-132"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vhb-wS-dyI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1674" y="-336"/>
+        </scene>
         <!--LoginSignupPractical1-->
         <scene sceneID="Me8-9F-SAf">
             <objects>
@@ -38,6 +58,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rmp-9M-hdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="732" y="-280"/>
+        </scene>
+        <!--TabBarApp-->
+        <scene sceneID="YA1-mZ-sfh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabBarApp" referencedIdentifier="TabBarApp" id="PgD-pl-VSw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="K9F-Dl-2iw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WKx-VI-0ZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="380"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2aD-qT-d9t">
@@ -102,23 +132,71 @@
                                     <segue destination="dzQ-ZH-g3E" kind="show" id="XAI-Nc-dth"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUt-QS-pl8">
+                                <rect key="frame" x="64" y="478" width="300" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Advance autolayout">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="2X5-xW-o72" kind="show" id="k9F-r1-8u0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6o-Gu-a42">
+                                <rect key="frame" x="64" y="538" width="300" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hugging and content compression">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Ugk-Uz-6BL" kind="show" id="PL6-rP-dsB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3Z-jI-noP">
+                                <rect key="frame" x="64" y="598" width="300" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Exercise IOS(3-C)">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="PgD-pl-VSw" kind="show" id="ghf-Na-cTA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7uK-Vl-4fR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="a6o-Gu-a42" firstAttribute="top" secondItem="kUt-QS-pl8" secondAttribute="bottom" constant="10" id="2re-Qx-u12"/>
                             <constraint firstItem="t4i-9D-9Us" firstAttribute="width" secondItem="vRP-ml-gnP" secondAttribute="width" id="3Tz-Aw-wdb"/>
                             <constraint firstItem="vRP-ml-gnP" firstAttribute="top" secondItem="HhK-5b-Do1" secondAttribute="bottom" constant="10" id="3dB-mh-H9f"/>
                             <constraint firstItem="t4i-9D-9Us" firstAttribute="centerX" secondItem="vRP-ml-gnP" secondAttribute="centerX" id="5bi-Gl-MG4"/>
                             <constraint firstItem="t4i-9D-9Us" firstAttribute="top" secondItem="vRP-ml-gnP" secondAttribute="bottom" constant="10" id="6h6-sy-Jc6"/>
+                            <constraint firstItem="a6o-Gu-a42" firstAttribute="height" secondItem="kUt-QS-pl8" secondAttribute="height" id="A9r-bT-UNU"/>
+                            <constraint firstItem="a6o-Gu-a42" firstAttribute="centerX" secondItem="kUt-QS-pl8" secondAttribute="centerX" id="BP3-d6-slJ"/>
                             <constraint firstItem="FoZ-MX-dPO" firstAttribute="centerX" secondItem="tJA-Pv-HAa" secondAttribute="centerX" id="DD7-7J-ndv"/>
                             <constraint firstItem="HhK-5b-Do1" firstAttribute="width" secondItem="FoZ-MX-dPO" secondAttribute="width" id="FUL-aH-dsf"/>
+                            <constraint firstItem="kUt-QS-pl8" firstAttribute="width" secondItem="t4i-9D-9Us" secondAttribute="width" id="IUR-6T-JLD"/>
+                            <constraint firstItem="n3Z-jI-noP" firstAttribute="top" secondItem="a6o-Gu-a42" secondAttribute="bottom" constant="10" id="JO0-4k-wou"/>
+                            <constraint firstItem="n3Z-jI-noP" firstAttribute="width" secondItem="a6o-Gu-a42" secondAttribute="width" id="O5B-Q1-c3n"/>
                             <constraint firstItem="FoZ-MX-dPO" firstAttribute="top" secondItem="7uK-Vl-4fR" secondAttribute="top" constant="150" id="Qao-B1-usH"/>
+                            <constraint firstItem="kUt-QS-pl8" firstAttribute="top" secondItem="t4i-9D-9Us" secondAttribute="bottom" constant="10" id="V3G-A7-Ta9"/>
+                            <constraint firstItem="a6o-Gu-a42" firstAttribute="width" secondItem="kUt-QS-pl8" secondAttribute="width" id="VGW-Vs-wMJ"/>
                             <constraint firstItem="vRP-ml-gnP" firstAttribute="width" secondItem="HhK-5b-Do1" secondAttribute="width" id="gDB-WT-ovG"/>
                             <constraint firstItem="vRP-ml-gnP" firstAttribute="centerX" secondItem="HhK-5b-Do1" secondAttribute="centerX" id="giM-no-iW5"/>
                             <constraint firstItem="HhK-5b-Do1" firstAttribute="centerX" secondItem="7uK-Vl-4fR" secondAttribute="centerX" id="mEL-iv-fYC"/>
                             <constraint firstItem="t4i-9D-9Us" firstAttribute="height" secondItem="vRP-ml-gnP" secondAttribute="height" id="nTz-qG-wU3"/>
                             <constraint firstItem="vRP-ml-gnP" firstAttribute="height" secondItem="HhK-5b-Do1" secondAttribute="height" id="oz3-7b-0Es"/>
+                            <constraint firstItem="n3Z-jI-noP" firstAttribute="centerX" secondItem="a6o-Gu-a42" secondAttribute="centerX" id="pJO-1G-nTy"/>
                             <constraint firstItem="HhK-5b-Do1" firstAttribute="top" secondItem="FoZ-MX-dPO" secondAttribute="bottom" constant="10" id="thn-T4-mVl"/>
+                            <constraint firstItem="kUt-QS-pl8" firstAttribute="height" secondItem="t4i-9D-9Us" secondAttribute="height" id="uHb-21-DbP"/>
+                            <constraint firstItem="n3Z-jI-noP" firstAttribute="height" secondItem="a6o-Gu-a42" secondAttribute="height" id="wlk-s4-Hn3"/>
+                            <constraint firstItem="kUt-QS-pl8" firstAttribute="centerX" secondItem="t4i-9D-9Us" secondAttribute="centerX" id="xF4-kH-ZG7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pCA-bH-iRw"/>
@@ -636,6 +714,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="ksr-B3-pFl"/>
+        <segue reference="NpM-Ig-aXZ"/>
         <segue reference="kUs-fc-AJy"/>
     </inferredMetricsTieBreakers>
     <resources>

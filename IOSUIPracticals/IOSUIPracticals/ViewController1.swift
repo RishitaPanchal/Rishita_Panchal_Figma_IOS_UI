@@ -2,11 +2,13 @@ import UIKit
 
 class ViewController1: UIViewController {
 
+    // MARK: IBOutlets
     @IBOutlet weak var txtView: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    // MARK: Functions
     func changeColor(txtFeild: UILabel, loc: Int, length: Int) {
         let myString: NSString = txtFeild.text! as NSString
         var myMutableString = NSMutableAttributedString()
