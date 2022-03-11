@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WKWebkitDemo" id="Y6W-OH-hqX" customClass="WKWebViewViewController" customModule="IOSUIPracticals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdK-Ps-zRq">
+                                <rect key="frame" x="0.0" y="112" width="414" height="750"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YRy-Mj-mmf">
+                                <rect key="frame" x="72.5" y="71" width="269" height="32"/>
+                                <segments>
+                                    <segment title="Load URL"/>
+                                    <segment title="Load PDF"/>
+                                    <segment title="Load HTML"/>
+                                </segments>
+                                <connections>
+                                    <action selector="chooseOption:" destination="Y6W-OH-hqX" eventType="valueChanged" id="4KS-Uh-XdH"/>
+                                </connections>
+                            </segmentedControl>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="f2F-GV-mNr">
+                                <rect key="frame" x="197" y="443" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YRy-Mj-mmf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="27" id="2wj-hr-R1J"/>
+                            <constraint firstItem="VdK-Ps-zRq" firstAttribute="top" secondItem="YRy-Mj-mmf" secondAttribute="bottom" constant="10" id="5D0-Hr-cVp"/>
+                            <constraint firstItem="f2F-GV-mNr" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="9IB-mY-dVc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VdK-Ps-zRq" secondAttribute="trailing" id="TPW-3B-UUW"/>
+                            <constraint firstItem="YRy-Mj-mmf" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="UQe-HH-Xfw"/>
+                            <constraint firstItem="VdK-Ps-zRq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XCa-kV-1MR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="VdK-Ps-zRq" secondAttribute="bottom" id="ncK-ob-yR3"/>
+                            <constraint firstItem="f2F-GV-mNr" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="pHm-kC-S12"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="f2F-GV-mNr" id="STV-ql-EGS"/>
+                        <outlet property="segmentControll" destination="YRy-Mj-mmf" id="mDf-ET-r9S"/>
+                        <outlet property="webView" destination="VdK-Ps-zRq" id="JfI-QG-GRe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.3478260869565224" y="4.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

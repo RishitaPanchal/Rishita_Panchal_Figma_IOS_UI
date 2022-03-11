@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Picker View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DatePicker" id="Y6W-OH-hqX" customClass="DatePickerViewController" customModule="IOSUIPracticals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8na-sF-pkz">
+                                <rect key="frame" x="47" y="345" width="320" height="216"/>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-94654800">
+                                    <!--1998-01-01 11:00:00 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dateChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="SRR-hA-2fr"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select date &amp; time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1I-Ew-8MC">
+                                <rect key="frame" x="137" y="245" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eRL-PO-dMJ">
+                                <rect key="frame" x="41.5" y="785" width="331" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8na-sF-pkz" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="HZY-C3-DyQ"/>
+                            <constraint firstItem="8na-sF-pkz" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="T9k-eb-HOd"/>
+                            <constraint firstItem="8na-sF-pkz" firstAttribute="top" secondItem="E1I-Ew-8MC" secondAttribute="top" constant="100" id="Vvb-Sl-P4v"/>
+                            <constraint firstItem="eRL-PO-dMJ" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="bfV-ZQ-Z23"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="eRL-PO-dMJ" secondAttribute="bottom" constant="43" id="bwe-G1-JLc"/>
+                            <constraint firstItem="eRL-PO-dMJ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="mrv-Sa-LyA"/>
+                            <constraint firstItem="E1I-Ew-8MC" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="tpb-wl-KbL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="8na-sF-pkz" id="vux-YK-a11"/>
+                        <outlet property="selectedDatee" destination="eRL-PO-dMJ" id="3cG-k3-epk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="19.419642857142858"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D023C6127D7659100191426 /* DatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D023C6027D7659100191426 /* DatePicker.storyboard */; };
+		0D023C6327D765BA00191426 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D023C6227D765BA00191426 /* DatePickerViewController.swift */; };
+		0D04FB3527C7555D00F9C31D /* ViewControllerSizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04FB3427C7555D00F9C31D /* ViewControllerSizeClass.swift */; };
+		0D04FB3727C7A31000F9C31D /* SizeClass2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D04FB3627C7A31000F9C31D /* SizeClass2.storyboard */; };
+		0D06786127D9B5CB00B20B27 /* SegCtlrToSwitchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D06786027D9B5CB00B20B27 /* SegCtlrToSwitchView.storyboard */; };
+		0D06786327D9B6D700B20B27 /* SegmentControllerToSwitchViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06786227D9B6D700B20B27 /* SegmentControllerToSwitchViewVC.swift */; };
 		0D07C53327D07BB900F31E5C /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D07C53227D07BB900F31E5C /* ScrollView.storyboard */; };
 		0D07C53527D09CD700F31E5C /* TableViewWIthCustomCell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D07C53427D09CD700F31E5C /* TableViewWIthCustomCell.storyboard */; };
 		0D07C53827D09D1200F31E5C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07C53627D09D1200F31E5C /* TableViewCell.swift */; };
 		0D07C53927D09D1200F31E5C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D07C53727D09D1200F31E5C /* TableViewCell.xib */; };
 		0D07C53B27D0A01900F31E5C /* ViewControllerTableViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07C53A27D0A01900F31E5C /* ViewControllerTableViewCustomCell.swift */; };
-		0D88EE3927C6279F005B66BA /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D88EE3827C6279F005B66BA /* ViewController1.swift */; };
-		0D88EE3B27C62F9E005B66BA /* ViewControllerSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D88EE3A27C62F9E005B66BA /* ViewControllerSignUp.swift */; };
-		0D04FB3527C7555D00F9C31D /* ViewControllerSizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04FB3427C7555D00F9C31D /* ViewControllerSizeClass.swift */; };
-		0D04FB3727C7A31000F9C31D /* SizeClass2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D04FB3627C7A31000F9C31D /* SizeClass2.storyboard */; };
+		0D2681AD27DB4125002E6EA6 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D2681AC27DB4125002E6EA6 /* demo.html */; };
+		0D4D787C27D9E924007B0100 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4D787B27D9E924007B0100 /* TableCell.swift */; };
+		0D4D787E27D9EE8A007B0100 /* CollectionViewCelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4D787D27D9EE8A007B0100 /* CollectionViewCelll.swift */; };
+		0D4D788027DA0ED2007B0100 /* WKWebkitDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4D787F27DA0ED2007B0100 /* WKWebkitDemo.storyboard */; };
+		0D4D788427DA118A007B0100 /* WKWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4D788327DA118A007B0100 /* WKWebViewViewController.swift */; };
+		0D4D788627DA1290007B0100 /* CLASS TIMETABLE_ODD_2020 17-6-2020 (1).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0D4D788527DA1290007B0100 /* CLASS TIMETABLE_ODD_2020 17-6-2020 (1).pdf */; };
 		0D582BDC27D1D51700AB8497 /* ViewControllerForTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D582BDB27D1D51700AB8497 /* ViewControllerForTabBar.swift */; };
 		0D582BE027D1D61C00AB8497 /* ViewControllerMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D582BDF27D1D61C00AB8497 /* ViewControllerMapView.swift */; };
 		0D582BE227D1E01F00AB8497 /* TabBarApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D582BE127D1E01F00AB8497 /* TabBarApp.storyboard */; };
@@ -29,6 +37,9 @@
 		0D88EE3B27C62F9E005B66BA /* ViewControllerSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D88EE3A27C62F9E005B66BA /* ViewControllerSignUp.swift */; };
 		0D88EE3D27C65350005B66BA /* HuggingPriorityContentCompression.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D88EE3C27C65350005B66BA /* HuggingPriorityContentCompression.storyboard */; };
 		0D88EE3F27C65B76005B66BA /* Sizeclass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D88EE3E27C65B76005B66BA /* Sizeclass.storyboard */; };
+		0DBFD98D27DB0A040011FC1A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFD98C27DB0A040011FC1A /* MainViewController.swift */; };
+		0DBFD98F27DB0A6A0011FC1A /* TableViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFD98E27DB0A6A0011FC1A /* TableViewCellData.swift */; };
+		0DBFD99127DB10030011FC1A /* TableViewTopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFD99027DB10030011FC1A /* TableViewTopicCell.swift */; };
 		0DC2721027CCA5FD001A2C5B /* LoginSignupPractical1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC2720F27CCA5FD001A2C5B /* LoginSignupPractical1.storyboard */; };
 		0DC2721227CCC6B4001A2C5B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2721127CCC6B4001A2C5B /* PageViewController.swift */; };
 		0DD4E7EB27C4C61A0024EAC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4E7EA27C4C61A0024EAC4 /* AppDelegate.swift */; };
@@ -40,6 +51,9 @@
 		0DD4E80C27C4C61D0024EAC4 /* IOSUIPracticalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4E80B27C4C61D0024EAC4 /* IOSUIPracticalsUITests.swift */; };
 		0DD4E80E27C4C61D0024EAC4 /* IOSUIPracticalsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4E80D27C4C61D0024EAC4 /* IOSUIPracticalsUITestsLaunchTests.swift */; };
 		0DD4E81B27C52BED0024EAC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD4E81A27C52BED0024EAC4 /* Main.storyboard */; };
+		0DE8FB1427D86C6800003E4C /* LifecycleDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE8FB1327D86C6800003E4C /* LifecycleDemo.storyboard */; };
+		0DE8FB1627D86D5B00003E4C /* ViewControllerTabOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8FB1527D86D5B00003E4C /* ViewControllerTabOne.swift */; };
+		0DE8FB1827D86D6C00003E4C /* ViewControllerTabTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8FB1727D86D6C00003E4C /* ViewControllerTabTwo.swift */; };
 		0DFF83A427CE39C000DEA55B /* ViewControllerForSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF83A327CE39C000DEA55B /* ViewControllerForSignup.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +75,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D023C6027D7659100191426 /* DatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DatePicker.storyboard; sourceTree = "<group>"; };
+		0D023C6227D765BA00191426 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		0D04FB3427C7555D00F9C31D /* ViewControllerSizeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSizeClass.swift; sourceTree = "<group>"; };
 		0D04FB3627C7A31000F9C31D /* SizeClass2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SizeClass2.storyboard; sourceTree = "<group>"; };
+		0D06786027D9B5CB00B20B27 /* SegCtlrToSwitchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SegCtlrToSwitchView.storyboard; sourceTree = "<group>"; };
+		0D06786227D9B6D700B20B27 /* SegmentControllerToSwitchViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControllerToSwitchViewVC.swift; sourceTree = "<group>"; };
+		0D07C53227D07BB900F31E5C /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
+		0D07C53427D09CD700F31E5C /* TableViewWIthCustomCell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewWIthCustomCell.storyboard; sourceTree = "<group>"; };
+		0D07C53627D09D1200F31E5C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0D07C53727D09D1200F31E5C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		0D07C53A27D0A01900F31E5C /* ViewControllerTableViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCustomCell.swift; sourceTree = "<group>"; };
+		0D2681AC27DB4125002E6EA6 /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = demo.html; path = ../../../demo.html; sourceTree = "<group>"; };
+		0D4D787B27D9E924007B0100 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		0D4D787D27D9EE8A007B0100 /* CollectionViewCelll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCelll.swift; sourceTree = "<group>"; };
+		0D4D787F27DA0ED2007B0100 /* WKWebkitDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WKWebkitDemo.storyboard; sourceTree = "<group>"; };
+		0D4D788327DA118A007B0100 /* WKWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewViewController.swift; sourceTree = "<group>"; };
+		0D4D788527DA1290007B0100 /* CLASS TIMETABLE_ODD_2020 17-6-2020 (1).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "CLASS TIMETABLE_ODD_2020 17-6-2020 (1).pdf"; path = "../../../../Downloads/CLASS TIMETABLE_ODD_2020 17-6-2020 (1).pdf"; sourceTree = "<group>"; };
 		0D582BDB27D1D51700AB8497 /* ViewControllerForTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerForTabBar.swift; sourceTree = "<group>"; };
 		0D582BDF27D1D61C00AB8497 /* ViewControllerMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMapView.swift; sourceTree = "<group>"; };
 		0D582BE127D1E01F00AB8497 /* TabBarApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarApp.storyboard; sourceTree = "<group>"; };
@@ -76,12 +105,9 @@
 		0D88EE3A27C62F9E005B66BA /* ViewControllerSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSignUp.swift; sourceTree = "<group>"; };
 		0D88EE3C27C65350005B66BA /* HuggingPriorityContentCompression.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HuggingPriorityContentCompression.storyboard; sourceTree = "<group>"; };
 		0D88EE3E27C65B76005B66BA /* Sizeclass.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sizeclass.storyboard; sourceTree = "<group>"; };
-		0D07C53227D07BB900F31E5C /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
-		0D07C53427D09CD700F31E5C /* TableViewWIthCustomCell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewWIthCustomCell.storyboard; sourceTree = "<group>"; };
-		0D07C53627D09D1200F31E5C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		0D07C53727D09D1200F31E5C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		0D07C53A27D0A01900F31E5C /* ViewControllerTableViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCustomCell.swift; sourceTree = "<group>"; };
-		0D88EE3827C6279F005B66BA /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		0DBFD98C27DB0A040011FC1A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0DBFD98E27DB0A6A0011FC1A /* TableViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellData.swift; sourceTree = "<group>"; };
+		0DBFD99027DB10030011FC1A /* TableViewTopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTopicCell.swift; sourceTree = "<group>"; };
 		0DC2720F27CCA5FD001A2C5B /* LoginSignupPractical1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSignupPractical1.storyboard; sourceTree = "<group>"; };
 		0DC2721127CCC6B4001A2C5B /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		0DD4E7E727C4C61A0024EAC4 /* IOSUIPracticals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSUIPracticals.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +123,9 @@
 		0DD4E80B27C4C61D0024EAC4 /* IOSUIPracticalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSUIPracticalsUITests.swift; sourceTree = "<group>"; };
 		0DD4E80D27C4C61D0024EAC4 /* IOSUIPracticalsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSUIPracticalsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0DD4E81A27C52BED0024EAC4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0DE8FB1327D86C6800003E4C /* LifecycleDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LifecycleDemo.storyboard; sourceTree = "<group>"; };
+		0DE8FB1527D86D5B00003E4C /* ViewControllerTabOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTabOne.swift; sourceTree = "<group>"; };
+		0DE8FB1727D86D6C00003E4C /* ViewControllerTabTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTabTwo.swift; sourceTree = "<group>"; };
 		0DFF83A327CE39C000DEA55B /* ViewControllerForSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerForSignup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +155,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D06785F27D9B49900B20B27 /* SegCtrlToSwitchView */ = {
+			isa = PBXGroup;
+			children = (
+				0D06786027D9B5CB00B20B27 /* SegCtlrToSwitchView.storyboard */,
+				0D06786227D9B6D700B20B27 /* SegmentControllerToSwitchViewVC.swift */,
+				0D4D787B27D9E924007B0100 /* TableCell.swift */,
+				0D4D787D27D9EE8A007B0100 /* CollectionViewCelll.swift */,
+			);
+			path = SegCtrlToSwitchView;
+			sourceTree = "<group>";
+		};
 		0D582BE327D1EADC00AB8497 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +198,7 @@
 		0DD4E7E927C4C61A0024EAC4 /* IOSUIPracticals */ = {
 			isa = PBXGroup;
 			children = (
+				0D06785F27D9B49900B20B27 /* SegCtrlToSwitchView */,
 				0DD4E7EA27C4C61A0024EAC4 /* AppDelegate.swift */,
 				0DD4E7EC27C4C61A0024EAC4 /* SceneDelegate.swift */,
 				0DD4E7EE27C4C61A0024EAC4 /* ViewController.swift */,
@@ -187,6 +228,18 @@
 				0D8739B627D5F9CB0046218A /* CellStackViewAxisChanger.swift */,
 				0D8739B827D5FA060046218A /* CellIncrementorDecrementor.swift */,
 				0D8739BC27D613090046218A /* TableViewControllerForSearchBar.swift */,
+				0D023C6027D7659100191426 /* DatePicker.storyboard */,
+				0D023C6227D765BA00191426 /* DatePickerViewController.swift */,
+				0DE8FB1327D86C6800003E4C /* LifecycleDemo.storyboard */,
+				0DE8FB1527D86D5B00003E4C /* ViewControllerTabOne.swift */,
+				0DE8FB1727D86D6C00003E4C /* ViewControllerTabTwo.swift */,
+				0D4D787F27DA0ED2007B0100 /* WKWebkitDemo.storyboard */,
+				0D4D788327DA118A007B0100 /* WKWebViewViewController.swift */,
+				0D4D788527DA1290007B0100 /* CLASS TIMETABLE_ODD_2020 17-6-2020 (1).pdf */,
+				0D2681AC27DB4125002E6EA6 /* demo.html */,
+				0DBFD98C27DB0A040011FC1A /* MainViewController.swift */,
+				0DBFD98E27DB0A6A0011FC1A /* TableViewCellData.swift */,
+				0DBFD99027DB10030011FC1A /* TableViewTopicCell.swift */,
 			);
 			path = IOSUIPracticals;
 			sourceTree = "<group>";
@@ -316,11 +369,17 @@
 				0D88EE3F27C65B76005B66BA /* Sizeclass.storyboard in Resources */,
 				0DD4E81B27C52BED0024EAC4 /* Main.storyboard in Resources */,
 				0DD4E7F727C4C61D0024EAC4 /* LaunchScreen.storyboard in Resources */,
+				0DE8FB1427D86C6800003E4C /* LifecycleDemo.storyboard in Resources */,
 				0DD4E7F427C4C61D0024EAC4 /* Assets.xcassets in Resources */,
 				0D88EE3D27C65350005B66BA /* HuggingPriorityContentCompression.storyboard in Resources */,
 				0D04FB3727C7A31000F9C31D /* SizeClass2.storyboard in Resources */,
 				0DC2721027CCA5FD001A2C5B /* LoginSignupPractical1.storyboard in Resources */,
+				0D2681AD27DB4125002E6EA6 /* demo.html in Resources */,
+				0D4D788027DA0ED2007B0100 /* WKWebkitDemo.storyboard in Resources */,
 				0DD4E81B27C52BED0024EAC4 /* Main.storyboard in Resources */,
+				0D06786127D9B5CB00B20B27 /* SegCtlrToSwitchView.storyboard in Resources */,
+				0D023C6127D7659100191426 /* DatePicker.storyboard in Resources */,
+				0D4D788627DA1290007B0100 /* CLASS TIMETABLE_ODD_2020 17-6-2020 (1).pdf in Resources */,
 				0DD4E7F727C4C61D0024EAC4 /* LaunchScreen.storyboard in Resources */,
 				0DD4E7F427C4C61D0024EAC4 /* Assets.xcassets in Resources */,
 				0D07C53327D07BB900F31E5C /* ScrollView.storyboard in Resources */,
@@ -350,23 +409,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DBFD98F27DB0A6A0011FC1A /* TableViewCellData.swift in Sources */,
 				0D07C53827D09D1200F31E5C /* TableViewCell.swift in Sources */,
 				0DC2721227CCC6B4001A2C5B /* PageViewController.swift in Sources */,
+				0D023C6327D765BA00191426 /* DatePickerViewController.swift in Sources */,
 				0D88EE3927C6279F005B66BA /* ViewController1.swift in Sources */,
+				0D06786327D9B6D700B20B27 /* SegmentControllerToSwitchViewVC.swift in Sources */,
 				0D582BE727D1ED4C00AB8497 /* PinAnnotation.swift in Sources */,
 				0D8739B527D5F92D0046218A /* ViewControllerCollectionView.swift in Sources */,
 				0D88EE3B27C62F9E005B66BA /* ViewControllerSignUp.swift in Sources */,
 				0D04FB3527C7555D00F9C31D /* ViewControllerSizeClass.swift in Sources */,
 				0D8739B727D5F9CB0046218A /* CellStackViewAxisChanger.swift in Sources */,
+				0DE8FB1827D86D6C00003E4C /* ViewControllerTabTwo.swift in Sources */,
 				0D8739BD27D613090046218A /* TableViewControllerForSearchBar.swift in Sources */,
 				0D582BDC27D1D51700AB8497 /* ViewControllerForTabBar.swift in Sources */,
 				0DD4E7EF27C4C61A0024EAC4 /* ViewController.swift in Sources */,
+				0DBFD98D27DB0A040011FC1A /* MainViewController.swift in Sources */,
 				0DFF83A427CE39C000DEA55B /* ViewControllerForSignup.swift in Sources */,
 				0D07C53B27D0A01900F31E5C /* ViewControllerTableViewCustomCell.swift in Sources */,
+				0D4D787E27D9EE8A007B0100 /* CollectionViewCelll.swift in Sources */,
 				0DD4E7EB27C4C61A0024EAC4 /* AppDelegate.swift in Sources */,
+				0D4D788427DA118A007B0100 /* WKWebViewViewController.swift in Sources */,
 				0D582BE027D1D61C00AB8497 /* ViewControllerMapView.swift in Sources */,
+				0D4D787C27D9E924007B0100 /* TableCell.swift in Sources */,
 				0D8739B927D5FA060046218A /* CellIncrementorDecrementor.swift in Sources */,
+				0DBFD99127DB10030011FC1A /* TableViewTopicCell.swift in Sources */,
 				0DD4E7ED27C4C61A0024EAC4 /* SceneDelegate.swift in Sources */,
+				0DE8FB1627D86D5B00003E4C /* ViewControllerTabOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
