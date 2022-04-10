@@ -36,7 +36,7 @@ class WKWebViewViewController: UIViewController {
     
     // MARK: Methods
     func loadPDF() -> URL {
-        let path = Bundle.main.path(forResource: "CLASS TIMETABLE_ODD_2020 17-6-2020 (1)", ofType: "pdf")
+        let path = Bundle.main.path(forResource: "Internal Review  Report II.pptx (1)", ofType: "pdf")
         let url = URL(fileURLWithPath: path!)
         return url
     }

@@ -25,7 +25,7 @@
                                     <segment title="CollectionView"/>
                                 </segments>
                                 <connections>
-                                    <action selector="segCtrlToSwitch:" destination="Y6W-OH-hqX" eventType="valueChanged" id="iBL-3j-iXP"/>
+                                    <action selector="switchToAnotherView:" destination="Y6W-OH-hqX" eventType="valueChanged" id="87e-2C-iar"/>
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" tag="101" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WTB-H2-vlV">
@@ -170,8 +170,8 @@
                     </view>
                     <connections>
                         <outlet property="coolectionView" destination="P6f-aU-KO5" id="34b-Hy-xJk"/>
-                        <outlet property="segController" destination="Gzk-as-Hlq" id="AbQ-lv-R9y"/>
-                        <outlet property="tblView" destination="WTB-H2-vlV" id="Jwp-I4-w6C"/>
+                        <outlet property="segController" destination="Gzk-as-Hlq" id="hhT-6d-G0Q"/>
+                        <outlet property="tableView" destination="WTB-H2-vlV" id="Jwp-I4-w6C"/>
                         <outlet property="textField" destination="rSr-fu-UKJ" id="EoB-HA-f53"/>
                     </connections>
                 </viewController>

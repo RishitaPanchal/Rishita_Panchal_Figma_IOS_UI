@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: Collectionview Custom Protocol 
 protocol RemoveDataProtocol {
     func removeData(idx: Int)
 }
@@ -26,3 +27,4 @@ class CollectionViewCelll: UICollectionViewCell {
     }
     
 }
+
