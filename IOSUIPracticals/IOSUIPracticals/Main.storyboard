@@ -114,11 +114,33 @@
                         <segue destination="CkV-Mn-0Pm" kind="show" identifier="LifecycleDemo" id="QZS-r5-Chw"/>
                         <segue destination="0lu-da-pKg" kind="show" identifier="DatePicker" id="1br-Ad-ggb"/>
                         <segue destination="TtP-a9-Vbm" kind="show" identifier="WKWebview" id="1W5-Ph-7eP"/>
+                        <segue destination="Jcw-B5-sQj" kind="show" identifier="MVCDemo" id="d6D-O1-2Gt"/>
+                        <segue destination="hhu-bM-ea9" kind="show" identifier="MVPDemo" id="E2h-bM-9GU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJa-ny-2J2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="66" y="44"/>
+        </scene>
+        <!--UserDetails-->
+        <scene sceneID="kX9-Tj-fkZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserDetails" referencedIdentifier="UserDetails" id="Jcw-B5-sQj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wDu-cT-dMf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ksg-3X-LUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="102"/>
+        </scene>
+        <!--MVPDemo-->
+        <scene sceneID="cYD-Cp-Lqv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MVPUserDetails" referencedIdentifier="MVPDemo" id="hhu-bM-ea9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yw3-V4-4Ql"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TR3-Tp-cDd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="167"/>
         </scene>
         <!--LoginSignupPractical1-->
         <scene sceneID="Me8-9F-SAf">

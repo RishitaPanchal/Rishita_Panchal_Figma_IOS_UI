@@ -41,6 +41,13 @@ class MainPageData {
                 NavigationButton(title: "DatePicker"),
                 NavigationButton(title: "WKWebview")
             ]
+        ),
+        TableViewCellData(
+            chapterTitle: "iOS-3E",
+            topics: [
+                NavigationButton(title: "MVCDemo"),
+                NavigationButton(title: "MVPDemo")
+            ]
         )
     ]
 }
