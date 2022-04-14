@@ -9,7 +9,7 @@ import UIKit
 
 class MVVMLoginViewController: UIViewController {
 
-    var coordinator: LoginCoordinator?
+    var coordinator: LoginVCCoordinator?
     
     var loginStatusMessage: String?
     @IBOutlet weak var tfEmail: UITextField!
@@ -19,6 +19,9 @@ class MVVMLoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let naController = self.navigationController{
+            coordinator = LoginVCCoordinator(naController)
+        }
     }
     
     @IBAction func didTapLogin(_ sender: Any) {
@@ -28,13 +31,22 @@ class MVVMLoginViewController: UIViewController {
         authenticationVM.loginCompletionHandler { status, message in
             if status{
                 self.loginStatusMessage = message + "\(self.authenticationVM.email)"
-                self.coordinator?.start()
+              /*  let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "ListCommentsViewController") as! MVVMshowCommentsViewController
+                        self.navigationController?.pushViewController(secondVC, animated: true)*/
+                self.coordinator?.goToListComments()
                 print(self.loginStatusMessage ?? "nil")
             } else {
                 self.loginStatusMessage = message
+                self.showAlert(message: self.loginStatusMessage ?? "nil")
                 print(self.loginStatusMessage ?? "nil")
             }
         }
+    }
+
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

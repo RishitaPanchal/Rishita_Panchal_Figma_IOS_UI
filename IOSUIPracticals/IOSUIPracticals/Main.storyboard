@@ -143,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="606" y="167"/>
         </scene>
-        <!--MVVMUsingCoordinator-->
+        <!--loginViewController-->
         <scene sceneID="8hU-9F-3CB">
             <objects>
-                <viewControllerPlaceholder storyboardName="MVVMUsingCoordinator" referencedIdentifier="MVVMUsingCoordinator" id="0oB-cu-D8C" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="MVVMUsingCoordinator" referencedIdentifier="loginViewController" id="0oB-cu-D8C" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="oMU-Dd-ZWZ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tdD-dc-CK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -20,14 +20,3 @@ struct Comments: Codable {
     }
     
 }
-
-struct Comments2: Codable {
-    
-    let email, body: String
-
-    enum CodingKeys: String, CodingKey {
-        case email, body
-    }
-    
-}
-

@@ -6,12 +6,10 @@
 //
 
 import Foundation
-
-import Foundation
 import UIKit
 
 class AppCoordinator: Coordinator {
-
+    
     // MARK: Instance variable
     var AppNavController: UINavigationController?
     

@@ -5,8 +5,9 @@
 //  Created by Rishita Panchal on 14/04/22.
 //
 
-import UIKit
+import Foundation
 
+import Foundation
 
 // MARK: Coordinator protocol
 protocol Coordinator {

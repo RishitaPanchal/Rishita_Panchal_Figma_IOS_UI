@@ -26,8 +26,6 @@
 		0D4D787E27D9EE8A007B0100 /* CollectionViewCelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4D787D27D9EE8A007B0100 /* CollectionViewCelll.swift */; };
 		0D4D788027DA0ED2007B0100 /* WKWebkitDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4D787F27DA0ED2007B0100 /* WKWebkitDemo.storyboard */; };
 		0D4D788427DA118A007B0100 /* WKWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4D788327DA118A007B0100 /* WKWebViewViewController.swift */; };
-		0D50C83428081E6300DF0885 /* RegisterationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50C83328081E6300DF0885 /* RegisterationCoordinator.swift */; };
-		0D50C83628081F3E00DF0885 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50C83528081F3E00DF0885 /* SignUpViewController.swift */; };
 		0D57502E28068FB000DD2679 /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D57502D28068FB000DD2679 /* UsersData.swift */; };
 		0D5750362806BED600DD2679 /* MVPUserDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5750352806BED600DD2679 /* MVPUserDetails.storyboard */; };
 		0D5750382806C09100DD2679 /* MVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5750372806C09100DD2679 /* MVPPresenter.swift */; };
@@ -48,19 +46,23 @@
 		0D88EE3D27C65350005B66BA /* HuggingPriorityContentCompression.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D88EE3C27C65350005B66BA /* HuggingPriorityContentCompression.storyboard */; };
 		0D88EE3F27C65B76005B66BA /* Sizeclass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D88EE3E27C65B76005B66BA /* Sizeclass.storyboard */; };
 		0D98F5002807F1B0006F724F /* MVVMUsingCoordinator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D98F4FF2807F1B0006F724F /* MVVMUsingCoordinator.storyboard */; };
-		0D98F5042807F2C4006F724F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98F5032807F2C4006F724F /* AppCoordinator.swift */; };
-		0D98F5062807F2ED006F724F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98F5052807F2ED006F724F /* Coordinator.swift */; };
-		0D98F5082807F386006F724F /* MainVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98F5072807F386006F724F /* MainVCCoordinator.swift */; };
 		0D98F51228080005006F724F /* MVVMLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98F51128080005006F724F /* MVVMLoginViewController.swift */; };
 		0D98F5152808009A006F724F /* MVVMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98F5142808009A006F724F /* MVVMUser.swift */; };
 		0D98F51728080102006F724F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98F51628080102006F724F /* LoginViewModel.swift */; };
 		0D98F51A280819B6006F724F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98F519280819B6006F724F /* UserManager.swift */; };
-		0D98F51C28081BBF006F724F /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98F51B28081BBF006F724F /* LoginCoordinator.swift */; };
 		0DBFD98D27DB0A040011FC1A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFD98C27DB0A040011FC1A /* MainViewController.swift */; };
 		0DBFD98F27DB0A6A0011FC1A /* TableViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFD98E27DB0A6A0011FC1A /* TableViewCellData.swift */; };
 		0DBFD99127DB10030011FC1A /* TableViewTopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFD99027DB10030011FC1A /* TableViewTopicCell.swift */; };
 		0DC2721027CCA5FD001A2C5B /* LoginSignupPractical1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC2720F27CCA5FD001A2C5B /* LoginSignupPractical1.storyboard */; };
 		0DC2721227CCC6B4001A2C5B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2721127CCC6B4001A2C5B /* PageViewController.swift */; };
+		0DC7624E280829C1009813EE /* MVVMshowCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7624D280829C1009813EE /* MVVMshowCommentsViewController.swift */; };
+		0DC7625028082A60009813EE /* ListCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7624F28082A60009813EE /* ListCommentCell.swift */; };
+		0DC7625228082E8C009813EE /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7625128082E8C009813EE /* Dynamic.swift */; };
+		0DC7625E2808405D009813EE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7625D2808405D009813EE /* AppCoordinator.swift */; };
+		0DC7626028084071009813EE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7625F28084071009813EE /* Coordinator.swift */; };
+		0DC76262280840A7009813EE /* LoginVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC76261280840A7009813EE /* LoginVCCoordinator.swift */; };
+		0DC762642808419C009813EE /* MainViewVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC762632808419C009813EE /* MainViewVCCoordinator.swift */; };
+		0DC7626628084294009813EE /* CommentsVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7626528084294009813EE /* CommentsVCCoordinator.swift */; };
 		0DD4E7EB27C4C61A0024EAC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4E7EA27C4C61A0024EAC4 /* AppDelegate.swift */; };
 		0DD4E7ED27C4C61A0024EAC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4E7EC27C4C61A0024EAC4 /* SceneDelegate.swift */; };
 		0DD4E7EF27C4C61A0024EAC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4E7EE27C4C61A0024EAC4 /* ViewController.swift */; };
@@ -113,8 +115,6 @@
 		0D4D787D27D9EE8A007B0100 /* CollectionViewCelll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCelll.swift; sourceTree = "<group>"; };
 		0D4D787F27DA0ED2007B0100 /* WKWebkitDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WKWebkitDemo.storyboard; sourceTree = "<group>"; };
 		0D4D788327DA118A007B0100 /* WKWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewViewController.swift; sourceTree = "<group>"; };
-		0D50C83328081E6300DF0885 /* RegisterationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationCoordinator.swift; sourceTree = "<group>"; };
-		0D50C83528081F3E00DF0885 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0D57502D28068FB000DD2679 /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
 		0D5750352806BED600DD2679 /* MVPUserDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVPUserDetails.storyboard; sourceTree = "<group>"; };
 		0D5750372806C09100DD2679 /* MVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPresenter.swift; sourceTree = "<group>"; };
@@ -135,19 +135,23 @@
 		0D88EE3C27C65350005B66BA /* HuggingPriorityContentCompression.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HuggingPriorityContentCompression.storyboard; sourceTree = "<group>"; };
 		0D88EE3E27C65B76005B66BA /* Sizeclass.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sizeclass.storyboard; sourceTree = "<group>"; };
 		0D98F4FF2807F1B0006F724F /* MVVMUsingCoordinator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVVMUsingCoordinator.storyboard; sourceTree = "<group>"; };
-		0D98F5032807F2C4006F724F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		0D98F5052807F2ED006F724F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		0D98F5072807F386006F724F /* MainVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCCoordinator.swift; sourceTree = "<group>"; };
 		0D98F51128080005006F724F /* MVVMLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMLoginViewController.swift; sourceTree = "<group>"; };
 		0D98F5142808009A006F724F /* MVVMUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMUser.swift; sourceTree = "<group>"; };
 		0D98F51628080102006F724F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0D98F519280819B6006F724F /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		0D98F51B28081BBF006F724F /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		0DBFD98C27DB0A040011FC1A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0DBFD98E27DB0A6A0011FC1A /* TableViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellData.swift; sourceTree = "<group>"; };
 		0DBFD99027DB10030011FC1A /* TableViewTopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTopicCell.swift; sourceTree = "<group>"; };
 		0DC2720F27CCA5FD001A2C5B /* LoginSignupPractical1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSignupPractical1.storyboard; sourceTree = "<group>"; };
 		0DC2721127CCC6B4001A2C5B /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		0DC7624D280829C1009813EE /* MVVMshowCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMshowCommentsViewController.swift; sourceTree = "<group>"; };
+		0DC7624F28082A60009813EE /* ListCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCommentCell.swift; sourceTree = "<group>"; };
+		0DC7625128082E8C009813EE /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		0DC7625D2808405D009813EE /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0DC7625F28084071009813EE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0DC76261280840A7009813EE /* LoginVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCCoordinator.swift; sourceTree = "<group>"; };
+		0DC762632808419C009813EE /* MainViewVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewVCCoordinator.swift; sourceTree = "<group>"; };
+		0DC7626528084294009813EE /* CommentsVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVCCoordinator.swift; sourceTree = "<group>"; };
 		0DD4E7E727C4C61A0024EAC4 /* IOSUIPracticals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSUIPracticals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD4E7EA27C4C61A0024EAC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DD4E7EC27C4C61A0024EAC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -301,7 +305,7 @@
 				0D98F51328080076006F724F /* Model */,
 				0D98F50E2807FC32006F724F /* ViewModel */,
 				0D98F5092807F8B5006F724F /* View */,
-				0D98F4FE2807F196006F724F /* Coordinator */,
+				0DC7625128082E8C009813EE /* Dynamic.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -314,22 +318,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0D98F4FE2807F196006F724F /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				0D98F5032807F2C4006F724F /* AppCoordinator.swift */,
-				0D98F5052807F2ED006F724F /* Coordinator.swift */,
-				0D98F5072807F386006F724F /* MainVCCoordinator.swift */,
-				0D98F51B28081BBF006F724F /* LoginCoordinator.swift */,
-				0D50C83328081E6300DF0885 /* RegisterationCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		0D98F5092807F8B5006F724F /* View */ = {
 			isa = PBXGroup;
 			children = (
 				0D98F51128080005006F724F /* MVVMLoginViewController.swift */,
+				0DC7624D280829C1009813EE /* MVVMshowCommentsViewController.swift */,
+				0DC7624F28082A60009813EE /* ListCommentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -338,7 +332,6 @@
 			isa = PBXGroup;
 			children = (
 				0D98F51628080102006F724F /* LoginViewModel.swift */,
-				0D50C83528081F3E00DF0885 /* SignUpViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -357,6 +350,18 @@
 				0D98F519280819B6006F724F /* UserManager.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		0DC7625C2808404D009813EE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0DC7625D2808405D009813EE /* AppCoordinator.swift */,
+				0DC7625F28084071009813EE /* Coordinator.swift */,
+				0DC762632808419C009813EE /* MainViewVCCoordinator.swift */,
+				0DC76261280840A7009813EE /* LoginVCCoordinator.swift */,
+				0DC7626528084294009813EE /* CommentsVCCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		0DD4E7DE27C4C61A0024EAC4 = {
@@ -383,6 +388,7 @@
 		0DD4E7E927C4C61A0024EAC4 /* IOSUIPracticals */ = {
 			isa = PBXGroup;
 			children = (
+				0DC7625C2808404D009813EE /* Coordinator */,
 				0D181F9728059A2800A969DF /* IOSArchitetcture */,
 				0D06785F27D9B49900B20B27 /* SegCtrlToSwitchView */,
 				0DD4E7EA27C4C61A0024EAC4 /* AppDelegate.swift */,
@@ -597,44 +603,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DBFD98F27DB0A6A0011FC1A /* TableViewCellData.swift in Sources */,
+				0DC76262280840A7009813EE /* LoginVCCoordinator.swift in Sources */,
 				0D57503F28070BAB00DD2679 /* APIClient.swift in Sources */,
+				0DC7626028084071009813EE /* Coordinator.swift in Sources */,
 				0D57503C2806C45900DD2679 /* MVPUsersCell.swift in Sources */,
 				0D07C53827D09D1200F31E5C /* TableViewCell.swift in Sources */,
 				0D98F51228080005006F724F /* MVVMLoginViewController.swift in Sources */,
 				0DC2721227CCC6B4001A2C5B /* PageViewController.swift in Sources */,
+				0DC7625E2808405D009813EE /* AppCoordinator.swift in Sources */,
 				0D57503A2806C39C00DD2679 /* MVPViewControllerView.swift in Sources */,
 				0D023C6327D765BA00191426 /* DatePickerViewController.swift in Sources */,
 				0D88EE3927C6279F005B66BA /* ViewController1.swift in Sources */,
-				0D98F5062807F2ED006F724F /* Coordinator.swift in Sources */,
 				0D181FA22805A34400A969DF /* UserDetailsCell.swift in Sources */,
 				0D06786327D9B6D700B20B27 /* SegmentControllerToSwitchViewVC.swift in Sources */,
 				0D582BE727D1ED4C00AB8497 /* PinAnnotation.swift in Sources */,
 				0D8739B527D5F92D0046218A /* ViewControllerCollectionView.swift in Sources */,
 				0D88EE3B27C62F9E005B66BA /* ViewControllerSignUp.swift in Sources */,
+				0DC7626628084294009813EE /* CommentsVCCoordinator.swift in Sources */,
 				0D98F51A280819B6006F724F /* UserManager.swift in Sources */,
-				0D98F5082807F386006F724F /* MainVCCoordinator.swift in Sources */,
+				0DC762642808419C009813EE /* MainViewVCCoordinator.swift in Sources */,
 				0D04FB3527C7555D00F9C31D /* ViewControllerSizeClass.swift in Sources */,
 				0D98F5152808009A006F724F /* MVVMUser.swift in Sources */,
-				0D50C83428081E6300DF0885 /* RegisterationCoordinator.swift in Sources */,
 				0D8739B727D5F9CB0046218A /* CellStackViewAxisChanger.swift in Sources */,
 				0D5750382806C09100DD2679 /* MVPPresenter.swift in Sources */,
-				0D50C83628081F3E00DF0885 /* SignUpViewController.swift in Sources */,
 				0DE8FB1827D86D6C00003E4C /* ViewControllerTabTwo.swift in Sources */,
 				0D8739BD27D613090046218A /* TableViewControllerForSearchBar.swift in Sources */,
 				0D582BDC27D1D51700AB8497 /* ViewControllerForTabBar.swift in Sources */,
+				0DC7625228082E8C009813EE /* Dynamic.swift in Sources */,
 				0DD4E7EF27C4C61A0024EAC4 /* ViewController.swift in Sources */,
 				0DBFD98D27DB0A040011FC1A /* MainViewController.swift in Sources */,
 				0DFF83A427CE39C000DEA55B /* ViewControllerForSignup.swift in Sources */,
 				0D07C53B27D0A01900F31E5C /* ViewControllerTableViewCustomCell.swift in Sources */,
 				0D4D787E27D9EE8A007B0100 /* CollectionViewCelll.swift in Sources */,
 				0D98F51728080102006F724F /* LoginViewModel.swift in Sources */,
-				0D98F51C28081BBF006F724F /* LoginCoordinator.swift in Sources */,
 				0DD4E7EB27C4C61A0024EAC4 /* AppDelegate.swift in Sources */,
 				0D4D788427DA118A007B0100 /* WKWebViewViewController.swift in Sources */,
+				0DC7625028082A60009813EE /* ListCommentCell.swift in Sources */,
 				0D57502E28068FB000DD2679 /* UsersData.swift in Sources */,
-				0D98F5042807F2C4006F724F /* AppCoordinator.swift in Sources */,
 				0D582BE027D1D61C00AB8497 /* ViewControllerMapView.swift in Sources */,
 				0D4D787C27D9E924007B0100 /* TableCell.swift in Sources */,
+				0DC7624E280829C1009813EE /* MVVMshowCommentsViewController.swift in Sources */,
 				0D8739B927D5FA060046218A /* CellIncrementorDecrementor.swift in Sources */,
 				0DBFD99127DB10030011FC1A /* TableViewTopicCell.swift in Sources */,
 				0DD4E7ED27C4C61A0024EAC4 /* SceneDelegate.swift in Sources */,

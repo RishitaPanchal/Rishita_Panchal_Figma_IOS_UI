@@ -1,5 +1,5 @@
 //
-//  MainVCCoordinator.swift
+//  MainViewVCCoordinator.swift
 //  IOSUIPracticals
 //
 //  Created by Rishita Panchal on 14/04/22.

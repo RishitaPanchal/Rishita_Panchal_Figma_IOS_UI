@@ -19,30 +19,11 @@ class MVPPresenter: UserDetailesDelegate {
     var viewDelegate: ViewProtocol?
     
     func showUsersComments() {
-       
         APiClient.shared.fetchComments(url: "https://jsonplaceholder.typicode.com/comments") { data in
             DispatchQueue.main.async {
                 self.viewDelegate?.success(comments: data)
             }
         }
     }
-//
-//    // MARK: Instance variable
-//    var delegate: UserDetailesDelegate?
-//
-//
-//    // MARK: API response function
-//    func fetchComments() {
-//
-//    }
-//
-//    // MARK: Functions
-//    func setViewDelegate(delegate: UserDetailesDelegate) {
-//        self.delegate = delegate
-//    }
-//
-//    func didTapUser(user: Comments) {
-//        delegate?.showAlert(title: "Message", message: "Selected user ID is : \(user.id)")
-//    }
-//
+    
 }

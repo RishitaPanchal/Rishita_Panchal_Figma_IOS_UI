@@ -11,6 +11,8 @@ class LoginViewModel: NSObject {
   
     var user: User?
     var email: String {return user?.email ?? "nill"}
+    var dynamic = Dynamic<[Comments]?>(nil)
+    
     
     typealias authenticationCallback = (_ status: Bool, _ message: String) -> Void
     var loginCallBack: authenticationCallback?
@@ -36,4 +38,13 @@ class LoginViewModel: NSObject {
         self.loginCallBack = callBack
     }
     
+    func showUsersComments() {
+        APiClient.shared.fetchComments(url: "https://jsonplaceholder.typicode.com/comments") { data in
+            DispatchQueue.main.async {
+                self.dynamic.value = data
+                self.dynamic.fire()
+            }
+        }
+    }
+
 }
