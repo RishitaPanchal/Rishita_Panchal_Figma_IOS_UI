@@ -46,7 +46,8 @@ class MainPageData {
             chapterTitle: "iOS-3E",
             topics: [
                 NavigationButton(title: "MVCDemo"),
-                NavigationButton(title: "MVPDemo")
+                NavigationButton(title: "MVPDemo"),
+                NavigationButton(title: "MVVMDemo")
             ]
         )
     ]

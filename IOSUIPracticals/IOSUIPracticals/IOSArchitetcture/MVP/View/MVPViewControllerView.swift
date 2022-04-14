@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol ViewProtocol {
+    func success(comments: [Comments])
+    func failure(message: String)
+}
+
 class MVPViewControllerView: UIViewController {
 
     // MARK: IBOutlets
@@ -21,8 +26,8 @@ class MVPViewControllerView: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        presenter.setViewDelegate(delegate: self)
-        presenter.fetchComments()
+        presenter.viewDelegate = self
+        presenter.showUsersComments()
     }
 
 }
@@ -47,25 +52,23 @@ extension MVPViewControllerView: UITableViewDataSource {
         return MVPUsersCell.loadData(tableView, userDetails, indexPath)
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.didTapUser(user: userDetails[indexPath.row])
-    }
-    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        presenter.didTapUser(user: userDetails[indexPath.row])
+//    }
+//
 }
 
-// MARK: Extension conforming UserPresenterDelegate
-extension MVPViewControllerView: UserDetailesDelegate {
-    func showUsersComments(comments: [Comments]) {
-        self.userDetails = comments
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-    }
+extension MVPViewControllerView: ViewProtocol {
     
-    func showAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "cancel", style: .cancel, handler: nil))
-        present(alert, animated: true)
+
+func success(comments: [Comments]) {
+    self.userDetails = comments
+    DispatchQueue.main.async {
+        self.tableView.reloadData()
     }
-    
+}
+
+func failure(message: String) {
+    print("Error")
+}
 }

@@ -10,38 +10,39 @@ import UIKit
 
 // MARK: MVP Protocol methods
 protocol UserDetailesDelegate: AnyObject {
-   
-    func showUsersComments(comments: [Comments])
-    func showAlert(title: String, message: String)
-
+    var viewDelegate: ViewProtocol? { get set }
+    func showUsersComments()
 }
 
-class MVPPresenter {
+class MVPPresenter: UserDetailesDelegate {
     
-    // MARK: Instance variable
-    weak var delegate: UserDetailesDelegate?
-
-    // MARK: API response function
-    func fetchComments() {
-        APiClient.shared.request(url: URL(string: "https://jsonplaceholder.typicode.com/comments"), expecting: [Comments].self) { [self] result in
-            switch result {
-                case .success(let comment):
-                    DispatchQueue.main.async {
-                        self.delegate?.showUsersComments(comments: comment)
-                    }
-                case .failure(_):
-                    print("Error")
+    var viewDelegate: ViewProtocol?
+    
+    func showUsersComments() {
+       
+        APiClient.shared.fetchComments(url: "https://jsonplaceholder.typicode.com/comments") { data in
+            DispatchQueue.main.async {
+                self.viewDelegate?.success(comments: data)
             }
         }
     }
-    
-    // MARK: Functions
-    func setViewDelegate(delegate: UserDetailesDelegate) {
-        self.delegate = delegate
-    }
-    
-    func didTapUser(user: Comments) {
-        delegate?.showAlert(title: "Message", message: "Selected user ID is : \(user.id)")
-    }
-    
+//
+//    // MARK: Instance variable
+//    var delegate: UserDetailesDelegate?
+//
+//
+//    // MARK: API response function
+//    func fetchComments() {
+//
+//    }
+//
+//    // MARK: Functions
+//    func setViewDelegate(delegate: UserDetailesDelegate) {
+//        self.delegate = delegate
+//    }
+//
+//    func didTapUser(user: Comments) {
+//        delegate?.showAlert(title: "Message", message: "Selected user ID is : \(user.id)")
+//    }
+//
 }

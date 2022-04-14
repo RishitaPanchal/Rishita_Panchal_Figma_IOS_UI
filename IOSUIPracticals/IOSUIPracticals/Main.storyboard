@@ -52,7 +52,7 @@
         <!--Main View Controller-->
         <scene sceneID="GVl-mh-rtK">
             <objects>
-                <viewController id="nUZ-VE-wI3" customClass="MainViewController" customModule="IOSUIPracticals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="nUZ-VE-wI3" customClass="MainViewController" customModule="IOSUIPracticals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gsT-LW-4rz">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,6 +116,7 @@
                         <segue destination="TtP-a9-Vbm" kind="show" identifier="WKWebview" id="1W5-Ph-7eP"/>
                         <segue destination="Jcw-B5-sQj" kind="show" identifier="MVCDemo" id="d6D-O1-2Gt"/>
                         <segue destination="hhu-bM-ea9" kind="show" identifier="MVPDemo" id="E2h-bM-9GU"/>
+                        <segue destination="0oB-cu-D8C" kind="show" identifier="MVVMDemo" id="a4u-tK-Lfw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJa-ny-2J2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -141,6 +142,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TR3-Tp-cDd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="606" y="167"/>
+        </scene>
+        <!--MVVMUsingCoordinator-->
+        <scene sceneID="8hU-9F-3CB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MVVMUsingCoordinator" referencedIdentifier="MVVMUsingCoordinator" id="0oB-cu-D8C" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oMU-Dd-ZWZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdD-dc-CK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598" y="215"/>
         </scene>
         <!--LoginSignupPractical1-->
         <scene sceneID="Me8-9F-SAf">

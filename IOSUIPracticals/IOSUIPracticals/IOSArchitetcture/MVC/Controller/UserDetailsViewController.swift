@@ -20,22 +20,9 @@ class UserDetailsViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        fetchComments()
-        //getUsers()
-    }
-
-
-    func fetchComments() {
-        APiClient.shared.request(url: URL(string: "https://jsonplaceholder.typicode.com/comments"), expecting: [Comments].self) { [self] result in
-            switch result {
-                case .success(let users):
-                    DispatchQueue.main.async {
-                        self.userComments = users
-                        self.tableView.reloadData()
-                    }
-                case .failure(_):
-                    print("Error")
-            }
+        APiClient.shared.fetchComments(url: "https://jsonplaceholder.typicode.com/comments") { data in
+            self.userComments = data
+            self.tableView.reloadData()
         }
     }
     
