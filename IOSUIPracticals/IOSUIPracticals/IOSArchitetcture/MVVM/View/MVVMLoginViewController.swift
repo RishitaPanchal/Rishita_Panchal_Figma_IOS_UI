@@ -9,6 +9,8 @@ import UIKit
 
 class MVVMLoginViewController: UIViewController {
 
+    var coordinator: LoginCoordinator?
+    
     var loginStatusMessage: String?
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
@@ -17,7 +19,6 @@ class MVVMLoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func didTapLogin(_ sender: Any) {
@@ -27,6 +28,7 @@ class MVVMLoginViewController: UIViewController {
         authenticationVM.loginCompletionHandler { status, message in
             if status{
                 self.loginStatusMessage = message + "\(self.authenticationVM.email)"
+                self.coordinator?.start()
                 print(self.loginStatusMessage ?? "nil")
             } else {
                 self.loginStatusMessage = message

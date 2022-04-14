@@ -26,6 +26,8 @@
 		0D4D787E27D9EE8A007B0100 /* CollectionViewCelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4D787D27D9EE8A007B0100 /* CollectionViewCelll.swift */; };
 		0D4D788027DA0ED2007B0100 /* WKWebkitDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4D787F27DA0ED2007B0100 /* WKWebkitDemo.storyboard */; };
 		0D4D788427DA118A007B0100 /* WKWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4D788327DA118A007B0100 /* WKWebViewViewController.swift */; };
+		0D50C83428081E6300DF0885 /* RegisterationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50C83328081E6300DF0885 /* RegisterationCoordinator.swift */; };
+		0D50C83628081F3E00DF0885 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50C83528081F3E00DF0885 /* SignUpViewController.swift */; };
 		0D57502E28068FB000DD2679 /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D57502D28068FB000DD2679 /* UsersData.swift */; };
 		0D5750362806BED600DD2679 /* MVPUserDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5750352806BED600DD2679 /* MVPUserDetails.storyboard */; };
 		0D5750382806C09100DD2679 /* MVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5750372806C09100DD2679 /* MVPPresenter.swift */; };
@@ -111,6 +113,8 @@
 		0D4D787D27D9EE8A007B0100 /* CollectionViewCelll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCelll.swift; sourceTree = "<group>"; };
 		0D4D787F27DA0ED2007B0100 /* WKWebkitDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WKWebkitDemo.storyboard; sourceTree = "<group>"; };
 		0D4D788327DA118A007B0100 /* WKWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewViewController.swift; sourceTree = "<group>"; };
+		0D50C83328081E6300DF0885 /* RegisterationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationCoordinator.swift; sourceTree = "<group>"; };
+		0D50C83528081F3E00DF0885 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0D57502D28068FB000DD2679 /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
 		0D5750352806BED600DD2679 /* MVPUserDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVPUserDetails.storyboard; sourceTree = "<group>"; };
 		0D5750372806C09100DD2679 /* MVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPresenter.swift; sourceTree = "<group>"; };
@@ -317,6 +321,7 @@
 				0D98F5052807F2ED006F724F /* Coordinator.swift */,
 				0D98F5072807F386006F724F /* MainVCCoordinator.swift */,
 				0D98F51B28081BBF006F724F /* LoginCoordinator.swift */,
+				0D50C83328081E6300DF0885 /* RegisterationCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -333,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				0D98F51628080102006F724F /* LoginViewModel.swift */,
+				0D50C83528081F3E00DF0885 /* SignUpViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -609,8 +615,10 @@
 				0D98F5082807F386006F724F /* MainVCCoordinator.swift in Sources */,
 				0D04FB3527C7555D00F9C31D /* ViewControllerSizeClass.swift in Sources */,
 				0D98F5152808009A006F724F /* MVVMUser.swift in Sources */,
+				0D50C83428081E6300DF0885 /* RegisterationCoordinator.swift in Sources */,
 				0D8739B727D5F9CB0046218A /* CellStackViewAxisChanger.swift in Sources */,
 				0D5750382806C09100DD2679 /* MVPPresenter.swift in Sources */,
+				0D50C83628081F3E00DF0885 /* SignUpViewController.swift in Sources */,
 				0DE8FB1827D86D6C00003E4C /* ViewControllerTabTwo.swift in Sources */,
 				0D8739BD27D613090046218A /* TableViewControllerForSearchBar.swift in Sources */,
 				0D582BDC27D1D51700AB8497 /* ViewControllerForTabBar.swift in Sources */,

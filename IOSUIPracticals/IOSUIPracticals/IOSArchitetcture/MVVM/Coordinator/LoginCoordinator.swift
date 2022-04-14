@@ -11,22 +11,26 @@ import UIKit
 class LoginCoordinator: Coordinator {
     
     // MARK: Instance variable
-    var MainNavController: UINavigationController?
+    var SignUpNavController: UINavigationController?
     
     // MARK: Initializer
     init(_ navigationController: UINavigationController) {
-        MainNavController = navigationController
+        SignUpNavController = navigationController
     }
     
     // MARK: Protocol methods
     func start() {
-        if let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as? MainViewController {
-            MainNavController?.pushViewController(loginVC, animated: true)
+        
+        print("callerdddd")
+
+        if let signUpVC = UIStoryboard(name: "SignUpViewController", bundle: nil).instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController {
+            SignUpNavController?.pushViewController(signUpVC, animated: true)
         }
+        print("caller")
     }
     
     func finish() {
-        MainNavController?.popViewController(animated: true)
+        SignUpNavController?.popViewController(animated: true)
     }
     
 }
