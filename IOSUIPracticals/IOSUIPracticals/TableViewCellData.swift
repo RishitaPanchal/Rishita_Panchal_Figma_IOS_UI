@@ -47,7 +47,8 @@ class MainPageData {
             topics: [
                 NavigationButton(title: "MVCDemo"),
                 NavigationButton(title: "MVPDemo"),
-                NavigationButton(title: "MVVMDemo")
+                NavigationButton(title: "MVVMDemo"),
+                NavigationButton(title: "VIPERDemo")
             ]
         )
     ]

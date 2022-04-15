@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MVPUsersCell: UITableViewCell {
+class MVPCeommentCell: UITableViewCell {
 
     // MARK: IBOutlets
     @IBOutlet weak var lblFirstName: UILabel!
@@ -15,7 +15,7 @@ class MVPUsersCell: UITableViewCell {
     
     // MARK: Fuction for Load data
     static func loadData(_ tableView: UITableView, _ userDetails: [Comments], _ indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MVPTableCell", for: indexPath) as? MVPUsersCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MVPTableCell", for: indexPath) as? MVPCeommentCell else {
                 return UITableViewCell()
         }
         cell.lblFirstName.text = userDetails[indexPath.row].email

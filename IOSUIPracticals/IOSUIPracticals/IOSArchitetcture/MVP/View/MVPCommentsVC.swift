@@ -12,7 +12,7 @@ protocol ViewProtocol {
     func failure(message: String)
 }
 
-class MVPViewControllerView: UIViewController {
+class MVPCommentsVC: UIViewController {
 
     // MARK: IBOutlets
     @IBOutlet weak var tableView: UITableView!
@@ -33,7 +33,7 @@ class MVPViewControllerView: UIViewController {
 }
 
 // MARK: Extention conforming TableviewDelegate
-extension MVPViewControllerView: UITableViewDelegate {
+extension MVPCommentsVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
@@ -42,33 +42,29 @@ extension MVPViewControllerView: UITableViewDelegate {
 }
 
 // MARK: Extension Conforming TableviewDatasource
-extension MVPViewControllerView: UITableViewDataSource {
+extension MVPCommentsVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return userDetails.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return MVPUsersCell.loadData(tableView, userDetails, indexPath)
+        return MVPCeommentCell.loadData(tableView, userDetails, indexPath)
+    }
+
+}
+
+extension MVPCommentsVC: ViewProtocol {
+    
+    func success(comments: [Comments]) {
+        self.userDetails = comments
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+
+    func failure(message: String) {
+        print("Error")
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        presenter.didTapUser(user: userDetails[indexPath.row])
-//    }
-//
-}
-
-extension MVPViewControllerView: ViewProtocol {
-    
-
-func success(comments: [Comments]) {
-    self.userDetails = comments
-    DispatchQueue.main.async {
-        self.tableView.reloadData()
-    }
-}
-
-func failure(message: String) {
-    print("Error")
-}
 }

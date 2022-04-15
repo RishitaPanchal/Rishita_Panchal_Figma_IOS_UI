@@ -20,7 +20,7 @@ class CommentsVCCoordinator: Coordinator {
     
     // MARK: Protocol methods
     func start() {
-        if let loginVC = UIStoryboard(name: "ListCommentsViewController", bundle: nil).instantiateViewController(withIdentifier: "ListCommentsViewController") as? MVVMshowCommentsViewController {
+        if let loginVC = UIStoryboard(name: "MVVMUsingCoordinator", bundle: nil).instantiateViewController(withIdentifier: "ListCommentsViewController") as? MVVMshowCommentsViewController {
             CommentsNavController?.pushViewController(loginVC, animated: true)
         }
     }

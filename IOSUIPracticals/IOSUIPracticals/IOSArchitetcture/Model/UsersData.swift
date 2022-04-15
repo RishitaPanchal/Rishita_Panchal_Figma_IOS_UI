@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-// MARK: - WelcomeElement
+// MARK: - Data class for MVP, MVC, MVVM
 struct Comments: Codable {
     
     let postID, id: Int
@@ -20,3 +20,10 @@ struct Comments: Codable {
     }
     
 }
+
+// MARK: MVVM Login Data class
+struct User {
+    var email: String
+    var password: String
+}
+

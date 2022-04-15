@@ -20,7 +20,7 @@ class LoginVCCoordinator: Coordinator {
     
     // MARK: Protocol methods
     func start() {
-        if let loginVC = UIStoryboard(name: "loginViewController", bundle: nil).instantiateViewController(withIdentifier: "loginViewController") as? MVVMLoginViewController {
+        if let loginVC = UIStoryboard(name: "MVVMUsingCoordinator", bundle: nil).instantiateViewController(withIdentifier: "loginViewController") as? MVVMLoginViewController {
             LoginNavController?.pushViewController(loginVC, animated: true)
         }
     }

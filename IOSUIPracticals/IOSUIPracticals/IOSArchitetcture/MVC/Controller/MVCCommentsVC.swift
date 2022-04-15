@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserDetailsViewController: UIViewController {
+class MVCCommentsVC: UIViewController {
 
     // MARK: Instance variable
     var userComments = [Comments]()
@@ -29,21 +29,21 @@ class UserDetailsViewController: UIViewController {
 }
 
 // MARK: Extension conforming Tableview Datasource
-extension UserDetailsViewController: UITableViewDataSource {
+extension MVCCommentsVC: UITableViewDataSource {
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return userComments.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let data = UserDetailesCell()
+        let data = MVCCeommentCell()
         return data.loadData(tableView, userComments, indexPath)
     }
  
 }
 
 // MARK: Extension confirming Tableview Delegate
-extension UserDetailsViewController: UITableViewDelegate {
+extension MVCCommentsVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200

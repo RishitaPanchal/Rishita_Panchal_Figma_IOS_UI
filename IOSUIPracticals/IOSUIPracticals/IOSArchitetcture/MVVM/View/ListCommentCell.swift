@@ -9,6 +9,7 @@ import UIKit
 
 class ListCommentCell: UITableViewCell {
     
+    // MARK: IBOutlets
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblComments: UILabel!
     

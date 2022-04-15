@@ -9,21 +9,25 @@ import UIKit
 
 class MVVMshowCommentsViewController: UIViewController {
 
-    
-    var authenticationVM = LoginViewModel()
+    // MARK: Instance variable
+    var viewModel = LoginViewModel()
     var userComments = [Comments]()
+    
+    // MARK: IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
+    // MARK: Overridden method
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         getDataFromDynamics()
-        authenticationVM.showUsersComments()
+        viewModel.showUsersComments()
     }
     
+    // MARK: Function
     func getDataFromDynamics() {
-        authenticationVM.dynamic.bind { data in
+        viewModel.commentsList.bind { data in
             guard data != nil else { return }
             self.tableView.reloadData()
         }
@@ -31,20 +35,24 @@ class MVVMshowCommentsViewController: UIViewController {
     
 }
 
+// MARK: Extension comforming Tableview delegate
 extension MVVMshowCommentsViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
+    
 }
 
+// MARK: Extension comforming Tableview Datasource
 extension MVVMshowCommentsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return ListCommentCell.loadData(tableView, authenticationVM.dynamic.value!, indexPath)
+        return ListCommentCell.loadData(tableView, viewModel.commentsList.value!, indexPath)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return authenticationVM.dynamic.value?.count ?? 0
+        return viewModel.commentsList.value?.count ?? 0
     }
     
 }

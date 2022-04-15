@@ -9,14 +9,16 @@ import UIKit
 
 class MVVMLoginViewController: UIViewController {
 
+    // MARK: Instance variable
     var coordinator: LoginVCCoordinator?
-    
     var loginStatusMessage: String?
+    var viewModel = LoginViewModel()
+     
+    // MARK: IBOutlets
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
    
-    var authenticationVM = LoginViewModel()
-    
+    // MARK: Overrideen method
     override func viewDidLoad() {
         super.viewDidLoad()
         if let naController = self.navigationController{
@@ -24,25 +26,15 @@ class MVVMLoginViewController: UIViewController {
         }
     }
     
+    // MARK: IBAction
     @IBAction func didTapLogin(_ sender: Any) {
-        guard let userEmail = self.tfEmail.text else { return }
-        guard let userPassword = self.tfPassword.text else { return }
-        authenticationVM.authenticateUsreWith(userEmail, userPassword)
-        authenticationVM.loginCompletionHandler { status, message in
-            if status{
-                self.loginStatusMessage = message + "\(self.authenticationVM.email)"
-              /*  let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "ListCommentsViewController") as! MVVMshowCommentsViewController
-                        self.navigationController?.pushViewController(secondVC, animated: true)*/
-                self.coordinator?.goToListComments()
-                print(self.loginStatusMessage ?? "nil")
-            } else {
-                self.loginStatusMessage = message
-                self.showAlert(message: self.loginStatusMessage ?? "nil")
-                print(self.loginStatusMessage ?? "nil")
-            }
+        viewModel.authenticateUsreWith(tfEmail.text ?? "nil", tfPassword.text ?? "nil")
+        viewModel.loginCompletionHandler { status, message in
+            status ? self.coordinator?.goToListComments() : self.showAlert(message: message)
         }
     }
-
+    
+    // MARK: Function
     func showAlert(message: String) {
         let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))

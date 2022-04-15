@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserDetailesCell: UITableViewCell {
+class MVCCeommentCell: UITableViewCell {
     
     // MARK: IBOutlets
     @IBOutlet weak var lblEmail: UILabel!
@@ -15,7 +15,7 @@ class UserDetailesCell: UITableViewCell {
     
     // MARK: Fuction for Load data
     func loadData(_ tableView: UITableView, _ userDetails: [Comments], _ indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserDetailsCell", for: indexPath) as? UserDetailesCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserDetailsCell", for: indexPath) as? MVCCeommentCell else {
                 return UITableViewCell()
             }
         cell.lblEmail.text = String(userDetails[indexPath.row].email)

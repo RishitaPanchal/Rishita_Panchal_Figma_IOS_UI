@@ -7,22 +7,20 @@
 
 import Foundation
 
-class LoginViewModel: NSObject {
+class LoginViewModel {
+    
+    // MARK: Typealias for closure
+    typealias authenticationCallback = (_ status: Bool, _ message: String) -> Void
   
+    // MARK: Instance variables
     var user: User?
     var email: String {return user?.email ?? "nill"}
-    var dynamic = Dynamic<[Comments]?>(nil)
-    
-    
-    typealias authenticationCallback = (_ status: Bool, _ message: String) -> Void
+    var commentsList = Dynamic<[Comments]?>(nil)
     var loginCallBack: authenticationCallback?
   
+    // MARK: Functions
     func authenticateUsreWith(_ email: String, _ password: String) {
-        if (email.count == 0 && password.count == 0) {
-            self.loginCallBack?(false,"Fields should not be empty!!")
-        } else {
-            verifyUserWith(email: email, password: password)
-        }
+        (email.isEmpty || password.isEmpty) ? self.loginCallBack?(false, "Fields should not be empty!!") :             verifyUserWith(email: email, password: password)
     }
     
     func verifyUserWith(email: String, password: String) {
@@ -40,10 +38,8 @@ class LoginViewModel: NSObject {
     
     func showUsersComments() {
         APiClient.shared.fetchComments(url: "https://jsonplaceholder.typicode.com/comments") { data in
-            DispatchQueue.main.async {
-                self.dynamic.value = data
-                self.dynamic.fire()
-            }
+            self.commentsList.value = data
+            self.commentsList.fire()
         }
     }
 
