@@ -16,38 +16,31 @@ protocol AnyView {
 class VIPERView: UIViewController, AnyView {
 
     var users: [UserComments] = []
+
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        let router = Router()
-        var view: AnyView = VIPERView()
-
-        var interactor: AnyInteractor = Interactor()
-        var presenter: AnyPresenter = Presenter(interactor)
-        
-        view.presenter = presenter
-        interactor.presenter = presenter
-        presenter.router = router
-        presenter.interactor = interactor
-        presenter.view = view
+        Router.start(vc: self)
     }
     
     var presenter: AnyPresenter?
     
     func update(_ comments: [UserComments]) {
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [weak self] in
+            guard let `self` = self else { return }
             self.users = comments
-            self.tableView.reloadData()
             print(comments)
+            self.tableView.reloadData()
         }
     }
     
     func update(_ error: String) {
         print(error)
     }
+    
 }
 
 extension VIPERView: UITableViewDelegate {
@@ -65,10 +58,11 @@ extension VIPERView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "VIPERCommentCell", for: indexPath) as? VIPERCommentCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as? VIPERCommentCell else {
                 return UITableViewCell()
         }
-        //cell.lblName.text = users[indexPath.row].email
+        cell.lblName.text = users[indexPath.row].email
+        cell.lblComment.text = users[indexPath.row].body
         return cell
     }
     

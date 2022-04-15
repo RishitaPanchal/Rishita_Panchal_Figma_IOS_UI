@@ -11,30 +11,22 @@ import UIKit
 typealias EntryPoint = AnyView & UIViewController
 
 protocol AnyRouter {
-    var entry: EntryPoint? { get }
-    static func start() -> AnyRouter
+    static func start(vc: UIViewController)
 }
 
 
 class Router: AnyRouter {
-    
-    var entry: EntryPoint?
-    
-    static func start() -> AnyRouter {
-
+   
+    static func start(vc: UIViewController) {
+        guard let vc = vc as? VIPERView else { return }
         let router = Router()
-      /*  var view: AnyView = VIPERView()
-       // var presenter: AnyPresenter = Presenter()
         var interactor: AnyInteractor = Interactor()
-        
-        view.presenter = presenter
+        var presenter: AnyPresenter = Presenter(interactor)
+        vc.presenter = presenter
         interactor.presenter = presenter
         presenter.router = router
         presenter.interactor = interactor
-        presenter.view = view
-        
-        router.entry = view as? EntryPoint*/
-        return router
+        presenter.view = vc
     }
     
     

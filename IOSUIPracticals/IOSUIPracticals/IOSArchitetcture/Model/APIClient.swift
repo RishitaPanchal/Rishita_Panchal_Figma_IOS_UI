@@ -55,5 +55,18 @@ class APiClient {
             }
         }
     }
+    
+    func fetchComments2(url: String, completion: @escaping ([UserComments]) -> Void) {
+        APiClient.shared.request(url: URL(string: url), expecting: [UserComments].self) { result in
+            switch result {
+                case .success(let users):
+                    DispatchQueue.main.async {
+                        completion(users)
+                    }
+                case .failure(_):
+                    print("Error")
+            }
+        }
+    }
    
 }

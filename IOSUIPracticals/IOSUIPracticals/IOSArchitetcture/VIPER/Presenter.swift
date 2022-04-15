@@ -7,19 +7,19 @@
 
 import Foundation
 
-enum CustomErrors: Error {
-    case failed
-}
 
 protocol AnyPresenter {
+
     var router: AnyRouter? { get set }
     var interactor: AnyInteractor? { get set }
     var view: AnyView? { get set }
-    
+
     func interactorDidFetchComments(result: Result<[UserComments], Error>)
+
 }
 
 class Presenter: AnyPresenter {
+    
     var router: AnyRouter?
     var interactor: AnyInteractor?
     var view: AnyView?
