@@ -13,11 +13,9 @@ class MVCCeommentCell: UITableViewCell {
     @IBOutlet weak var lblEmail: UILabel!
     @IBOutlet weak var lblComment: UILabel!
     
-    // MARK: Fuction for Load data
+    // MARK: LoadData Fuction
     func loadData(_ tableView: UITableView, _ userDetails: [Comments], _ indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserDetailsCell", for: indexPath) as? MVCCeommentCell else {
-                return UITableViewCell()
-            }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserDetailsCell", for: indexPath) as? MVCCeommentCell else { return UITableViewCell() }
         cell.lblEmail.text = String(userDetails[indexPath.row].email)
         cell.lblComment.text = String(userDetails[indexPath.row].body)
         return cell

@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: View Prototcol
 protocol ViewProtocol {
     func success(comments: [Comments])
     func failure(message: String)
@@ -49,11 +50,12 @@ extension MVPCommentsVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return MVPCeommentCell.loadData(tableView, userDetails, indexPath)
+        return MVPCommentCell.loadData(tableView, userDetails, indexPath)
     }
 
 }
 
+// MARK: Extension comforming viewProtocol
 extension MVPCommentsVC: ViewProtocol {
     
     func success(comments: [Comments]) {

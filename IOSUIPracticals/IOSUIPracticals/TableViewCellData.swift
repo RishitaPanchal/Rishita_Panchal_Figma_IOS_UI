@@ -48,7 +48,7 @@ class MainPageData {
                 NavigationButton(title: "MVCDemo"),
                 NavigationButton(title: "MVPDemo"),
                 NavigationButton(title: "MVVMDemo"),
-                NavigationButton(title: "VIPERDemo")
+                NavigationButton(title: "VIPERDemo1")
             ]
         )
     ]

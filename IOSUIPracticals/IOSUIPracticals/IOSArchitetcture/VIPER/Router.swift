@@ -8,26 +8,22 @@
 import Foundation
 import UIKit
 
-typealias EntryPoint = AnyView & UIViewController
-
-protocol AnyRouter {
-    static func start(vc: UIViewController)
-}
-
-
-class Router: AnyRouter {
+class Router: VRouterProtocol {
    
-    static func start(vc: UIViewController) {
-        guard let vc = vc as? VIPERView else { return }
+    // MARK: Protocol method
+    func start(navigationConroller navigationController: UINavigationController) {
+        let storyboard = UIStoryboard(name: "VIPERCommentsList", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "VIPERCommentsList") as! VIPERView
         let router = Router()
-        var interactor: AnyInteractor = Interactor()
-        var presenter: AnyPresenter = Presenter(interactor)
+        var interactor: VInteractorProtocol = Interactor()
+        var presenter: VPresenterProtocol = Presenter(interactor)
+        
         vc.presenter = presenter
         interactor.presenter = presenter
         presenter.router = router
         presenter.interactor = interactor
         presenter.view = vc
+        navigationController.pushViewController(vc, animated: true)
     }
-    
     
 }

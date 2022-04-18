@@ -8,17 +8,14 @@
 import Foundation
 import UIKit
 
-protocol AnyInteractor {
-    var presenter: AnyPresenter? { get set }
-    func getComments()
-}
-
-class Interactor: AnyInteractor {
+class Interactor: VInteractorProtocol {
     
-    var presenter: AnyPresenter?
+    // MARK: Instance variable
+    var presenter: VPresenterProtocol?
     
+    // MARK: Protocol method
     func getComments() {
-        APiClient.shared.fetchComments2(url: "https://jsonplaceholder.typicode.com/comments") { data in
+        APiClient.shared.fetchCommentsForVIPER(url: "https://jsonplaceholder.typicode.com/comments") { data in
             self.presenter?.interactorDidFetchComments(result: .success(data))
         }
     }

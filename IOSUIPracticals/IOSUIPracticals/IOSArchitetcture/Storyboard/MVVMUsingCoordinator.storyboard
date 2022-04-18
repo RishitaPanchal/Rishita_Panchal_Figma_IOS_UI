@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--LoginVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="loginViewController" id="Y6W-OH-hqX" customClass="MVVMLoginViewController" customModule="IOSUIPracticals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="Y6W-OH-hqX" customClass="MVVMLoginVC" customModule="IOSUIPracticals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="25.446428571428569"/>
         </scene>
-        <!--Mshow Comments View Controller-->
+        <!--Show CommentsVC-->
         <scene sceneID="N5H-Ne-1oD">
             <objects>
-                <viewController storyboardIdentifier="ListCommentsViewController" id="aL9-eM-jcf" customClass="MVVMshowCommentsViewController" customModule="IOSUIPracticals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MVVMshowCommentsViewController" id="aL9-eM-jcf" customClass="MVVMShowCommentsVC" customModule="IOSUIPracticals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PbO-qh-dQV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

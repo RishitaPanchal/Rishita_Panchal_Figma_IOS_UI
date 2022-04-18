@@ -10,15 +10,19 @@ import UIKit
 
 class APiClient {
     
+    // MARK: Instance variable
     static let shared = APiClient()
     
+    // MARK: Initializer
     private init() { }
     
+    // MARK: Enumeration For CustomError
     enum CustomError: Error {
         case invalidUrl
         case invalidData
     }
     
+    // MARK: APICalling Generic function
     func request<T: Codable>(url: URL?, expecting: T.Type, completion: @escaping (Result<T,Error>) -> Void) {
         guard let url = url else {
             completion(.failure(CustomError.invalidUrl))
@@ -26,11 +30,11 @@ class APiClient {
         }
         let task = URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
-                if let error = error {
-                    completion(.failure(error))
-                } else {
+                guard let error = error else {
                     completion(.failure(CustomError.invalidData))
+                    return
                 }
+                completion(.failure(error))
                 return
             }
             do {
@@ -56,7 +60,7 @@ class APiClient {
         }
     }
     
-    func fetchComments2(url: String, completion: @escaping ([UserComments]) -> Void) {
+    func fetchCommentsForVIPER(url: String, completion: @escaping ([UserComments]) -> Void) {
         APiClient.shared.request(url: URL(string: url), expecting: [UserComments].self) { result in
             switch result {
                 case .success(let users):

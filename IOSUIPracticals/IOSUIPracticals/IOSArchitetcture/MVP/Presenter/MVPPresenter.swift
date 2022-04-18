@@ -14,6 +14,7 @@ protocol UserDetailesDelegate: AnyObject {
     func showUsersComments()
 }
 
+// MARK: Extension comforming UserDetailesDelegate
 class MVPPresenter: UserDetailesDelegate {
     
     var viewDelegate: ViewProtocol?

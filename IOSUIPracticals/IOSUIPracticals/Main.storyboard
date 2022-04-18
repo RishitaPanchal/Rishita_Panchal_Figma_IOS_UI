@@ -117,7 +117,7 @@
                         <segue destination="Jcw-B5-sQj" kind="show" identifier="MVCDemo" id="d6D-O1-2Gt"/>
                         <segue destination="hhu-bM-ea9" kind="show" identifier="MVPDemo" id="E2h-bM-9GU"/>
                         <segue destination="0oB-cu-D8C" kind="show" identifier="MVVMDemo" id="a4u-tK-Lfw"/>
-                        <segue destination="l3N-0a-czC" kind="show" identifier="VIPERDemo" id="p0q-tI-1Cd"/>
+                        <segue destination="l3N-0a-czC" kind="show" identifier="VIPERDemo1" id="p0q-tI-1Cd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJa-ny-2J2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="598" y="215"/>
         </scene>
-        <!--VIPERCommentsList-->
+        <!--VIPERCoordinator-->
         <scene sceneID="Jpb-2Z-2SX">
             <objects>
-                <viewControllerPlaceholder storyboardName="VIPERCommentsList" referencedIdentifier="VIPERCommentsList" id="l3N-0a-czC" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="VIPERCommentsList" referencedIdentifier="VIPERCoordinator" id="l3N-0a-czC" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="M6z-ag-FiY"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIk-az-a2E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

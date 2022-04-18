@@ -7,31 +7,27 @@
 
 import UIKit
 
-protocol AnyView {
-    var presenter: AnyPresenter? { get set }
-    func update(_ comments: [UserComments])
-    func update(_ error: String)
-}
+class VIPERView: UIViewController, VViewProtocol {
 
-class VIPERView: UIViewController, AnyView {
-
-    var users: [UserComments] = []
-
+    // MARK: Instance variable
+    var usersComments: [UserComments] = []
+    var presenter: VPresenterProtocol?
+    
+    // MARK: IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
+    // MARK: Overridden method
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        Router.start(vc: self)
     }
     
-    var presenter: AnyPresenter?
-    
+    // MARK: Protocol methods
     func update(_ comments: [UserComments]) {
         DispatchQueue.main.async { [weak self] in
             guard let `self` = self else { return }
-            self.users = comments
+            self.usersComments = comments
             print(comments)
             self.tableView.reloadData()
         }
@@ -43,6 +39,7 @@ class VIPERView: UIViewController, AnyView {
     
 }
 
+// MARK: Extension comforming TableviewDelegate
 extension VIPERView: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -51,19 +48,15 @@ extension VIPERView: UITableViewDelegate {
 
 }
 
+// MARK: Extension comforming TableViewDataSource
 extension VIPERView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
+        return usersComments.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as? VIPERCommentCell else {
-                return UITableViewCell()
-        }
-        cell.lblName.text = users[indexPath.row].email
-        cell.lblComment.text = users[indexPath.row].body
-        return cell
+        return VIPERCommentCell.loadData(tableView: tableView, userComments: usersComments, indexPath: indexPath)
     }
     
 }

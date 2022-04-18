@@ -8,33 +8,26 @@
 import Foundation
 
 
-protocol AnyPresenter {
-
-    var router: AnyRouter? { get set }
-    var interactor: AnyInteractor? { get set }
-    var view: AnyView? { get set }
-
-    func interactorDidFetchComments(result: Result<[UserComments], Error>)
-
-}
-
-class Presenter: AnyPresenter {
+class Presenter: VPresenterProtocol {
     
-    var router: AnyRouter?
-    var interactor: AnyInteractor?
-    var view: AnyView?
+    // MARK: Instance variable (Refferences)
+    var router: VRouterProtocol?
+    var interactor: VInteractorProtocol?
+    var view: VViewProtocol?
     
-    init(_ interactor: AnyInteractor) {
+    // MARK: Initializer
+    init(_ interactor: VInteractorProtocol) {
         self.interactor = interactor
         self.interactor?.getComments()
     }
     
+    // MARK: Protocol method
     func interactorDidFetchComments(result: Result<[UserComments], Error>) {
         switch result {
-        case .success(let users):
-            view?.update(users)
-        case .failure(_):
-            view?.update("something went wrong!!")
+            case .success(let users):
+                view?.update(users)
+            case .failure(_):
+                view?.update("something went wrong!!")
         }
     }
     

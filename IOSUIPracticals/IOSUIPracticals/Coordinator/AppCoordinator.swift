@@ -8,6 +8,14 @@
 import Foundation
 import UIKit
 
+// MARK: Coordinator protocol
+protocol Coordinator {
+    
+    func start()
+    func finish()
+    
+}
+
 class AppCoordinator: Coordinator {
     
     // MARK: Instance variable
@@ -20,10 +28,9 @@ class AppCoordinator: Coordinator {
     
     // MARK: Protocol methods
     func start() {
-        if let navVC = AppNavController {
-            let mainVC = MainVCCoordinator(navVC)
-            mainVC.start()
-        }
+        let vc = MainViewController.instantiateFromStoryBoard(from: .main)
+        vc.mainCoordinator = self
+        AppNavController?.pushViewController(vc, animated: true)
     }
     
     func finish() {

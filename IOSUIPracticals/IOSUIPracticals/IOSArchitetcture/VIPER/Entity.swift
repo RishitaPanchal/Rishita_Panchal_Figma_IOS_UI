@@ -6,7 +6,8 @@
 //
 
 import Foundation
-// MARK: - Data class for MVP, MVC, MVVM
+
+// MARK: Model class
 struct UserComments: Codable {
     
     let postID, id: Int

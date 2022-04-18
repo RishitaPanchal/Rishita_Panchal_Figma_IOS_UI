@@ -7,10 +7,11 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, CoordinatorBoard {
 
     //MARK: IBAction
     @IBOutlet weak var tblView: UITableView!
+    var mainCoordinator: AppCoordinator?
     
     // MARK: Instance variable
     var chapterDetails = MainPageData.topicsData
