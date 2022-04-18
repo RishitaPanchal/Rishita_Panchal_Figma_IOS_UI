@@ -7,11 +7,12 @@
 
 import UIKit
 
-class MVVMshowCommentsViewController: UIViewController {
+class MVVMShowCommentsVC: UIViewController, CoordinatorBoard {
 
     // MARK: Instance variable
     var viewModel = LoginViewModel()
     var userComments = [Comments]()
+    var coordinator: ArchitectureCoordinator?
     
     // MARK: IBOutlets
     @IBOutlet weak var tableView: UITableView!
@@ -28,7 +29,8 @@ class MVVMshowCommentsViewController: UIViewController {
     // MARK: Function
     func getDataFromDynamics() {
         viewModel.commentsList.bind { data in
-            guard data != nil else { return }
+            guard let data = data else { return }
+            self.userComments = data
             self.tableView.reloadData()
         }
     }
@@ -36,7 +38,7 @@ class MVVMshowCommentsViewController: UIViewController {
 }
 
 // MARK: Extension comforming Tableview delegate
-extension MVVMshowCommentsViewController: UITableViewDelegate {
+extension MVVMShowCommentsVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
@@ -45,14 +47,14 @@ extension MVVMshowCommentsViewController: UITableViewDelegate {
 }
 
 // MARK: Extension comforming Tableview Datasource
-extension MVVMshowCommentsViewController: UITableViewDataSource {
+extension MVVMShowCommentsVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return ListCommentCell.loadData(tableView, viewModel.commentsList.value!, indexPath)
+        return ListCommentCell.loadData(tableView, userComments, indexPath)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.commentsList.value?.count ?? 0
+        return userComments.count
     }
     
 }

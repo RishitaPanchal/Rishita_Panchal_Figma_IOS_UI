@@ -7,10 +7,10 @@
 
 import UIKit
 
-class MVVMLoginViewController: UIViewController {
+class MVVMLoginVC: UIViewController, CoordinatorBoard {
 
     // MARK: Instance variable
-    var coordinator: LoginVCCoordinator?
+    var coordinator: ArchitectureCoordinator?
     var loginStatusMessage: String?
     var viewModel = LoginViewModel()
      
@@ -22,7 +22,7 @@ class MVVMLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let naController = self.navigationController{
-            coordinator = LoginVCCoordinator(naController)
+            coordinator = ArchitectureCoordinator(naController)
         }
     }
     
@@ -30,7 +30,7 @@ class MVVMLoginViewController: UIViewController {
     @IBAction func didTapLogin(_ sender: Any) {
         viewModel.authenticateUsreWith(tfEmail.text ?? "nil", tfPassword.text ?? "nil")
         viewModel.loginCompletionHandler { status, message in
-            status ? self.coordinator?.goToListComments() : self.showAlert(message: message)
+            status ? self.coordinator?.goToComment(): self.showAlert(message: message)
         }
     }
     
