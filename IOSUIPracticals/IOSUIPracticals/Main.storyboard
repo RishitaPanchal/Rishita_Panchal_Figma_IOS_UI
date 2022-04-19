@@ -115,6 +115,8 @@
                         <segue destination="0lu-da-pKg" kind="show" identifier="DatePicker" id="1br-Ad-ggb"/>
                         <segue destination="TtP-a9-Vbm" kind="show" identifier="WKWebview" id="1W5-Ph-7eP"/>
                         <segue destination="H3G-pF-bAb" kind="presentation" identifier="NavigationController" modalPresentationStyle="fullScreen" id="2wg-YD-jDn"/>
+                        <segue destination="SZJ-BF-nbI" kind="show" identifier="URLSessionDemo" id="yQp-Ty-SSU"/>
+                        <segue destination="EHa-py-OQn" kind="show" identifier="PutPatchDelete" id="cU8-RC-Swp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJa-ny-2J2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -130,6 +132,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pfo-BH-cSu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="530" y="106"/>
+        </scene>
+        <!--URLSessionDemo-->
+        <scene sceneID="rGz-sh-cAn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="URLSessionDemo" id="SZJ-BF-nbI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hIJ-dg-qfs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTa-im-m5M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637" y="150"/>
+        </scene>
+        <!--PutPatchDelete-->
+        <scene sceneID="41X-Nj-A5f">
+            <objects>
+                <viewControllerPlaceholder storyboardName="URLSessionDemo" referencedIdentifier="PutPatchDelete" id="EHa-py-OQn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5kC-5b-vVO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4F-F4-pVW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="189"/>
         </scene>
         <!--LoginSignupPractical1-->
         <scene sceneID="Me8-9F-SAf">

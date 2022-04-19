@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RadioTableViewCell: UIView {
+class RadioTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -47,6 +47,13 @@ class MainPageData {
             topics: [
                 NavigationButton(title: "NavigationController"),
             ]
+        ),
+        TableViewCellData(
+            chapterTitle: "iOS-Webservices",
+            topics: [
+                NavigationButton(title: "URLSessionDemo"),
+                NavigationButton(title: "PutPatchDelete")
+            ]
         )
     ]
 }
