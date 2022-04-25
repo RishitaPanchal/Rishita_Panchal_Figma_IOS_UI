@@ -22,12 +22,12 @@ class MVVMShowCommentsVC: UIViewController, CoordinatorBoard {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        getDataFromDynamics()
+        getData()
         viewModel.showUsersComments()
     }
     
     // MARK: Function
-    func getDataFromDynamics() {
+    func getData() {
         viewModel.commentsList.bind { data in
             guard let data = data else { return }
             self.userComments = data

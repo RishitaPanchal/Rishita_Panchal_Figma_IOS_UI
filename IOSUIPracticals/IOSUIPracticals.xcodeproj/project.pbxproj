@@ -54,6 +54,7 @@
 		0D88EE3B27C62F9E005B66BA /* ViewControllerSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D88EE3A27C62F9E005B66BA /* ViewControllerSignUp.swift */; };
 		0D88EE3D27C65350005B66BA /* HuggingPriorityContentCompression.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D88EE3C27C65350005B66BA /* HuggingPriorityContentCompression.storyboard */; };
 		0D88EE3F27C65B76005B66BA /* Sizeclass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D88EE3E27C65B76005B66BA /* Sizeclass.storyboard */; };
+		0D9169D528169AD9001874BD /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9169D428169AD9001874BD /* CustomError.swift */; };
 		0D98F5002807F1B0006F724F /* MVVMUsingCoordinator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D98F4FF2807F1B0006F724F /* MVVMUsingCoordinator.storyboard */; };
 		0D98F51228080005006F724F /* MVVMLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98F51128080005006F724F /* MVVMLoginVC.swift */; };
 		0D98F51728080102006F724F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98F51628080102006F724F /* LoginViewModel.swift */; };
@@ -148,6 +149,7 @@
 		0D88EE3A27C62F9E005B66BA /* ViewControllerSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSignUp.swift; sourceTree = "<group>"; };
 		0D88EE3C27C65350005B66BA /* HuggingPriorityContentCompression.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HuggingPriorityContentCompression.storyboard; sourceTree = "<group>"; };
 		0D88EE3E27C65B76005B66BA /* Sizeclass.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sizeclass.storyboard; sourceTree = "<group>"; };
+		0D9169D428169AD9001874BD /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		0D98F4FF2807F1B0006F724F /* MVVMUsingCoordinator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVVMUsingCoordinator.storyboard; sourceTree = "<group>"; };
 		0D98F51128080005006F724F /* MVVMLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMLoginVC.swift; sourceTree = "<group>"; };
 		0D98F51628080102006F724F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				0D57503D2806F79100DD2679 /* MVVM */,
 				0D5750312806BC4100DD2679 /* MVP */,
 				0D181F9828059A4500A969DF /* MVC */,
+				0D9169D428169AD9001874BD /* CustomError.swift */,
 			);
 			path = IOSArchitetcture;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 			files = (
 				0DBFD98F27DB0A6A0011FC1A /* TableViewCellData.swift in Sources */,
 				0DC76262280840A7009813EE /* ArchitectureCoordinator.swift in Sources */,
+				0D9169D528169AD9001874BD /* CustomError.swift in Sources */,
 				0D57503F28070BAB00DD2679 /* APIClient.swift in Sources */,
 				0D57503C2806C45900DD2679 /* MVPCommentCell.swift in Sources */,
 				0D07C53827D09D1200F31E5C /* TableViewCell.swift in Sources */,
