@@ -439,7 +439,6 @@
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="goToFourthVc:" destination="Gxg-iy-I4U" eventType="touchUpInside" id="2sJ-yE-S3p"/>
-                                                            <action selector="goToFourthVc:" destination="SRo-od-bGZ" eventType="touchUpInside" id="svK-zW-Br4"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPG-kH-Ek8">
@@ -461,7 +460,6 @@
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pushForthVc:" destination="Gxg-iy-I4U" eventType="touchUpInside" id="JwE-o5-AwT"/>
-                                                            <action selector="pushForthVc:" destination="SRo-od-bGZ" eventType="touchUpInside" id="KfM-YZ-Fb9"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -483,7 +481,6 @@
                                                                 <buttonConfiguration key="configuration" style="filled" title="SEND BACK"/>
                                                                 <connections>
                                                                     <action selector="sendBackData:" destination="Gxg-iy-I4U" eventType="touchUpInside" id="foP-Er-gIG"/>
-                                                                    <action selector="sendBackData:" destination="SRo-od-bGZ" eventType="touchUpInside" id="nc1-jH-f69"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -563,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bvt-2b-17H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1158" y="-591"/>
+            <point key="canvasLocation" x="1970" y="-645"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="8xh-qn-4YK">
@@ -652,117 +649,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="53L-Rh-Xzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1862" y="56"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="FcN-4z-bxT">
-            <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="SRo-od-bGZ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dpm-6s-DyF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Dk-nV-gsG">
-                                <rect key="frame" x="123.5" y="405" width="167" height="96"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBk-7j-xhk">
-                                        <rect key="frame" x="0.0" y="0.0" width="167" height="43"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background">
-                                                <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </backgroundConfiguration>
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Present FourthVC">
-                                                    <attributes>
-                                                        <font key="NSFont" size="12" name="Helvetica"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseForegroundColor" systemColor="systemGray6Color"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="goToFourthVc:" destination="SRo-od-bGZ" eventType="touchUpInside" id="gCF-dh-RUV"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n73-3r-wEo">
-                                        <rect key="frame" x="0.0" y="53" width="167" height="43"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background">
-                                                <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </backgroundConfiguration>
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Push Forth VC">
-                                                    <attributes>
-                                                        <font key="NSFont" size="12" name="Helvetica"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="pushForthVc:" destination="SRo-od-bGZ" eventType="touchUpInside" id="KVu-5X-XvW"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="n73-3r-wEo" firstAttribute="height" secondItem="PBk-7j-xhk" secondAttribute="height" id="aGC-um-tXq"/>
-                                    <constraint firstItem="PBk-7j-xhk" firstAttribute="height" secondItem="0Dk-nV-gsG" secondAttribute="height" multiplier="0.05" constant="38.024999999999999" id="yRq-Bu-2QG"/>
-                                </constraints>
-                            </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guJ-dk-Ovt">
-                                <rect key="frame" x="87" y="551" width="240" height="191"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pHO-an-DBl">
-                                        <rect key="frame" x="24" y="30" width="192" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfd-6W-aQu">
-                                        <rect key="frame" x="43" y="84" width="154" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="SEND BACK"/>
-                                        <connections>
-                                            <action selector="sendBackData:" destination="SRo-od-bGZ" eventType="touchUpInside" id="OaR-ma-Mvg"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="pHO-an-DBl" firstAttribute="top" secondItem="guJ-dk-Ovt" secondAttribute="top" constant="30" id="2pW-BE-yYe"/>
-                                    <constraint firstItem="qfd-6W-aQu" firstAttribute="width" secondItem="pHO-an-DBl" secondAttribute="width" multiplier="0.8" id="7tj-UD-GVb"/>
-                                    <constraint firstItem="qfd-6W-aQu" firstAttribute="top" secondItem="pHO-an-DBl" secondAttribute="bottom" constant="20" id="ZAX-Hd-hx1"/>
-                                    <constraint firstItem="pHO-an-DBl" firstAttribute="width" secondItem="guJ-dk-Ovt" secondAttribute="width" multiplier="0.8" id="bbF-yV-puN"/>
-                                    <constraint firstItem="qfd-6W-aQu" firstAttribute="centerX" secondItem="pHO-an-DBl" secondAttribute="centerX" id="p8y-ls-6PG"/>
-                                    <constraint firstItem="pHO-an-DBl" firstAttribute="centerX" secondItem="guJ-dk-Ovt" secondAttribute="centerX" id="pJa-Vb-thO"/>
-                                    <constraint firstItem="qfd-6W-aQu" firstAttribute="height" secondItem="pHO-an-DBl" secondAttribute="height" multiplier="0.911765" id="uvL-Qk-uVj"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Wcd-9N-4bg"/>
-                        <color key="backgroundColor" red="0.73056380939999999" green="0.62551178279999997" blue="0.9073128748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="guJ-dk-Ovt" firstAttribute="width" secondItem="0Dk-nV-gsG" secondAttribute="width" multiplier="1.43713" id="3IM-8G-kZs"/>
-                            <constraint firstItem="0Dk-nV-gsG" firstAttribute="centerY" secondItem="Wcd-9N-4bg" secondAttribute="centerY" id="7Xn-cL-YoZ"/>
-                            <constraint firstItem="guJ-dk-Ovt" firstAttribute="top" secondItem="0Dk-nV-gsG" secondAttribute="bottom" constant="50" id="WMD-cx-Wnb"/>
-                            <constraint firstItem="guJ-dk-Ovt" firstAttribute="height" secondItem="0Dk-nV-gsG" secondAttribute="height" multiplier="2" id="bU0-Cq-b5C"/>
-                            <constraint firstItem="0Dk-nV-gsG" firstAttribute="centerX" secondItem="Wcd-9N-4bg" secondAttribute="centerX" id="eRT-Mb-niS"/>
-                            <constraint firstItem="0Dk-nV-gsG" firstAttribute="width" secondItem="dpm-6s-DyF" secondAttribute="width" multiplier="0.403382" id="oOI-5x-VUQ"/>
-                            <constraint firstItem="PBk-7j-xhk" firstAttribute="width" secondItem="dpm-6s-DyF" secondAttribute="width" multiplier="0.403382" id="xld-jf-JWE"/>
-                            <constraint firstItem="guJ-dk-Ovt" firstAttribute="centerX" secondItem="0Dk-nV-gsG" secondAttribute="centerX" id="yhE-B9-B3g"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="fsq-ji-qJI"/>
-                    <connections>
-                        <outlet property="receivedData" destination="pHO-an-DBl" id="tos-kQ-pxj"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w0v-Ko-hYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2780" y="-1042"/>
+            <point key="canvasLocation" x="1970" y="56"/>
         </scene>
         <!--ForthVC-->
         <scene sceneID="oxP-0S-nO2">
@@ -917,7 +804,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Of-4R-ICu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="bJt-d4-4CZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3497.1014492753625" y="55.580357142857139"/>
+            <point key="canvasLocation" x="3374" y="56"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jvl-V9-kK6">
