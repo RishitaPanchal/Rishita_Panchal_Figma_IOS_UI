@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Gzk-as-Hlq">
-                                <rect key="frame" x="96.5" y="97" width="221" height="32"/>
+                                <rect key="frame" x="96.5" y="54" width="221" height="32"/>
                                 <segments>
                                     <segment title="TableView"/>
                                     <segment title="CollectionView"/>
@@ -160,7 +160,7 @@
                             <constraint firstItem="Cno-vE-9BV" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="FQj-p1-2QK"/>
                             <constraint firstItem="P6f-aU-KO5" firstAttribute="trailing" secondItem="WTB-H2-vlV" secondAttribute="trailing" id="QZw-RK-k70"/>
                             <constraint firstItem="P6f-aU-KO5" firstAttribute="bottom" secondItem="WTB-H2-vlV" secondAttribute="bottom" id="Wkd-YT-SVt"/>
-                            <constraint firstItem="Gzk-as-Hlq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="53" id="Yra-xR-cKr"/>
+                            <constraint firstItem="Gzk-as-Hlq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="Yra-xR-cKr"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Cno-vE-9BV" secondAttribute="bottom" constant="30" id="bLC-m0-vsy"/>
                             <constraint firstItem="WTB-H2-vlV" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="cYK-Ho-rbJ"/>
                             <constraint firstItem="WTB-H2-vlV" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.5" id="npe-7A-drr"/>
