@@ -5,8 +5,8 @@ class PageViewController: UIPageViewController {
     lazy var viewControllerList:[UIViewController] = {
         let storyboard = UIStoryboard(name: "LoginSignupPractical1", bundle: nil)
         let firstviewController = storyboard.instantiateViewController(identifier: "Login")
-        let secondviewController = storyboard.instantiateViewController(identifier: "SignUp")
-        let thirdviewController = storyboard.instantiateViewController(identifier: "Registration")
+        let secondviewController = storyboard.instantiateViewController(identifier: "Registration")
+        let thirdviewController = storyboard.instantiateViewController(identifier: "SignUpWithScroll")
         return [firstviewController, secondviewController, thirdviewController]
     }()
   
