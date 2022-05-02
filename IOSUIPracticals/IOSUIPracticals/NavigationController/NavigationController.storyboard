@@ -231,6 +231,9 @@
                     <navigationItem key="navigationItem" title="First" id="UOP-3c-1OF">
                         <barButtonItem key="backBarButtonItem" title="Back" id="hnI-zz-Hov"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="scrollView" destination="zE6-c4-gn0" id="4VH-2m-hx1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eJ-Jw-naR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -405,7 +408,6 @@
         <!--Third View Controller-->
         <scene sceneID="p37-gK-QNL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z78-3p-UVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ThirdViewController" modalPresentationStyle="fullScreen" id="Gxg-iy-I4U" customClass="ThirdViewController" customModule="IOSUIPracticals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="57M-mh-zfC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -529,8 +531,10 @@
                     <navigationItem key="navigationItem" id="oh3-mr-59e"/>
                     <connections>
                         <outlet property="receivedData" destination="vSQ-a6-tQF" id="XdA-GZ-Chk"/>
+                        <outlet property="scrollView" destination="sUL-qf-jdh" id="03o-MM-Ef4"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z78-3p-UVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2667" y="56"/>
         </scene>

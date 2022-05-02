@@ -12,13 +12,14 @@ class LoginViewController: UIViewController {
     // MARK: IBOutlets
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
-    
+    @IBOutlet weak var scrollView: UIScrollView!
     // MARK: Instance variable
     var token: String?
     
     // MARK: Overridden method
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView?.showsVerticalScrollIndicator = false
         tfEmail.text = "eve.holt@reqres.in"
         tfPassword.text = "cityslicka"
     }

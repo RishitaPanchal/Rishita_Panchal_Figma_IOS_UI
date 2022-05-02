@@ -14,12 +14,14 @@ class SignupBasicAutolayoutViewController: UIViewController {
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
    
+    @IBOutlet weak var scrollView: UIScrollView!
     // MARK: - Overridden method
     override func viewDidLoad() {
         super.viewDidLoad()
         tfFullname.delegate = self
         tfEmail.delegate =  self
         tfPassword.delegate = self
+        scrollView?.showsVerticalScrollIndicator = false
         configureTapGesture()
     }
 

@@ -12,9 +12,11 @@ class FirstViewController: UIViewController {
     // MARK: INStance variable
     var coordinator: HomeVCCoordinator?
     
+    @IBOutlet weak var scrollView: UIScrollView!
     // MARK: Overridden method
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView?.showsVerticalScrollIndicator = false
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         if let naController = self.navigationController{
             coordinator = HomeVCCoordinator(naController)

@@ -20,10 +20,12 @@ class ThirdViewController: UIViewController {
     // MARK: Instance variable
     var recivedName: String?
     weak var delegate: SendBackData?
+    @IBOutlet weak var scrollView: UIScrollView!
     
     // MARK: Overridden methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView?.showsVerticalScrollIndicator = false
         receivedData.text = recivedName
         navigationItem.title = "Third VC"
         configureBarItem()

@@ -13,10 +13,12 @@ class AlamofireViewController: UIViewController {
     // MARK: IBOutlets
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     // MARK: Overriden method
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView?.showsVerticalScrollIndicator = false
         tfEmail.text = "eve.holt@reqres.in"
         tfPassword.text = "cityslicka"
     }
