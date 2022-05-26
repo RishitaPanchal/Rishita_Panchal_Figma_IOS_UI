@@ -50,6 +50,10 @@ extension MainViewController: UITableViewDataSource {
         let segId = chapterDetails[indexPath.section].topics[indexPath.row].segId
         performSegue(withIdentifier: segId, sender: nil)
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
 
 }
 
