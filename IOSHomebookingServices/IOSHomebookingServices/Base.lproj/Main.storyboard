@@ -22,12 +22,12 @@
         <!--Login View Controller-->
         <scene sceneID="eWx-4V-jw6">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" modalTransitionStyle="flipHorizontal" id="WkE-Cn-CVo" customClass="LoginViewController" customModule="IOSHomebookingServices" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="WkE-Cn-CVo" customClass="LoginViewController" customModule="IOSHomebookingServices" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HGK-zA-vyB">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAm-tJ-nEZ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAm-tJ-nEZ" customClass="TPKeyboardAvoidingScrollView" customModule="TPKeyboardAvoidingSwift">
                                 <rect key="frame" x="0.0" y="88" width="428" height="838"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crs-pr-Ywd">
@@ -48,12 +48,12 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19z-WN-LDS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="78" height="68"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="googleIconLogin"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="GooglegoogleButton (1)"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIp-vk-7Ml">
                                                                 <rect key="frame" x="78" y="0.0" width="78" height="68"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="faceBookIconLogin"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="Facebookfacebook (1)"/>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -121,6 +121,7 @@
                                                             <backgroundConfiguration key="background">
                                                                 <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
+                                                            <color key="baseForegroundColor" red="1" green="0.4490017201" blue="0.50492845360000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need support?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LA-DL-Khd" customClass="CustomLabelNeedSupport" customModule="IOSHomebookingServices" customModuleProvider="target">
@@ -130,20 +131,20 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuf-8K-Fi0">
-                                                        <rect key="frame" x="95.666666666666686" y="695" width="237" height="31"/>
+                                                        <rect key="frame" x="93.666666666666671" y="695" width="240.66666666666663" height="31"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaR-Tc-V7m" customClass="CustomLabelNeedSupport" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaR-Tc-V7m" customClass="CustomBottomLabel" customModule="IOSHomebookingServices" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="165.66666666666666" height="31"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAH-hD-9Cg" customClass="CustomButtonGoToSignUp" customModule="IOSHomebookingServices" customModuleProvider="target">
-                                                                <rect key="frame" x="165.66666666666663" y="0.0" width="71.333333333333314" height="31"/>
+                                                                <rect key="frame" x="165.66666666666663" y="0.0" width="75" height="31"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="sign up"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                                                 <connections>
-                                                                    <action selector="goToSIgnUpVC:" destination="WkE-Cn-CVo" eventType="touchUpInside" id="KaI-qC-sYt"/>
+                                                                    <segue destination="oSy-eZ-8BF" kind="show" id="MMH-MY-dso"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -212,9 +213,7 @@
                             <constraint firstItem="TsV-rK-xD0" firstAttribute="height" relation="greaterThanOrEqual" secondItem="r4r-UC-fWZ" secondAttribute="height" multiplier="0.07" constant="30" id="vrp-Bw-nfg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lis-K7-bVM">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="bkc-sO-fsQ"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="lis-K7-bVM"/>
                     <connections>
                         <outlet property="txtPassword" destination="rGj-k5-jOg" id="1It-H6-bdi"/>
                         <outlet property="txtUsername" destination="v5c-jx-Bho" id="69k-Xq-5gW"/>
@@ -222,7 +221,227 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhv-E9-geq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747" y="43"/>
+            <point key="canvasLocation" x="740" y="24"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="1dy-pw-QkT">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="oSy-eZ-8BF" customClass="SignupViewController" customModule="IOSHomebookingServices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ASN-bw-KCA">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rV-RR-YDB" customClass="TPKeyboardAvoidingScrollView" customModule="TPKeyboardAvoidingSwift">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wr4-YS-ric">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="826.66666666666663"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aza-L5-B2u" customClass="CustomUIview" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="40" width="428" height="786.66666666666663"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="oZB-Fq-Luj">
+                                                        <rect key="frame" x="39.999999999999986" y="39.999999999999993" width="232.66666666666663" height="66.333333333333314"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lets get something" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LP-eQ-ij6" customClass="CustomLoginH1Label" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="232.66666666666666" height="33.666666666666664"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="24"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create account to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svL-T8-siv" customClass="CustomLoginH2Label" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="46.666666666666671" width="193.33333333333334" height="19.666666666666671"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SHz-uA-Oul">
+                                                        <rect key="frame" x="40" y="148.99999999999997" width="348" height="418.33333333333326"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DAZ-6E-35F" customClass="CustomTextField" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="348" height="59.666666666666664"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                        <real key="value" value="35"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="accountuserIcon"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAw-vG-9H7" customClass="CustomTextField" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="89.666666666666686" width="348" height="59.666666666666657"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                        <real key="value" value="35"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="accountuserIcon"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0NX-pB-3sa" customClass="CustomTextField" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="179.33333333333331" width="348" height="59.666666666666657"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                        <real key="value" value="35"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="phoneIcon"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JDe-JD-4iY" customClass="CustomTextField" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="269" width="348" height="59.666666666666686"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                        <real key="value" value="35"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="emailIcon"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q0z-kc-l9e" customClass="CustomTextField" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="358.66666666666663" width="348" height="59.666666666666686"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                        <real key="value" value="35"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="locationIcon"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svl-dG-COK" customClass="CustomButton" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                        <rect key="frame" x="40" y="623.33333333333337" width="348" height="54"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="54" id="g0M-Cp-dhl"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Create Account">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </backgroundConfiguration>
+                                                            <color key="baseForegroundColor" red="1" green="0.4490017201" blue="0.50492845360000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need support?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4x-nB-eOp" customClass="CustomLabelNeedSupport" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="718" width="428" height="19.666666666666629"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgt-4J-Rl0">
+                                                        <rect key="frame" x="87.333333333333329" y="757" width="253.66666666666669" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAA-dn-Yxd" customClass="CustomBottomLabel" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAc-3U-xKd" customClass="CustomButtonGoToSignUp" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                                <rect key="frame" x="178.66666666666669" y="0.0" width="75" height="31"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="E4x-nB-eOp" secondAttribute="trailing" id="AY8-7S-Gca"/>
+                                                    <constraint firstAttribute="trailing" secondItem="SHz-uA-Oul" secondAttribute="trailing" constant="40" id="D5k-3T-VnG"/>
+                                                    <constraint firstItem="SHz-uA-Oul" firstAttribute="top" secondItem="oZB-Fq-Luj" secondAttribute="bottom" multiplier="1.4" id="F07-zZ-Pus"/>
+                                                    <constraint firstItem="jgt-4J-Rl0" firstAttribute="centerX" secondItem="Aza-L5-B2u" secondAttribute="centerX" id="MKx-Xz-NjA"/>
+                                                    <constraint firstItem="E4x-nB-eOp" firstAttribute="top" secondItem="Svl-dG-COK" secondAttribute="bottom" multiplier="1.06" id="QU1-rK-4w1"/>
+                                                    <constraint firstItem="E4x-nB-eOp" firstAttribute="leading" secondItem="Aza-L5-B2u" secondAttribute="leading" id="SIS-rE-2I7"/>
+                                                    <constraint firstItem="SHz-uA-Oul" firstAttribute="leading" secondItem="Aza-L5-B2u" secondAttribute="leading" constant="40" id="VDw-Z4-2uV"/>
+                                                    <constraint firstItem="oZB-Fq-Luj" firstAttribute="top" secondItem="Aza-L5-B2u" secondAttribute="top" constant="40" id="Vzi-Rt-H0I"/>
+                                                    <constraint firstItem="Svl-dG-COK" firstAttribute="leading" secondItem="SHz-uA-Oul" secondAttribute="leading" id="ZkO-yB-AfX"/>
+                                                    <constraint firstItem="jgt-4J-Rl0" firstAttribute="top" secondItem="E4x-nB-eOp" secondAttribute="bottom" constant="19.333333333333371" id="dhc-YX-US2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="jgt-4J-Rl0" secondAttribute="bottom" constant="-1.3333333333333712" id="eZX-b8-z7Y"/>
+                                                    <constraint firstItem="SHz-uA-Oul" firstAttribute="height" relation="greaterThanOrEqual" secondItem="Aza-L5-B2u" secondAttribute="height" multiplier="0.325" constant="54" id="l9N-LL-DvH"/>
+                                                    <constraint firstItem="Svl-dG-COK" firstAttribute="trailing" secondItem="SHz-uA-Oul" secondAttribute="trailing" id="pmE-ay-FN5"/>
+                                                    <constraint firstItem="Svl-dG-COK" firstAttribute="top" secondItem="SHz-uA-Oul" secondAttribute="bottom" multiplier="1.099" id="rCY-Tk-P4Y"/>
+                                                    <constraint firstItem="oZB-Fq-Luj" firstAttribute="leading" secondItem="Aza-L5-B2u" secondAttribute="leading" constant="40" id="s0l-N0-RDz"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.15144118670000001" blue="0.39907598500000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Aza-L5-B2u" firstAttribute="top" secondItem="wr4-YS-ric" secondAttribute="top" constant="40" id="LTF-1H-emi"/>
+                                            <constraint firstAttribute="trailing" secondItem="Aza-L5-B2u" secondAttribute="trailing" id="XNy-i6-15z"/>
+                                            <constraint firstItem="Aza-L5-B2u" firstAttribute="leading" secondItem="wr4-YS-ric" secondAttribute="leading" id="Z6F-aT-iWN"/>
+                                            <constraint firstAttribute="bottom" secondItem="Aza-L5-B2u" secondAttribute="bottom" id="v0M-h6-QiV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wr4-YS-ric" firstAttribute="width" secondItem="2rV-RR-YDB" secondAttribute="width" id="Ugm-xw-SoC"/>
+                                    <constraint firstItem="wr4-YS-ric" firstAttribute="top" secondItem="2rV-RR-YDB" secondAttribute="top" id="aAD-6u-XrZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="wr4-YS-ric" secondAttribute="bottom" id="fLG-qa-cjx"/>
+                                    <constraint firstAttribute="trailing" secondItem="wr4-YS-ric" secondAttribute="trailing" id="p1U-Tr-90h"/>
+                                    <constraint firstItem="wr4-YS-ric" firstAttribute="leading" secondItem="2rV-RR-YDB" secondAttribute="leading" id="vyD-gh-Sgf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Owt-A8-8Cc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2rV-RR-YDB" firstAttribute="top" secondItem="ASN-bw-KCA" secondAttribute="top" id="0tm-HC-r9e"/>
+                            <constraint firstItem="2rV-RR-YDB" firstAttribute="leading" secondItem="Owt-A8-8Cc" secondAttribute="leading" id="6rv-tj-CAw"/>
+                            <constraint firstItem="2rV-RR-YDB" firstAttribute="trailing" secondItem="Owt-A8-8Cc" secondAttribute="trailing" id="T8S-xG-n9O"/>
+                            <constraint firstAttribute="bottom" secondItem="2rV-RR-YDB" secondAttribute="bottom" id="ero-pt-qRX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Y30-HH-lTf"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="JDe-JD-4iY" id="hhf-x5-6nV"/>
+                        <outlet property="txtLocation" destination="q0z-kc-l9e" id="sl1-LG-Ffm"/>
+                        <outlet property="txtPhone" destination="0NX-pB-3sa" id="O43-OC-NFO"/>
+                        <outlet property="txtSurname" destination="RAw-vG-9H7" id="mEL-Wd-NXp"/>
+                        <outlet property="txtUsername" destination="DAZ-6E-35F" id="yXP-De-SdJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSz-yK-HX2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.0560747663551" y="23.974082073434126"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7hY-xO-Lai">
@@ -246,19 +465,38 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="0NX-pB-3sa">
+            <size key="intrinsicContentSize" width="159" height="59.666666666666664"/>
+        </designable>
+        <designable name="DAZ-6E-35F">
+            <size key="intrinsicContentSize" width="184" height="59.666666666666664"/>
+        </designable>
+        <designable name="JDe-JD-4iY">
+            <size key="intrinsicContentSize" width="155.66666666666666" height="59.666666666666664"/>
+        </designable>
+        <designable name="RAw-vG-9H7">
+            <size key="intrinsicContentSize" width="175.66666666666666" height="59.666666666666664"/>
+        </designable>
+        <designable name="q0z-kc-l9e">
+            <size key="intrinsicContentSize" width="171.33333333333334" height="59.666666666666664"/>
+        </designable>
         <designable name="rGj-k5-jOg">
-            <size key="intrinsicContentSize" width="197.33333333333334" height="59.666666666666664"/>
+            <size key="intrinsicContentSize" width="177.33333333333334" height="59.666666666666664"/>
         </designable>
         <designable name="v5c-jx-Bho">
-            <size key="intrinsicContentSize" width="205" height="59.666666666666664"/>
+            <size key="intrinsicContentSize" width="185" height="59.666666666666664"/>
         </designable>
     </designables>
     <resources>
+        <image name="Facebookfacebook (1)" width="54" height="54"/>
+        <image name="GooglegoogleButton (1)" width="54" height="54"/>
         <image name="Icon feather-eye-offnotShowing" width="16" height="16"/>
         <image name="Icon material-lock-outlinepassword" width="12" height="15"/>
+        <image name="accountuserIcon" width="15" height="15"/>
         <image name="accountuserName" width="16" height="16"/>
-        <image name="faceBookIconLogin" width="54" height="54"/>
-        <image name="googleIconLogin" width="54" height="54"/>
+        <image name="emailIcon" width="18" height="13"/>
+        <image name="locationIcon" width="13" height="18"/>
+        <image name="phoneIcon" width="15" height="15"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

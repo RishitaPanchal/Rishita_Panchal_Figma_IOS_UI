@@ -16,32 +16,30 @@ class CustomTextFieldPassword: CustomTextField {
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        initTextFieldStyle()
     }
-
-    /// function to init password textfield style
-    func initTextFieldStyle() {
+    
+    /// function to init textfield style
+    func initTextField() {
         self.borderStyle = UITextField.BorderStyle.none
         self.font = R.font.poppinsRegular(size: 14.0)
-        self.backgroundColor = UIColor.lightGraytxtField
+        self.backgroundColor = UIColor.lightGrayTxtBackground
         layer.cornerRadius = 15
-        eyeIcon()
+        setEyeIcon()
     }
-
-    /// function to apply right icon
-    func eyeIcon() {
+    
+    /// function to init right icon
+    func setEyeIcon() {
         let eyeRightIcon = UIButton()
-        eyeRightIcon.setImage(UIImage.init(resource: R.image.eyeSlash), for: .normal)
-        eyeRightIcon.setImage(UIImage.init(resource: R.image.eye), for: .selected)
+        eyeRightIcon.setImage(UIImage(systemName: "eye"), for: .normal)
+        eyeRightIcon.setImage(UIImage(systemName: "eye.slash"), for: .selected)
         eyeRightIcon.addTarget(self, action: #selector(onEyeButtonClicked), for: .touchUpInside)
         eyeRightIcon.isSelected = true
-        eyeRightIcon.frame = CGRect(x: 0, y: 0, width: 18, height: 18)
+        eyeRightIcon.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         eyeRightIcon.tintColor = UIColor.gray
         self.rightView = eyeRightIcon
         self.rightViewMode = .always
     }
-
-    /// action to right icon
+    
     @objc func onEyeButtonClicked(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         self.isSecureTextEntry = sender.isSelected

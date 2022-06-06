@@ -115,20 +115,26 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 12 colors.
+  /// This `R.color` struct is generated, and contains static references to 15 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
+    /// Color `BorderColor`.
+    static let borderColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "BorderColor")
+    /// Color `ButtonBackground`.
+    static let buttonBackground = Rswift.ColorResource(bundle: R.hostingBundle, name: "ButtonBackground")
     /// Color `Color`.
     static let color = Rswift.ColorResource(bundle: R.hostingBundle, name: "Color")
     /// Color `HeaderLabel`.
     static let headerLabel = Rswift.ColorResource(bundle: R.hostingBundle, name: "HeaderLabel")
+    /// Color `TextfieldBackground`.
+    static let textfieldBackground = Rswift.ColorResource(bundle: R.hostingBundle, name: "TextfieldBackground")
     /// Color `ViewControllerBackground`.
     static let viewControllerBackground = Rswift.ColorResource(bundle: R.hostingBundle, name: "ViewControllerBackground")
     /// Color `darkred`.
     static let darkred = Rswift.ColorResource(bundle: R.hostingBundle, name: "darkred")
-    /// Color `labelColor`.
-    static let labelColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "labelColor")
+    /// Color `labelColor-1`.
+    static let labelColor1 = Rswift.ColorResource(bundle: R.hostingBundle, name: "labelColor-1")
     /// Color `lightGrayTextfieldBg`.
     static let lightGrayTextfieldBg = Rswift.ColorResource(bundle: R.hostingBundle, name: "lightGrayTextfieldBg")
     /// Color `lightGray`.
@@ -139,8 +145,8 @@ struct R: Rswift.Validatable {
     static let navyBlueColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "navyBlueColor")
     /// Color `placeHolderColor`.
     static let placeHolderColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "placeHolderColor")
-    /// Color `switchColor`.
-    static let switchColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "switchColor")
+    /// Color `switchColor-1`.
+    static let switchColor1 = Rswift.ColorResource(bundle: R.hostingBundle, name: "switchColor-1")
 
     #if os(iOS) || os(tvOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
@@ -148,6 +154,24 @@ struct R: Rswift.Validatable {
     @available(iOS 11.0, *)
     static func accentColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.accentColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "BorderColor", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func borderColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.borderColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "ButtonBackground", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func buttonBackground(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.buttonBackground, compatibleWith: traitCollection)
     }
     #endif
 
@@ -170,6 +194,15 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "TextfieldBackground", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func textfieldBackground(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.textfieldBackground, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIColor(named: "ViewControllerBackground", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
@@ -188,11 +221,11 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "labelColor", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "labelColor-1", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
-    static func labelColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.labelColor, compatibleWith: traitCollection)
+    static func labelColor1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.labelColor1, compatibleWith: traitCollection)
     }
     #endif
 
@@ -242,11 +275,11 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "switchColor", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "switchColor-1", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
-    static func switchColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.switchColor, compatibleWith: traitCollection)
+    static func switchColor1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.switchColor1, compatibleWith: traitCollection)
     }
     #endif
 
@@ -255,6 +288,22 @@ struct R: Rswift.Validatable {
     @available(watchOSApplicationExtension 4.0, *)
     static func accentColor(_: Void = ()) -> UIKit.UIColor? {
       return UIKit.UIColor(named: R.color.accentColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "BorderColor", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func borderColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.borderColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "ButtonBackground", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func buttonBackground(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.buttonBackground.name)
     }
     #endif
 
@@ -275,6 +324,14 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(watchOS)
+    /// `UIColor(named: "TextfieldBackground", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func textfieldBackground(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.textfieldBackground.name)
+    }
+    #endif
+
+    #if os(watchOS)
     /// `UIColor(named: "ViewControllerBackground", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
     static func viewControllerBackground(_: Void = ()) -> UIKit.UIColor? {
@@ -291,10 +348,10 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(watchOS)
-    /// `UIColor(named: "labelColor", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "labelColor-1", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
-    static func labelColor(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.labelColor.name)
+    static func labelColor1(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.labelColor1.name)
     }
     #endif
 
@@ -339,10 +396,10 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(watchOS)
-    /// `UIColor(named: "switchColor", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "switchColor-1", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
-    static func switchColor(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.switchColor.name)
+    static func switchColor1(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.switchColor1.name)
     }
     #endif
 
@@ -660,22 +717,28 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 13 images.
+  /// This `R.image` struct is generated, and contains static references to 20 images.
   struct image {
     /// Image `AppLogo`.
     static let appLogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "AppLogo")
     /// Image `BackbackButton`.
     static let backbackButton = Rswift.ImageResource(bundle: R.hostingBundle, name: "BackbackButton")
+    /// Image `Facebookfacebook (1)`.
+    static let facebookfacebook1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Facebookfacebook (1)")
+    /// Image `GooglegoogleButton (1)`.
+    static let googlegoogleButton1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "GooglegoogleButton (1)")
     /// Image `Icon material-lock-outlinepassword`.
     static let iconMaterialLockOutlinepassword = Rswift.ImageResource(bundle: R.hostingBundle, name: "Icon material-lock-outlinepassword")
     /// Image `LoginLoginScreen`.
     static let loginLoginScreen = Rswift.ImageResource(bundle: R.hostingBundle, name: "LoginLoginScreen")
+    /// Image `SignupImage`.
+    static let signupImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "SignupImage")
     /// Image `Vectorback`.
     static let vectorback = Rswift.ImageResource(bundle: R.hostingBundle, name: "Vectorback")
     /// Image `accountuserName`.
     static let accountuserName = Rswift.ImageResource(bundle: R.hostingBundle, name: "accountuserName")
-    /// Image `backIcon`.
-    static let backIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "backIcon")
+    /// Image `email`.
+    static let email = Rswift.ImageResource(bundle: R.hostingBundle, name: "email")
     /// Image `eyeSlash`.
     static let eyeSlash = Rswift.ImageResource(bundle: R.hostingBundle, name: "eyeSlash")
     /// Image `eye`.
@@ -684,10 +747,18 @@ struct R: Rswift.Validatable {
     static let faceBookIconLogin = Rswift.ImageResource(bundle: R.hostingBundle, name: "faceBookIconLogin")
     /// Image `googleIconLogin`.
     static let googleIconLogin = Rswift.ImageResource(bundle: R.hostingBundle, name: "googleIconLogin")
+    /// Image `location`.
+    static let location = Rswift.ImageResource(bundle: R.hostingBundle, name: "location")
     /// Image `passwordIcon`.
     static let passwordIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "passwordIcon")
     /// Image `passwordNotShowing`.
     static let passwordNotShowing = Rswift.ImageResource(bundle: R.hostingBundle, name: "passwordNotShowing")
+    /// Image `phoneIcon`.
+    static let phoneIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "phoneIcon")
+    /// Image `phone`.
+    static let phone = Rswift.ImageResource(bundle: R.hostingBundle, name: "phone")
+    /// Image `userIcon`.
+    static let userIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "userIcon")
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "AppLogo", bundle: ..., traitCollection: ...)`
@@ -700,6 +771,20 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "BackbackButton", bundle: ..., traitCollection: ...)`
     static func backbackButton(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.backbackButton, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Facebookfacebook (1)", bundle: ..., traitCollection: ...)`
+    static func facebookfacebook1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.facebookfacebook1, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "GooglegoogleButton (1)", bundle: ..., traitCollection: ...)`
+    static func googlegoogleButton1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.googlegoogleButton1, compatibleWith: traitCollection)
     }
     #endif
 
@@ -718,6 +803,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "SignupImage", bundle: ..., traitCollection: ...)`
+    static func signupImage(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.signupImage, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "Vectorback", bundle: ..., traitCollection: ...)`
     static func vectorback(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.vectorback, compatibleWith: traitCollection)
@@ -732,9 +824,9 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIImage(named: "backIcon", bundle: ..., traitCollection: ...)`
-    static func backIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.backIcon, compatibleWith: traitCollection)
+    /// `UIImage(named: "email", bundle: ..., traitCollection: ...)`
+    static func email(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.email, compatibleWith: traitCollection)
     }
     #endif
 
@@ -767,6 +859,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "location", bundle: ..., traitCollection: ...)`
+    static func location(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.location, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "passwordIcon", bundle: ..., traitCollection: ...)`
     static func passwordIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.passwordIcon, compatibleWith: traitCollection)
@@ -777,6 +876,27 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "passwordNotShowing", bundle: ..., traitCollection: ...)`
     static func passwordNotShowing(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.passwordNotShowing, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "phone", bundle: ..., traitCollection: ...)`
+    static func phone(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.phone, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "phoneIcon", bundle: ..., traitCollection: ...)`
+    static func phoneIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.phoneIcon, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "userIcon", bundle: ..., traitCollection: ...)`
+    static func userIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.userIcon, compatibleWith: traitCollection)
     }
     #endif
 
@@ -816,12 +936,20 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 1 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
     struct localizable {
-      /// Value:   Back
-      static let back = Rswift.StringResource(key: "back", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// en translation:   Back
+      ///
+      /// Locales: en
+      static let back = Rswift.StringResource(key: "back", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: This is my app name
+      ///
+      /// Locales: en
+      static let appname = Rswift.StringResource(key: "appname", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
 
-      /// Value:   Back
+      /// en translation:   Back
+      ///
+      /// Locales: en
       static func back(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
           return NSLocalizedString("back", bundle: hostingBundle, comment: "")
@@ -832,6 +960,21 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("back", bundle: bundle, comment: "")
+      }
+
+      /// en translation: This is my app name
+      ///
+      /// Locales: en
+      static func appname(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("appname", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "appname"
+        }
+
+        return NSLocalizedString("appname", bundle: bundle, comment: "")
       }
 
       fileprivate init() {}
@@ -894,22 +1037,20 @@ struct _R: Rswift.Validatable {
       typealias InitialController = UIKit.UINavigationController
 
       let bundle = R.hostingBundle
-      let loginViewController = StoryboardViewControllerResource<LoginViewController>(identifier: "LoginViewController")
       let name = "Main"
 
-      func loginViewController(_: Void = ()) -> LoginViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: loginViewController)
-      }
-
       static func validate() throws {
+        if UIKit.UIImage(named: "Facebookfacebook (1)", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Facebookfacebook (1)' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "GooglegoogleButton (1)", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'GooglegoogleButton (1)' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "Icon feather-eye-offnotShowing", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Icon feather-eye-offnotShowing' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "Icon material-lock-outlinepassword", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Icon material-lock-outlinepassword' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "accountuserIcon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'accountuserIcon' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "accountuserName", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'accountuserName' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "faceBookIconLogin", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'faceBookIconLogin' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "googleIconLogin", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'googleIconLogin' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "emailIcon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'emailIcon' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "locationIcon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'locationIcon' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "phoneIcon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'phoneIcon' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
-        if _R.storyboard.main().loginViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'loginViewController' could not be loaded from storyboard 'Main' as 'LoginViewController'.") }
       }
 
       fileprivate init() {}

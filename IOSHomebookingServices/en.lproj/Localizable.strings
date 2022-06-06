@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  IOSHomebookingServices
+
+  Created by Rishita Panchal on 03/05/22.
+  
+*/
+
+"appname" = "This is my app name";
+"back" = "  Back";

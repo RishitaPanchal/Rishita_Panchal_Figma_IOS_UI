@@ -7,33 +7,24 @@
 
 import UIKit
 
-// MARK: UIView custom control
+// MARK: UIView custom coponent
 class CustomUIview: UIView {
     
-    // MARK: - Initializers
+    // MARK: Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
-        initView()
     }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        initView()
     }
     
-    // MARK: - Overridden method
+    // MARK: Overridden method
     override func layoutSubviews() {
         roundCorners(corners: [.topLeft, .topRight], radius: 40.0)
     }
-
-    /// function to init style to view
-    func initView() {
-        layer.borderColor = UIColor.red.cgColor
-        layer.masksToBounds = true
-        clipsToBounds = true
-    }
-
-    /// function to apply curve to view
+    
+    /// function to in it view style
     func roundCorners(corners: UIRectCorner, radius: CGFloat) {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         let mask = CAShapeLayer()

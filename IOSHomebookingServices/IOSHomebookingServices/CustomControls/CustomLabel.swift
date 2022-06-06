@@ -7,62 +7,73 @@
 
 import UIKit
 
-// MARK: - Custom label Baseclass
+// MARK: - Custom label base class
 class CustomLabel: UILabel {
     
-    // MARK: Initializers
+    // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+    
+    // MARK: - IBInspectables
+    @IBInspectable var borderWidth: CGFloat = 1 {
+        didSet {
+            layer.borderWidth = self.borderWidth
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor = UIColor.black {
+        didSet {
+            layer.borderColor = self.borderColor.cgColor
+        }
     }
     
 }
 
-// MARK: H1Label CustomCOntrol
-class CustomH1LabelLogin: CustomLabel {
+class CustomLoginH1Label: CustomLabel {
     
-    // MARK: Initializers
+    // MARK: - Initializer
     override init(frame: CGRect) {
         super.init(frame: frame)
-        initH2LabelStyle()
+        initFontStyles()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        initH2LabelStyle()
+        initFontStyles()
     }
 
-    /// init style of H1Label of Sign in screen
-    func initH2LabelStyle() {
+    ///function to init label style
+    func initFontStyles() {
         self.font = R.font.poppinsSemiBold(size: 24.0)
         self.textColor = UIColor.navyBlue
     }
     
 }
 
-// MARK: - H2Label CustomControl
-class CustomeH2LabelLogin: CustomLabel {
+class CustomLoginH2Label: CustomLabel {
     
-    // MARK: - Initializers
+    // MARK: Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
-        initLabelStyle()
+        initFontStyles()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        initLabelStyle()
+        initFontStyles()
     }
-
-    /// init style of H2Label of Sign in screen
-    func initLabelStyle() {
+    
+    /// function to init label style
+    func initFontStyles() {
         self.font = R.font.poppinsRegular(size: 14.0)
         self.textColor = UIColor.lightGray
     }
-
+    
 }
 
 class CustomLabelNeedSupport: CustomLabel {
@@ -78,9 +89,9 @@ class CustomLabelNeedSupport: CustomLabel {
         initFontStyles()
     }
     
-    // MARK: Functions
+    /// function to init label style
     func initFontStyles() {
-        self.font = R.font.poppinsLight(size: 14.0)
+        self.font = R.font.poppinsLight(size: 13.0)
         self.textColor = UIColor.lightGray
     }
     
@@ -99,9 +110,9 @@ class CustomBottomLabel: CustomLabel {
         initFontStyles()
     }
 
-    /// init style of bottom label of Sign in screen
+    /// Function to init style of bottom label of Sign in screen
     func initFontStyles() {
-        self.font = R.font.poppinsLight(size: 14.0)
+        self.font = R.font.poppinsRegular(size: 14.0)
         self.textColor = UIColor.lightGray
     }
     

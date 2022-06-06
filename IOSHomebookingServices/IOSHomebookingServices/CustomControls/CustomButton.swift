@@ -7,7 +7,7 @@
 
 import UIKit
 
-// MARK: - Custom button base class
+// MARK: - Button base class
 class CustomButton: UIButton {
     
     // MARK: Initializers
@@ -21,12 +21,11 @@ class CustomButton: UIButton {
         initView()
     }
     
-    /// function to change style of basebutton
+    /// function to init view style
     func initView() {
         self.layer.cornerRadius = 15.0
-        self.titleLabel?.font = R.font.poppinsBold(size: 14.0)
         self.layer.backgroundColor = UIColor.lightPink.cgColor
-        self.tintColor = UIColor.darkRed
+        clipsToBounds = true
     }
     
 }
@@ -47,29 +46,7 @@ class CustomButtonGoToSignUp: UIButton {
     /// function to change gotoSignupButton style
     func initButtonStyle() {
         self.titleLabel?.font = R.font.poppinsBold(size: 14.0)
-        self.tintColor = UIColor.darkRed
+        self.tintColor = UIColor.red
     }
     
 }
-
-class CustomOnBoardingSkipBtn: CustomButton {
-    
-    // MARK: - Initializers
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        applyBackground()
-    }
-
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        applyBackground()
-    }
-
-    /// function to change style of onboarding next button
-    func applyBackground() {
-        self.layer.cornerRadius = 15.0
-        self.layer.backgroundColor = UIColor.darkRed.cgColor
-    }
-    
-}
-

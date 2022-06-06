@@ -9,29 +9,21 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    // MARK: - IBOutlets
+    // MARK: IBOutlets
     @IBOutlet weak var txtUsername: CustomTextField!
     @IBOutlet weak var txtPassword: CustomTextFieldPassword!
-    @IBOutlet weak var lblGotoSignUp: CustomBottomLabel!
-    @IBOutlet weak var scrollView: UIScrollView!
     
-    // MARK: - Overridden method
+    // MARK: Overridden method
     override func viewDidLoad() {
         super.viewDidLoad()
+        changeStatusBarColor()
         configureBarButton()
         setNavigationBarTintColor()
-        changeStatusBarColor()
         configureTapGesture(viewController: self)
         applyDelegate()
     }
     
     // MARK: - Functions
-    
-    /// function to apply textfiled delegate
-    func applyDelegate() {
-        txtUsername.delegate = self
-        txtPassword.delegate = self
-    }
     
     /// function to change appearance of navigationbar
     func setNavigationBarTintColor() {
@@ -42,12 +34,19 @@ class LoginViewController: UIViewController {
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
-
+    
+    /// function to apply textfield delegate
+    func applyDelegate() {
+        txtUsername.delegate = self
+        txtPassword.delegate = self
+    }
+    
 }
 
-// MARK: extension UITextfieldDelegate
+// MARK: - Textfield delegate Extension 
 extension LoginViewController: UITextFieldDelegate {
         
+    /// function for textfield return key
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
             case txtUsername:
@@ -57,5 +56,6 @@ extension LoginViewController: UITextFieldDelegate {
         }
         return true
     }
-    
+
 }
+
