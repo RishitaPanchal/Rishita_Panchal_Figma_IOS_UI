@@ -115,12 +115,32 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 2 colors.
+  /// This `R.color` struct is generated, and contains static references to 12 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
     /// Color `Color`.
     static let color = Rswift.ColorResource(bundle: R.hostingBundle, name: "Color")
+    /// Color `HeaderLabel`.
+    static let headerLabel = Rswift.ColorResource(bundle: R.hostingBundle, name: "HeaderLabel")
+    /// Color `ViewControllerBackground`.
+    static let viewControllerBackground = Rswift.ColorResource(bundle: R.hostingBundle, name: "ViewControllerBackground")
+    /// Color `darkred`.
+    static let darkred = Rswift.ColorResource(bundle: R.hostingBundle, name: "darkred")
+    /// Color `labelColor`.
+    static let labelColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "labelColor")
+    /// Color `lightGrayTextfieldBg`.
+    static let lightGrayTextfieldBg = Rswift.ColorResource(bundle: R.hostingBundle, name: "lightGrayTextfieldBg")
+    /// Color `lightGray`.
+    static let lightGray = Rswift.ColorResource(bundle: R.hostingBundle, name: "lightGray")
+    /// Color `lightPink`.
+    static let lightPink = Rswift.ColorResource(bundle: R.hostingBundle, name: "lightPink")
+    /// Color `navyBlueColor`.
+    static let navyBlueColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "navyBlueColor")
+    /// Color `placeHolderColor`.
+    static let placeHolderColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "placeHolderColor")
+    /// Color `switchColor`.
+    static let switchColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "switchColor")
 
     #if os(iOS) || os(tvOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
@@ -140,6 +160,96 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "HeaderLabel", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func headerLabel(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.headerLabel, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "ViewControllerBackground", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func viewControllerBackground(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.viewControllerBackground, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "darkred", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func darkred(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.darkred, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "labelColor", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func labelColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.labelColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "lightGray", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func lightGray(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.lightGray, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "lightGrayTextfieldBg", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func lightGrayTextfieldBg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.lightGrayTextfieldBg, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "lightPink", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func lightPink(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.lightPink, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "navyBlueColor", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func navyBlueColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.navyBlueColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "placeHolderColor", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func placeHolderColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.placeHolderColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "switchColor", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func switchColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.switchColor, compatibleWith: traitCollection)
+    }
+    #endif
+
     #if os(watchOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
@@ -153,6 +263,86 @@ struct R: Rswift.Validatable {
     @available(watchOSApplicationExtension 4.0, *)
     static func color(_: Void = ()) -> UIKit.UIColor? {
       return UIKit.UIColor(named: R.color.color.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "HeaderLabel", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func headerLabel(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.headerLabel.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "ViewControllerBackground", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func viewControllerBackground(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.viewControllerBackground.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "darkred", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func darkred(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.darkred.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "labelColor", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func labelColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.labelColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "lightGray", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func lightGray(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.lightGray.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "lightGrayTextfieldBg", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func lightGrayTextfieldBg(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.lightGrayTextfieldBg.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "lightPink", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func lightPink(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.lightPink.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "navyBlueColor", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func navyBlueColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.navyBlueColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "placeHolderColor", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func placeHolderColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.placeHolderColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "switchColor", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func switchColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.switchColor.name)
     }
     #endif
 
@@ -470,15 +660,123 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 1 images.
+  /// This `R.image` struct is generated, and contains static references to 13 images.
   struct image {
+    /// Image `AppLogo`.
+    static let appLogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "AppLogo")
+    /// Image `BackbackButton`.
+    static let backbackButton = Rswift.ImageResource(bundle: R.hostingBundle, name: "BackbackButton")
+    /// Image `Icon material-lock-outlinepassword`.
+    static let iconMaterialLockOutlinepassword = Rswift.ImageResource(bundle: R.hostingBundle, name: "Icon material-lock-outlinepassword")
+    /// Image `LoginLoginScreen`.
+    static let loginLoginScreen = Rswift.ImageResource(bundle: R.hostingBundle, name: "LoginLoginScreen")
+    /// Image `Vectorback`.
+    static let vectorback = Rswift.ImageResource(bundle: R.hostingBundle, name: "Vectorback")
+    /// Image `accountuserName`.
+    static let accountuserName = Rswift.ImageResource(bundle: R.hostingBundle, name: "accountuserName")
+    /// Image `backIcon`.
+    static let backIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "backIcon")
+    /// Image `eyeSlash`.
+    static let eyeSlash = Rswift.ImageResource(bundle: R.hostingBundle, name: "eyeSlash")
     /// Image `eye`.
     static let eye = Rswift.ImageResource(bundle: R.hostingBundle, name: "eye")
+    /// Image `faceBookIconLogin`.
+    static let faceBookIconLogin = Rswift.ImageResource(bundle: R.hostingBundle, name: "faceBookIconLogin")
+    /// Image `googleIconLogin`.
+    static let googleIconLogin = Rswift.ImageResource(bundle: R.hostingBundle, name: "googleIconLogin")
+    /// Image `passwordIcon`.
+    static let passwordIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "passwordIcon")
+    /// Image `passwordNotShowing`.
+    static let passwordNotShowing = Rswift.ImageResource(bundle: R.hostingBundle, name: "passwordNotShowing")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "AppLogo", bundle: ..., traitCollection: ...)`
+    static func appLogo(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.appLogo, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "BackbackButton", bundle: ..., traitCollection: ...)`
+    static func backbackButton(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.backbackButton, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Icon material-lock-outlinepassword", bundle: ..., traitCollection: ...)`
+    static func iconMaterialLockOutlinepassword(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconMaterialLockOutlinepassword, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "LoginLoginScreen", bundle: ..., traitCollection: ...)`
+    static func loginLoginScreen(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loginLoginScreen, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Vectorback", bundle: ..., traitCollection: ...)`
+    static func vectorback(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.vectorback, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "accountuserName", bundle: ..., traitCollection: ...)`
+    static func accountuserName(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.accountuserName, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "backIcon", bundle: ..., traitCollection: ...)`
+    static func backIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.backIcon, compatibleWith: traitCollection)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "eye", bundle: ..., traitCollection: ...)`
     static func eye(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.eye, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "eyeSlash", bundle: ..., traitCollection: ...)`
+    static func eyeSlash(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.eyeSlash, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "faceBookIconLogin", bundle: ..., traitCollection: ...)`
+    static func faceBookIconLogin(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.faceBookIconLogin, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "googleIconLogin", bundle: ..., traitCollection: ...)`
+    static func googleIconLogin(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.googleIconLogin, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "passwordIcon", bundle: ..., traitCollection: ...)`
+    static func passwordIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.passwordIcon, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "passwordNotShowing", bundle: ..., traitCollection: ...)`
+    static func passwordNotShowing(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.passwordNotShowing, compatibleWith: traitCollection)
     }
     #endif
 
@@ -581,7 +879,9 @@ struct _R: Rswift.Validatable {
       let name = "LaunchScreen"
 
       static func validate() throws {
+        if UIKit.UIImage(named: "AppLogo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'AppLogo' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "darkred", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'darkred' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
         }
       }
 
@@ -591,14 +891,25 @@ struct _R: Rswift.Validatable {
 
     #if os(iOS) || os(tvOS)
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = ViewController
+      typealias InitialController = UIKit.UINavigationController
 
       let bundle = R.hostingBundle
+      let loginViewController = StoryboardViewControllerResource<LoginViewController>(identifier: "LoginViewController")
       let name = "Main"
 
+      func loginViewController(_: Void = ()) -> LoginViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: loginViewController)
+      }
+
       static func validate() throws {
+        if UIKit.UIImage(named: "Icon feather-eye-offnotShowing", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Icon feather-eye-offnotShowing' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Icon material-lock-outlinepassword", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Icon material-lock-outlinepassword' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "accountuserName", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'accountuserName' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "faceBookIconLogin", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'faceBookIconLogin' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "googleIconLogin", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'googleIconLogin' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+        if _R.storyboard.main().loginViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'loginViewController' could not be loaded from storyboard 'Main' as 'LoginViewController'.") }
       }
 
       fileprivate init() {}

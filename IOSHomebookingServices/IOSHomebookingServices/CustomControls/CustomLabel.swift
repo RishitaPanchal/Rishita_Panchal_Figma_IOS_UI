@@ -35,7 +35,7 @@ class CustomH1LabelLogin: CustomLabel {
         initH2LabelStyle()
     }
 
-    /// init style of H2Label of Sign in screen
+    /// init style of H1Label of Sign in screen
     func initH2LabelStyle() {
         self.font = R.font.poppinsSemiBold(size: 24.0)
         self.textColor = UIColor.navyBlue
@@ -56,7 +56,8 @@ class CustomeH2LabelLogin: CustomLabel {
         super.init(coder: coder)
         initLabelStyle()
     }
-    
+
+    /// init style of H2Label of Sign in screen
     func initLabelStyle() {
         self.font = R.font.poppinsRegular(size: 14.0)
         self.textColor = UIColor.lightGray
@@ -76,7 +77,7 @@ class CustomLabelNeedSupport: CustomLabel {
         super.init(coder: coder)
         initFontStyles()
     }
-
+    
     // MARK: Functions
     func initFontStyles() {
         self.font = R.font.poppinsLight(size: 14.0)
@@ -98,9 +99,9 @@ class CustomBottomLabel: CustomLabel {
         initFontStyles()
     }
 
-    /// init style of need support label of Sign in screen
+    /// init style of bottom label of Sign in screen
     func initFontStyles() {
-        self.font = R.font.poppinsLight(size: 13.0)
+        self.font = R.font.poppinsLight(size: 14.0)
         self.textColor = UIColor.lightGray
     }
     
