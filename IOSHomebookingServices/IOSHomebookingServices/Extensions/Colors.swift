@@ -20,5 +20,6 @@ extension UIColor {
     static let blackSetting = R.color.black() ?? UIColor.black
     static let blackAndWhite = R.color.blackAndWhiteColor() ?? UIColor.gray
     static let darkRed = R.color.borderColor() ?? UIColor.red
-    
+    static let switchColorGray = R.color.switchCollor() ?? UIColor.gray
+
 }

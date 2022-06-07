@@ -151,7 +151,7 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 17 colors.
+  /// This `R.color` struct is generated, and contains static references to 18 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
@@ -185,6 +185,8 @@ struct R: Rswift.Validatable {
     static let navyBlueColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "navyBlueColor")
     /// Color `placeHolderColor`.
     static let placeHolderColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "placeHolderColor")
+    /// Color `switchCollor`.
+    static let switchCollor = Rswift.ColorResource(bundle: R.hostingBundle, name: "switchCollor")
     /// Color `switchColor-1`.
     static let switchColor1 = Rswift.ColorResource(bundle: R.hostingBundle, name: "switchColor-1")
 
@@ -333,6 +335,15 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "switchCollor", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func switchCollor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.switchCollor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIColor(named: "switchColor-1", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
@@ -466,6 +477,14 @@ struct R: Rswift.Validatable {
     @available(watchOSApplicationExtension 4.0, *)
     static func placeHolderColor(_: Void = ()) -> UIKit.UIColor? {
       return UIKit.UIColor(named: R.color.placeHolderColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "switchCollor", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func switchCollor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.switchCollor.name)
     }
     #endif
 
@@ -1141,7 +1160,7 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 9 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 10 localization keys.
     struct localizable {
       /// en translation:   Back
       ///
@@ -1171,6 +1190,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en
       static let description3 = Rswift.StringResource(key: "description3", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Oops!! Something went wrong...
+      ///
+      /// Locales: en
+      static let error = Rswift.StringResource(key: "error", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: TItle
       ///
       /// Locales: en
@@ -1283,6 +1306,21 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("description3", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Oops!! Something went wrong...
+      ///
+      /// Locales: en
+      static func error(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("error", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "error"
+        }
+
+        return NSLocalizedString("error", bundle: bundle, comment: "")
       }
 
       /// en translation: TItle

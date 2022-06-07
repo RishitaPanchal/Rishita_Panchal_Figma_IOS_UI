@@ -21,7 +21,7 @@ class AuthenticationCoordinator: Coordinator {
     // MARK: - functions
     func start() {
         let vc = LoginViewController.instantiateFromStoryBoard(from: .main)
-        vc.loginViewCoordinator = self
+        vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -37,13 +37,13 @@ class AuthenticationCoordinator: Coordinator {
     
     func goTosignUpVC() {
         let vc = SIgnUpViewController.instantiateFromStoryBoard(from: .main)
-        vc.signUpCoordinator = self
+        vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
     }
     
     func redirectToLoginVC() {
         let vc = LoginViewController.instantiateFromStoryBoard(from: .main)
-        vc.loginViewCoordinator = self
+        vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
     }
     

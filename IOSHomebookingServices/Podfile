@@ -8,4 +8,6 @@ target 'IOSHomebookingServices' do
   # Pods for IOSHomebookingServices
   pod 'R.swift'
   pod 'TPKeyboardAvoidingSwift'
+  pod 'Alamofire'
+
 end

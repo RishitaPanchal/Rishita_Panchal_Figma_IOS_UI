@@ -25,6 +25,8 @@
 		0D9243782822CB680089A75E /* SettingsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9243772822CB680089A75E /* SettingsTVCell.swift */; };
 		0D92437A2822CCC80089A75E /* SettingModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9243792822CCC80089A75E /* SettingModelClass.swift */; };
 		0D92437C2822D62D0089A75E /* AccountTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92437B2822D62D0089A75E /* AccountTVCell.swift */; };
+		0DA1FC1D28508219008D4433 /* BaseApiCalling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA1FC1C28508219008D4433 /* BaseApiCalling.swift */; };
+		0DADE6372851BE9300EF2801 /* ModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DADE6362851BE9300EF2801 /* ModelClass.swift */; };
 		0DAEFADF28228C3E005E9662 /* TutorialScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAEFADE28228C3E005E9662 /* TutorialScreens.storyboard */; };
 		0DAEFAE2282290B9005E9662 /* TutorialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEFAE1282290B9005E9662 /* TutorialScreenViewController.swift */; };
 		0DB195352820FB8800C63287 /* CustomTextFieldPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB195342820FB8800C63287 /* CustomTextFieldPassword.swift */; };
@@ -48,6 +50,11 @@
 		0DBD5D76281D022400D42AFF /* IOSHomebookingServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD5D75281D022400D42AFF /* IOSHomebookingServicesUITests.swift */; };
 		0DBD5D78281D022400D42AFF /* IOSHomebookingServicesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD5D77281D022400D42AFF /* IOSHomebookingServicesUITestsLaunchTests.swift */; };
 		0DC1B1F22829226400BD4644 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1B1F12829226400BD4644 /* WelcomeScreenViewController.swift */; };
+		0DDB58D6284F243B005B2434 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB58D5284F243B005B2434 /* BaseViewController.swift */; };
+		0DDB58DA284F4F13005B2434 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB58D9284F4F13005B2434 /* LoginViewModel.swift */; };
+		0DDB58DC284F7846005B2434 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB58DB284F7846005B2434 /* BaseViewModel.swift */; };
+		0DDB58DE284F7AEE005B2434 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB58DD284F7AEE005B2434 /* Dynamic.swift */; };
+		0DDB6DD828509ECE00C4CEDC /* APICalling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB6DD728509ECE00C4CEDC /* APICalling.swift */; };
 		0DF79A8928263F2F00BC5FF2 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7628263F2F00BC5FF2 /* Poppins-ExtraLight.ttf */; };
 		0DF79A8A28263F2F00BC5FF2 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7728263F2F00BC5FF2 /* Poppins-ThinItalic.ttf */; };
 		0DF79A8B28263F2F00BC5FF2 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7828263F2F00BC5FF2 /* Poppins-ExtraLightItalic.ttf */; };
@@ -107,6 +114,8 @@
 		0D9243772822CB680089A75E /* SettingsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVCell.swift; sourceTree = "<group>"; };
 		0D9243792822CCC80089A75E /* SettingModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModelClass.swift; sourceTree = "<group>"; };
 		0D92437B2822D62D0089A75E /* AccountTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTVCell.swift; sourceTree = "<group>"; };
+		0DA1FC1C28508219008D4433 /* BaseApiCalling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiCalling.swift; sourceTree = "<group>"; };
+		0DADE6362851BE9300EF2801 /* ModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClass.swift; sourceTree = "<group>"; };
 		0DAEFADE28228C3E005E9662 /* TutorialScreens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TutorialScreens.storyboard; sourceTree = "<group>"; };
 		0DAEFAE1282290B9005E9662 /* TutorialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialScreenViewController.swift; sourceTree = "<group>"; };
 		0DB195342820FB8800C63287 /* CustomTextFieldPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldPassword.swift; sourceTree = "<group>"; };
@@ -134,6 +143,11 @@
 		0DBD5D75281D022400D42AFF /* IOSHomebookingServicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSHomebookingServicesUITests.swift; sourceTree = "<group>"; };
 		0DBD5D77281D022400D42AFF /* IOSHomebookingServicesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSHomebookingServicesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0DC1B1F12829226400BD4644 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		0DDB58D5284F243B005B2434 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0DDB58D9284F4F13005B2434 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0DDB58DB284F7846005B2434 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		0DDB58DD284F7AEE005B2434 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		0DDB6DD728509ECE00C4CEDC /* APICalling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICalling.swift; sourceTree = "<group>"; };
 		0DF79A7628263F2F00BC5FF2 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		0DF79A7728263F2F00BC5FF2 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
 		0DF79A7828263F2F00BC5FF2 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -193,6 +207,14 @@
 				0DB290DB28239FA9002801C0 /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0DADE6352851BE8200EF2801 /* ModelClass */ = {
+			isa = PBXGroup;
+			children = (
+				0DADE6362851BE9300EF2801 /* ModelClass.swift */,
+			);
+			path = ModelClass;
 			sourceTree = "<group>";
 		};
 		0DAEFAE02822909F005E9662 /* TutorialScreen */ = {
@@ -255,6 +277,9 @@
 		0DBD5D53281D022200D42AFF /* IOSHomebookingServices */ = {
 			isa = PBXGroup;
 			children = (
+				0DADE6352851BE8200EF2801 /* ModelClass */,
+				0DDB58D8284F4EFD005B2434 /* ViewModel */,
+				0DDB58D4284F2419005B2434 /* BaseSetups */,
 				0DF79A7428263F1900BC5FF2 /* PoppinsFont */,
 				0DB6F36E2824E63000B79135 /* Coordinator */,
 				0DB290DE2823B180002801C0 /* TutorialScreens */,
@@ -310,6 +335,26 @@
 				0DB8AD5F28238D7100AE9192 /* CustomLabelSettings.swift */,
 			);
 			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		0DDB58D4284F2419005B2434 /* BaseSetups */ = {
+			isa = PBXGroup;
+			children = (
+				0DDB58D5284F243B005B2434 /* BaseViewController.swift */,
+				0DDB58DB284F7846005B2434 /* BaseViewModel.swift */,
+				0DDB58DD284F7AEE005B2434 /* Dynamic.swift */,
+				0DA1FC1C28508219008D4433 /* BaseApiCalling.swift */,
+				0DDB6DD728509ECE00C4CEDC /* APICalling.swift */,
+			);
+			path = BaseSetups;
+			sourceTree = "<group>";
+		};
+		0DDB58D8284F4EFD005B2434 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0DDB58D9284F4F13005B2434 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		0DF79A7428263F1900BC5FF2 /* PoppinsFont */ = {
@@ -585,10 +630,13 @@
 			files = (
 				0DB6F3722824E65900B79135 /* AppCoordinator.swift in Sources */,
 				0DB290DC28239FA9002801C0 /* Extensions.swift in Sources */,
+				0DADE6372851BE9300EF2801 /* ModelClass.swift in Sources */,
+				0DDB58DA284F4F13005B2434 /* LoginViewModel.swift in Sources */,
 				0D9243762822CA6E0089A75E /* SettingsViewController.swift in Sources */,
 				0DB195372821017200C63287 /* CustomSwitch.swift in Sources */,
 				0D8EC76D28213D4F007CA59A /* Colors.swift in Sources */,
 				0DBD5D59281D022200D42AFF /* LoginViewController.swift in Sources */,
+				0DDB6DD828509ECE00C4CEDC /* APICalling.swift in Sources */,
 				0D9243782822CB680089A75E /* SettingsTVCell.swift in Sources */,
 				0D92436E2822AD7A0089A75E /* ContactDetailsTVCell.swift in Sources */,
 				0DB290E62823CAF9002801C0 /* OnBoardingCell.swift in Sources */,
@@ -596,10 +644,12 @@
 				0D4D5D2B2822524600BDE150 /* Validations.swift in Sources */,
 				0D0B5A252820077900A312BB /* CustomLoginH1Label.swift in Sources */,
 				0DAEFAE2282290B9005E9662 /* TutorialScreenViewController.swift in Sources */,
+				0DDB58D6284F243B005B2434 /* BaseViewController.swift in Sources */,
 				0DB6F3742824FC6700B79135 /* AuthenticationCoordinator.swift in Sources */,
 				0D03A7E6281D62FD00F0B0E2 /* CustomButton.swift in Sources */,
 				0DB6F3702824E64600B79135 /* CoordinatorBoard.swift in Sources */,
 				0D92437C2822D62D0089A75E /* AccountTVCell.swift in Sources */,
+				0DDB58DC284F7846005B2434 /* BaseViewModel.swift in Sources */,
 				0D03A7E4281D2A9A00F0B0E2 /* CustomTextField.swift in Sources */,
 				0D8EC76F28216AE6007CA59A /* SIgnUpViewController.swift in Sources */,
 				0D92437A2822CCC80089A75E /* SettingModelClass.swift in Sources */,
@@ -611,8 +661,10 @@
 				0DB290E22823C262002801C0 /* OnBoardingViewController.swift in Sources */,
 				0DBD5D57281D022200D42AFF /* SceneDelegate.swift in Sources */,
 				0DB290E42823C319002801C0 /* OnBoardingModelClass.swift in Sources */,
+				0DDB58DE284F7AEE005B2434 /* Dynamic.swift in Sources */,
 				0D0B59FA281FE1AD00A312BB /* CustomUIview.swift in Sources */,
 				0D8EC768282132AD007CA59A /* R.generated.swift in Sources */,
+				0DA1FC1D28508219008D4433 /* BaseApiCalling.swift in Sources */,
 				0D03A7E2281D124100F0B0E2 /* CustomLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,7 @@ class CustomSwitch: UISwitch {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         set(width: 34, height: 19)
-        self.onTintColor = UIColor.gray
+        self.onTintColor = UIColor.switchColorGray
     }
     
     // MARK: - FUnctions

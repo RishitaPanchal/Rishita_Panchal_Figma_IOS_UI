@@ -6,17 +6,18 @@
 //
 
 import UIKit
+import UserNotifications
 
-class SIgnUpViewController: UIViewController, CoordinatorBoard {
+class SIgnUpViewController: BaseViewController<AuthenticationCoordinator, LoginViewModel> {
 
+    // MARK: IBOutlets
     @IBOutlet weak var txtUsername: CustomTextField!
     @IBOutlet weak var txtSurname: CustomTextField!
     @IBOutlet weak var txtPhone: CustomTextField!
     @IBOutlet weak var txtEmail: CustomTextField!
     @IBOutlet weak var txtLocation: CustomTextField!
     
-    var signUpCoordinator: AuthenticationCoordinator?
-    
+    // MARK: - Overridden methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.changeStatusBarColor()
@@ -26,6 +27,7 @@ class SIgnUpViewController: UIViewController, CoordinatorBoard {
         applyDelegates()
     }
     
+    // MARK: - Functions
     func applyDelegates() {
         txtUsername.delegate = self
         txtSurname.delegate = self
@@ -33,12 +35,17 @@ class SIgnUpViewController: UIViewController, CoordinatorBoard {
         txtEmail.delegate = self
         txtLocation.delegate = self
     }
-    
+        
+    // MARK: IBActions
     @IBAction func goToSignUp(_ sender: UIButton) {
+        print("hello")
     }
+
 }
 
+// MARK: Extensionss
 extension SIgnUpViewController: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
         case txtUsername:

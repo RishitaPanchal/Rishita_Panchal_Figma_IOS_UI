@@ -18,3 +18,7 @@
 "description1" = "Lorem ipsum dolor sit amet";
 "description2" = "Lorem ipsum dolor sit amet,";
 "description3" = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed  ";
+
+// MARK: - API Calling
+
+"error" = "Oops!! Something went wrong...";

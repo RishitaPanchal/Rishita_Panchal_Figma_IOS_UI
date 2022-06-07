@@ -163,10 +163,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ThL-Dm-m9i" customClass="Cust">
-                                                    <rect key="frame" x="40" y="27" width="334" height="174"/>
+                                                    <rect key="frame" x="40" y="27" width="334" height="194.5"/>
                                                     <subviews>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VPM-DF-jQN" customClass="CustomTextField" customModule="IOSHomebookingServices" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="52.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="59.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                             <userDefinedRuntimeAttributes>
@@ -180,7 +180,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </textField>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iVd-gc-pXi" customClass="CustomTextField" customModule="IOSHomebookingServices" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="60.5" width="334" height="53"/>
+                                                            <rect key="frame" x="0.0" y="67.5" width="334" height="59.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                             <userDefinedRuntimeAttributes>
@@ -194,7 +194,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </textField>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bHF-Qo-0C2" customClass="CustomTextField" customModule="IOSHomebookingServices" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="121.5" width="334" height="52.5"/>
+                                                            <rect key="frame" x="0.0" y="135" width="334" height="59.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                             <userDefinedRuntimeAttributes>
@@ -232,6 +232,26 @@
             <point key="canvasLocation" x="-597.10144927536237" y="130.58035714285714"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="2YT-qy-y5v">
+            <size key="intrinsicContentSize" width="123" height="59.5"/>
+        </designable>
+        <designable name="I74-OX-QCw">
+            <size key="intrinsicContentSize" width="123" height="59.5"/>
+        </designable>
+        <designable name="VPM-DF-jQN">
+            <size key="intrinsicContentSize" width="160" height="59.5"/>
+        </designable>
+        <designable name="bHF-Qo-0C2">
+            <size key="intrinsicContentSize" width="171.5" height="59.5"/>
+        </designable>
+        <designable name="gcf-g1-H6T">
+            <size key="intrinsicContentSize" width="123" height="59.5"/>
+        </designable>
+        <designable name="iVd-gc-pXi">
+            <size key="intrinsicContentSize" width="156.5" height="59.5"/>
+        </designable>
+    </designables>
     <resources>
         <image name="accountuserName" width="16" height="16"/>
         <image name="avatorprofileImage" width="115" height="115"/>
