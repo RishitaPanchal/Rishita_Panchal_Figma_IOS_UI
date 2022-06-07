@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="akN-XU-xee">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Settings" id="Y6W-OH-hqX" customClass="SettingsViewController" customModule="IOSHomebookingServices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qY0-h9-vG4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Accounts" rowHeight="79" id="oNo-1S-Uau" customClass="AccountTVCell" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="79"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oNo-1S-Uau" id="Z16-2x-639">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrX-dD-Oim">
+                                                    <rect key="frame" x="323" y="15" width="59" height="49"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="arrowGo" title=""/>
+                                                </button>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatorprofileImage" translatesAutoresizingMaskIntoConstraints="NO" id="dj8-pQ-edP">
+                                                    <rect key="frame" x="20" y="11" width="55" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="dj8-pQ-edP" secondAttribute="height" multiplier="1:1" id="R1R-hB-OsI"/>
+                                                        <constraint firstAttribute="height" constant="55" id="sBz-YP-1fI"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="48k-lY-oI1">
+                                                    <rect key="frame" x="99" y="22" width="159" height="36"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vanessa Luo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tk0-cv-WRJ" customClass="CustomLabelSettingAccount" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="87" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vannessaluo@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUZ-ML-7fg" customClass="CustomLabelSettingStatus" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="18" width="159" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dj8-pQ-edP" firstAttribute="top" secondItem="Z16-2x-639" secondAttribute="top" constant="11" id="1sJ-dm-HCO"/>
+                                                <constraint firstAttribute="bottom" secondItem="dj8-pQ-edP" secondAttribute="bottom" constant="13" id="B5L-mT-lKm"/>
+                                                <constraint firstItem="48k-lY-oI1" firstAttribute="top" secondItem="Z16-2x-639" secondAttribute="top" constant="22" id="CfW-s8-YZZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="FrX-dD-Oim" secondAttribute="trailing" constant="32" id="XaR-ni-lRu"/>
+                                                <constraint firstItem="48k-lY-oI1" firstAttribute="leading" secondItem="dj8-pQ-edP" secondAttribute="trailing" constant="24" id="nZx-MB-bJq"/>
+                                                <constraint firstItem="dj8-pQ-edP" firstAttribute="leading" secondItem="Z16-2x-639" secondAttribute="leading" constant="20" symbolic="YES" id="sDN-jp-mo2"/>
+                                                <constraint firstAttribute="bottom" secondItem="48k-lY-oI1" secondAttribute="bottom" constant="21" id="uIV-S3-1rt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="FrX-dD-Oim" firstAttribute="centerY" secondItem="oNo-1S-Uau" secondAttribute="centerY" id="1eM-gm-DtH"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="goButton" destination="FrX-dD-Oim" id="87X-S9-47m"/>
+                                            <outlet property="img" destination="dj8-pQ-edP" id="e14-nC-WJf"/>
+                                            <outlet property="subTitle" destination="sUZ-ML-7fg" id="UOY-7E-dmA"/>
+                                            <outlet property="title" destination="Tk0-cv-WRJ" id="tQG-Qk-I8g"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="settings" rowHeight="79" id="EAf-VT-2Ll" customClass="SettingsTVCell" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="123.5" width="414" height="79"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EAf-VT-2Ll" id="0Vm-YF-ffc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="6WD-YD-rKF">
+                                                    <rect key="frame" x="36" y="27.5" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="Iry-uj-DCE"/>
+                                                        <constraint firstAttribute="width" secondItem="6WD-YD-rKF" secondAttribute="height" id="Tap-iN-hKV"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqx-Bg-PUD" customClass="CustomLabelSettings" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                    <rect key="frame" x="98.5" y="22.5" width="31" height="34.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wE-rV-9Rs" customClass="CustomLabelSettingStatus" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                    <rect key="frame" x="272.5" y="33" width="28.5" height="13.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTI-fp-kg0">
+                                                    <rect key="frame" x="323" y="15" width="59" height="49"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="arrowGo" title=""/>
+                                                </button>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qTG-yt-vBZ" customClass="CustomSwitch" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                    <rect key="frame" x="333" y="24" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="qTG-yt-vBZ" secondAttribute="trailing" constant="32" id="6da-Rw-c6o"/>
+                                                <constraint firstItem="qTG-yt-vBZ" firstAttribute="centerY" secondItem="0Vm-YF-ffc" secondAttribute="centerY" id="7qK-Eg-04l"/>
+                                                <constraint firstItem="5wE-rV-9Rs" firstAttribute="centerY" secondItem="0Vm-YF-ffc" secondAttribute="centerY" id="DR6-uV-YQw"/>
+                                                <constraint firstItem="xTI-fp-kg0" firstAttribute="leading" secondItem="5wE-rV-9Rs" secondAttribute="trailing" constant="22" id="Dju-Nj-Nb1"/>
+                                                <constraint firstItem="6WD-YD-rKF" firstAttribute="leading" secondItem="0Vm-YF-ffc" secondAttribute="leading" constant="36" id="G2x-5J-Xxj"/>
+                                                <constraint firstItem="qTG-yt-vBZ" firstAttribute="leading" secondItem="5wE-rV-9Rs" secondAttribute="trailing" constant="32" id="Inl-Fe-bE5"/>
+                                                <constraint firstItem="xTI-fp-kg0" firstAttribute="centerY" secondItem="0Vm-YF-ffc" secondAttribute="centerY" id="Mou-f4-K8g"/>
+                                                <constraint firstAttribute="trailing" secondItem="xTI-fp-kg0" secondAttribute="trailing" constant="32" id="RIC-kf-fBw"/>
+                                                <constraint firstItem="6WD-YD-rKF" firstAttribute="centerY" secondItem="0Vm-YF-ffc" secondAttribute="centerY" id="Wt5-oY-9NC"/>
+                                                <constraint firstItem="Tqx-Bg-PUD" firstAttribute="height" relation="greaterThanOrEqual" secondItem="0Vm-YF-ffc" secondAttribute="height" multiplier="0.183544" constant="20" id="afT-hp-5cn"/>
+                                                <constraint firstAttribute="bottom" secondItem="Tqx-Bg-PUD" secondAttribute="bottom" constant="22" id="joN-tt-Oc8"/>
+                                                <constraint firstItem="Tqx-Bg-PUD" firstAttribute="leading" secondItem="6WD-YD-rKF" secondAttribute="trailing" constant="38.659999999999997" id="odZ-Kf-8Vo"/>
+                                                <constraint firstItem="Tqx-Bg-PUD" firstAttribute="top" secondItem="0Vm-YF-ffc" secondAttribute="top" constant="22.5" id="rJ0-gh-yna"/>
+                                                <constraint firstItem="5wE-rV-9Rs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Tqx-Bg-PUD" secondAttribute="trailing" constant="20" id="rxn-L9-r66"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnGo" destination="xTI-fp-kg0" id="QZ7-JL-4xq"/>
+                                            <outlet property="imgSettingIcon" destination="6WD-YD-rKF" id="xQN-c6-5vm"/>
+                                            <outlet property="lblSettingName" destination="Tqx-Bg-PUD" id="Pwn-hE-JVp"/>
+                                            <outlet property="lblSettingStatus" destination="5wE-rV-9Rs" id="pax-18-roM"/>
+                                            <outlet property="switchSetting" destination="qTG-yt-vBZ" id="RQe-fm-Wye"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="1YL-9p-7nE"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="9Hm-bc-Oda"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qY0-h9-vG4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="7Ya-0x-L8F"/>
+                            <constraint firstItem="qY0-h9-vG4" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="FEd-eu-9ny"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qY0-h9-vG4" secondAttribute="trailing" id="NRv-ZH-8cH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="qY0-h9-vG4" secondAttribute="bottom" id="pTl-t9-bxj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="JrW-kn-7vm"/>
+                    <connections>
+                        <outlet property="tableView" destination="qY0-h9-vG4" id="EHo-Bk-bdi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881.15942028985512" y="25.446428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uSA-n7-x3y">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="akN-XU-xee" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EKO-c3-GhK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Color"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="7Ay-DZ-2BY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtZ-5K-CvH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28.985507246376812" y="25.446428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowGo" width="35" height="35"/>
+        <image name="avatorprofileImage" width="115" height="115"/>
+        <image name="email" width="19" height="13"/>
+        <namedColor name="Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
