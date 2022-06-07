@@ -7,39 +7,25 @@
 
 import UIKit
 
-class SignupViewController: UIViewController {
+class SIgnUpViewController: UIViewController, CoordinatorBoard {
 
-    // MARK: IBOutlets
     @IBOutlet weak var txtUsername: CustomTextField!
     @IBOutlet weak var txtSurname: CustomTextField!
     @IBOutlet weak var txtPhone: CustomTextField!
     @IBOutlet weak var txtEmail: CustomTextField!
     @IBOutlet weak var txtLocation: CustomTextField!
     
-    // MARK: Overridden method
+    var signUpCoordinator: AuthenticationCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.changeStatusBarColor()
-        configureBarButton()
         changeStatusBarColor()
-        setNavigationBarTintColor()
         configureTapGesture(viewController: self)
+        configureBarButton()
         applyDelegates()
     }
     
-    // MARK: Functions
-    
-    /// Function to change appearance of navigationbar
-    func setNavigationBarTintColor() {
-        navigationController?.navigationBar.prefersLargeTitles = false
-        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = UIColor.navyBlue
-        navigationController?.navigationBar.tintColor = UIColor.white
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
-    }
-    
-    /// function to apply textfield delegate
     func applyDelegates() {
         txtUsername.delegate = self
         txtSurname.delegate = self
@@ -48,12 +34,11 @@ class SignupViewController: UIViewController {
         txtLocation.delegate = self
     }
     
+    @IBAction func goToSignUp(_ sender: UIButton) {
+    }
 }
 
-// MARK: Textfield delegate Extension
-extension SignupViewController: UITextFieldDelegate {
-    
-    /// function for return key
+extension SIgnUpViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
         case txtUsername:

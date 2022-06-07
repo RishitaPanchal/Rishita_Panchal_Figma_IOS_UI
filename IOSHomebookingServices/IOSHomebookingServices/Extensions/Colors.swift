@@ -8,14 +8,17 @@
 import Foundation
 import UIKit
 
-//MARK: - UIColor extension
+// MARK: - Extension UIColor
 extension UIColor {
     
     static let navyBlue = R.color.viewControllerBackground() ?? UIColor.red
     static let lightPink = R.color.buttonBackground() ?? UIColor.systemPink
-    static let lightGray = R.color.labelColor1() ?? UIColor.gray
+    static let lightGray = R.color.headerLabel() ?? UIColor.gray
     static let lightGrayTxtBackground = R.color.textfieldBackground() ?? UIColor.gray
     static let redBorderColor = R.color.borderColor() ?? UIColor.red
-    static let lightGraySwitchColor = R.color.switchColor1() ?? UIColor.gray
+    static let lightGraySwitchColor = R.color.lightGray() ?? UIColor.gray
+    static let blackSetting = R.color.black() ?? UIColor.black
+    static let blackAndWhite = R.color.blackAndWhiteColor() ?? UIColor.gray
+    static let darkRed = R.color.borderColor() ?? UIColor.red
     
 }

@@ -7,4 +7,14 @@
 */
 
 "appname" = "This is my app name";
+"rishita" = "TItle";
 "back" = "  Back";
+
+// MARK: - Page controller
+"title1" = "Lorem ipsum dolor sit amet, consetetur";
+"title2" = "Lorem ipsum dolor sit";
+"title3" = "Lorem ipsum";
+
+"description1" = "Lorem ipsum dolor sit amet";
+"description2" = "Lorem ipsum dolor sit amet,";
+"description3" = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed  ";

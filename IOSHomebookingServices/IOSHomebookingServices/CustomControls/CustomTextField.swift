@@ -70,8 +70,8 @@ class CustomTextField: UITextField {
         }
     }
 
-    // MARK: - Functions
-    ///function init style of textfield
+    
+    // MARK: Function
     func initView() {
         self.borderStyle = UITextField.BorderStyle.none
         self.font = R.font.poppinsRegular(size: 14.0)
@@ -79,7 +79,6 @@ class CustomTextField: UITextField {
         layer.cornerRadius = 15
     }
     
-    /// function to init left icon in textfield
     func initLeftIcon() {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         imageView.contentMode = .scaleAspectFit

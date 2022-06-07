@@ -1,0 +1,40 @@
+//
+//  CustomSwitch.swift
+//  IOSHomebookingServices
+//
+//  Created by Rishita Panchal on 03/05/22.
+//
+
+import UIKit
+
+<<<<<<< HEAD
+// MARK: - UISwitch Custom component
+=======
+>>>>>>> 42bdc2a (ADD: Tutorial screen)
+class CustomSwitch: UISwitch {
+
+    // MARK: - Initializer
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        set(width: 34, height: 19)
+        self.onTintColor = UIColor.lightGraySwitchColor
+    }
+    
+<<<<<<< HEAD
+    /// function to init switch view
+=======
+    // MARK: - FUnctions
+>>>>>>> 42bdc2a (ADD: Tutorial screen)
+    func set(width: CGFloat, height: CGFloat) {
+        let standardHeight: CGFloat = 31
+        let standardWidth: CGFloat = 51
+        let heightRatio = height / standardHeight
+        let widthRatio = width / standardWidth
+        transform = CGAffineTransform(scaleX: widthRatio, y: heightRatio)
+    }
+    
+}

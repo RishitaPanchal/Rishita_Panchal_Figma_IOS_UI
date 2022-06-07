@@ -7,10 +7,9 @@
 
 import Foundation
 
-// MARK: - Extension string
+// MARK: Extension String
 extension String {
     
-    /// function to validate email
     func isEmailValid() -> Bool {
         let regEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         return applyPredicateOnRegEx(regExStr: regEx)

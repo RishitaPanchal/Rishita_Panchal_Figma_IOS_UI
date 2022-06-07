@@ -7,10 +7,10 @@
 
 import UIKit
 
-// MARK: - Button base class
+// MARK: - Custom button base class
 class CustomButton: UIButton {
     
-    // MARK: Initializers
+    // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
         initView()
@@ -21,32 +21,98 @@ class CustomButton: UIButton {
         initView()
     }
     
-    /// function to init view style
+    /// functin to init style of button
     func initView() {
         self.layer.cornerRadius = 15.0
+        self.titleLabel?.font = R.font.poppinsBold(size: 14.0)
         self.layer.backgroundColor = UIColor.lightPink.cgColor
-        clipsToBounds = true
+        self.tintColor = UIColor.darkRed
     }
     
 }
 
 class CustomButtonGoToSignUp: UIButton {
     
-    // MARK: Initializers
+    // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
-        initButtonStyle()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        initButtonStyle()
-    }
-
-    /// function to change gotoSignupButton style
-    func initButtonStyle() {
         self.titleLabel?.font = R.font.poppinsBold(size: 14.0)
-        self.tintColor = UIColor.red
+        self.tintColor = UIColor.darkRed
     }
     
 }
+
+class CustomOnBoardingSkipBtn: CustomButton {
+        
+    // MARK: Initializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        applyBackground()
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        applyBackground()
+    }
+    
+    /// function to init style of button
+    func applyBackground() {
+        self.layer.cornerRadius = 15.0
+        self.layer.backgroundColor = UIColor.darkRed.cgColor
+    }
+    
+}
+
+class CustomLoginButtonWelcomeScreen: CustomButton {
+    
+    // MARK: - Initializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        applyBackground()
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        applyBackground()
+    }
+    
+    /// function to init style of button
+    func applyBackground() {
+        self.layer.cornerRadius = 15.0
+        self.layer.backgroundColor = UIColor.darkRed.cgColor
+        self.titleLabel?.font = R.font.poppinsBold(size: 14.0)
+        self.tintColor = UIColor.white
+    }
+    
+}
+
+
+class CustomSignupButtonWelcomeScreen: CustomButton {
+    
+    // MARK: Initializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        applyBackground()
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        applyBackground()
+    }
+    
+    /// function to init view of button
+    func applyBackground() {
+        self.layer.cornerRadius = 15.0
+        self.layer.backgroundColor = UIColor.white.cgColor
+        self.layer.borderColor = UIColor.darkRed.cgColor
+        self.layer.borderWidth = 1
+        self.titleLabel?.font = R.font.poppinsBold(size: 14.0)
+        self.tintColor = UIColor.darkRed
+    }
+    
+}
+

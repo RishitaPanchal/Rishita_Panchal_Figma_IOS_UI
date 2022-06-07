@@ -7,25 +7,32 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, CoordinatorBoard {
     
-    // MARK: IBOutlets
+    // MARK:
     @IBOutlet weak var txtUsername: CustomTextField!
     @IBOutlet weak var txtPassword: CustomTextFieldPassword!
     
-    // MARK: Overridden method
+    var loginViewCoordinator: AuthenticationCoordinator?
+    var appCoordinator: AppCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        changeStatusBarColor()
-        configureBarButton()
-        setNavigationBarTintColor()
+        self.changeStatusBarColor()
         configureTapGesture(viewController: self)
+        setNavigationBarTintColor()
+        configureBarButton()
         applyDelegate()
     }
     
-    // MARK: - Functions
+    func applyDelegate() {
+        txtUsername.delegate = self
+        txtPassword.delegate = self
+    }
+    @IBAction func goToSIgnUpVC(_ sender: UIButton) {
+        loginViewCoordinator?.goTosignUpVC()
+    }
     
-    /// function to change appearance of navigationbar
     func setNavigationBarTintColor() {
         navigationController?.navigationBar.prefersLargeTitles = false
         let appearance = UINavigationBarAppearance()
@@ -35,18 +42,11 @@ class LoginViewController: UIViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     
-    /// function to apply textfield delegate
-    func applyDelegate() {
-        txtUsername.delegate = self
-        txtPassword.delegate = self
-    }
-    
 }
 
-// MARK: - Textfield delegate Extension 
+
 extension LoginViewController: UITextFieldDelegate {
         
-    /// function for textfield return key
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
             case txtUsername:
@@ -58,4 +58,5 @@ extension LoginViewController: UITextFieldDelegate {
     }
 
 }
+
 

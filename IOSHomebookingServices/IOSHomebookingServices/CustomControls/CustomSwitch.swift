@@ -7,7 +7,6 @@
 
 import UIKit
 
-// MARK: - UISwitch Custom component
 class CustomSwitch: UISwitch {
 
     // MARK: - Initializer
@@ -18,10 +17,10 @@ class CustomSwitch: UISwitch {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         set(width: 34, height: 19)
-        self.onTintColor = UIColor.lightGraySwitchColor
+        self.onTintColor = UIColor.gray
     }
     
-    /// function to init switch view
+    // MARK: - FUnctions
     func set(width: CGFloat, height: CGFloat) {
         let standardHeight: CGFloat = 31
         let standardWidth: CGFloat = 51

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial Screen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="TutorialScreenViewController" customModule="IOSHomebookingServices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="87D-n7-J3o">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="Kom-aZ-BWp">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY PROFILE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hr3-AR-9y4">
+                                            <rect key="frame" x="154.5" y="30" width="105" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatorprofileImage" translatesAutoresizingMaskIntoConstraints="NO" id="jcb-gg-rcB">
+                                            <rect key="frame" x="149.5" y="79.5" width="115" height="115"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="jcb-gg-rcB" secondAttribute="height" id="tPe-Jq-7Yr"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="hr3-AR-9y4" firstAttribute="top" secondItem="Kom-aZ-BWp" secondAttribute="top" constant="30" id="a8m-pi-Tyf"/>
+                                        <constraint firstItem="jcb-gg-rcB" firstAttribute="top" secondItem="hr3-AR-9y4" secondAttribute="bottom" constant="29" id="bqi-7e-big"/>
+                                        <constraint firstItem="jcb-gg-rcB" firstAttribute="width" secondItem="hr3-AR-9y4" secondAttribute="width" constant="10" id="fz5-ce-8En"/>
+                                        <constraint firstItem="hr3-AR-9y4" firstAttribute="centerX" secondItem="Kom-aZ-BWp" secondAttribute="centerX" id="mOH-jm-EFW"/>
+                                        <constraint firstItem="jcb-gg-rcB" firstAttribute="centerX" secondItem="hr3-AR-9y4" secondAttribute="centerX" id="qPP-bU-8mw"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCellOne" rowHeight="420" id="X04-pp-DdN" customClass="BasicDetailsTVCell" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="259.5" width="414" height="420"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X04-pp-DdN" id="hv8-fj-K4U">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="420"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="tTt-9x-Ahf">
+                                                    <rect key="frame" x="40" y="33" width="334" height="243"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zZQ-qK-JrF" customClass="CustomTextField" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="71.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                    <real key="value" value="35"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                                    <real key="value" value="20"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="accountuserName"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4PA-mU-aZh" customClass="CustomTextField" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="85.5" width="334" height="72"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                    <real key="value" value="35"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                                    <real key="value" value="20"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="accountuserName"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHn-i0-4XI" customClass="CustomTextField" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="171.5" width="334" height="71.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                    <real key="value" value="35"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                                    <real key="value" value="20"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="location"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNV-H2-cAt">
+                                                    <rect key="frame" x="40" y="298" width="334" height="54"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="HuX-0q-afv">
+                                                            <rect key="frame" x="16" y="11" width="102" height="32"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mc4-6z-OPA">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="32"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain" image="toggleradioOff"/>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehk-UQ-bc6">
+                                                                    <rect key="frame" x="65" y="0.0" width="37" height="32"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="L2c-Ud-jTi">
+                                                            <rect key="frame" x="147.5" y="11" width="120.5" height="32"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhn-Ex-3A4">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="32"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain" image="toggletoggleRadioOn"/>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl1-ao-5eM">
+                                                                    <rect key="frame" x="65" y="0.0" width="55.5" height="32"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="L2c-Ud-jTi" firstAttribute="centerY" secondItem="HuX-0q-afv" secondAttribute="centerY" id="3Kv-1P-KfJ"/>
+                                                        <constraint firstItem="L2c-Ud-jTi" firstAttribute="leading" secondItem="HuX-0q-afv" secondAttribute="trailing" multiplier="1.25" id="Vm5-4R-UpA"/>
+                                                        <constraint firstItem="HuX-0q-afv" firstAttribute="centerY" secondItem="aNV-H2-cAt" secondAttribute="centerY" id="bmi-51-m3B"/>
+                                                        <constraint firstAttribute="height" constant="54" id="krd-vv-NdN"/>
+                                                        <constraint firstItem="HuX-0q-afv" firstAttribute="leading" secondItem="aNV-H2-cAt" secondAttribute="leading" constant="16" id="ryP-tC-fG1"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aNV-H2-cAt" firstAttribute="top" secondItem="tTt-9x-Ahf" secondAttribute="bottom" multiplier="1.08" id="OSd-vv-sn5"/>
+                                                <constraint firstItem="aNV-H2-cAt" firstAttribute="trailing" secondItem="tTt-9x-Ahf" secondAttribute="trailing" id="RqH-oU-qu9"/>
+                                                <constraint firstItem="aNV-H2-cAt" firstAttribute="leading" secondItem="tTt-9x-Ahf" secondAttribute="leading" id="nA5-2q-kAY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="tTt-9x-Ahf" firstAttribute="top" secondItem="X04-pp-DdN" secondAttribute="top" constant="33" id="Ewu-5x-s53"/>
+                                            <constraint firstAttribute="trailing" secondItem="tTt-9x-Ahf" secondAttribute="trailing" constant="40" id="SDt-VS-SO6"/>
+                                            <constraint firstItem="tTt-9x-Ahf" firstAttribute="height" relation="greaterThanOrEqual" secondItem="X04-pp-DdN" secondAttribute="height" multiplier="0.45" constant="54" id="X3f-qv-Two"/>
+                                            <constraint firstItem="tTt-9x-Ahf" firstAttribute="leading" secondItem="X04-pp-DdN" secondAttribute="leading" constant="40" id="bZY-Wi-pjt"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="txtDOB" destination="IHn-i0-4XI" id="Del-8e-1tm"/>
+                                            <outlet property="txtSurname" destination="4PA-mU-aZh" id="zXb-jp-4bN"/>
+                                            <outlet property="txtUserName" destination="zZQ-qK-JrF" id="22p-b7-CSE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="87D-n7-J3o" secondAttribute="trailing" id="9IM-UE-49B"/>
+                            <constraint firstItem="87D-n7-J3o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="AAF-4r-nNS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="87D-n7-J3o" secondAttribute="bottom" id="HCz-9z-Bxd"/>
+                            <constraint firstItem="87D-n7-J3o" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="In8-VZ-nAd"/>
+                            <constraint firstItem="87D-n7-J3o" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="MIr-6a-Rkh"/>
+                            <constraint firstItem="87D-n7-J3o" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="bSA-SC-YhA"/>
+                            <constraint firstItem="87D-n7-J3o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="k2U-dw-Syf"/>
+                            <constraint firstItem="87D-n7-J3o" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="pGM-gD-doD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="87D-n7-J3o" id="hrd-yj-rja"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="25.446428571428569"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="4PA-mU-aZh">
+            <size key="intrinsicContentSize" width="123" height="59.5"/>
+        </designable>
+        <designable name="IHn-i0-4XI">
+            <size key="intrinsicContentSize" width="120" height="59.5"/>
+        </designable>
+        <designable name="zZQ-qK-JrF">
+            <size key="intrinsicContentSize" width="123" height="59.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="accountuserName" width="16" height="16"/>
+        <image name="avatorprofileImage" width="115" height="115"/>
+        <image name="location" width="13" height="19"/>
+        <image name="toggleradioOff" width="18" height="18"/>
+        <image name="toggletoggleRadioOn" width="18" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

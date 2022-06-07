@@ -7,7 +7,6 @@
 
 import UIKit
 
-// MARK: UIView custom coponent
 class CustomUIview: UIView {
     
     // MARK: Initializers
@@ -19,17 +18,17 @@ class CustomUIview: UIView {
         super.init(coder: coder)
     }
     
-    // MARK: Overridden method
+    // MARK: - Overridden method
     override func layoutSubviews() {
         roundCorners(corners: [.topLeft, .topRight], radius: 40.0)
     }
     
-    /// function to in it view style
+    /// function to init style of view
     func roundCorners(corners: UIRectCorner, radius: CGFloat) {
-        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-        let mask = CAShapeLayer()
-        mask.path = path.cgPath
-        layer.mask = mask
+          let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+          let mask = CAShapeLayer()
+          mask.path = path.cgPath
+          layer.mask = mask
     }
     
 }

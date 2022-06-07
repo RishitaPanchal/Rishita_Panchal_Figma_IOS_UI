@@ -12,13 +12,15 @@ class CustomTextFieldPassword: CustomTextField {
     // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
+        initTextField()
     }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        initTextField()
     }
     
-    /// function to init textfield style
+    //  MARK: Function
     func initTextField() {
         self.borderStyle = UITextField.BorderStyle.none
         self.font = R.font.poppinsRegular(size: 14.0)
@@ -27,7 +29,6 @@ class CustomTextFieldPassword: CustomTextField {
         setEyeIcon()
     }
     
-    /// function to init right icon
     func setEyeIcon() {
         let eyeRightIcon = UIButton()
         eyeRightIcon.setImage(UIImage(systemName: "eye"), for: .normal)

@@ -11,14 +11,33 @@
 		0D03A7E4281D2A9A00F0B0E2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D03A7E3281D2A9A00F0B0E2 /* CustomTextField.swift */; };
 		0D03A7E6281D62FD00F0B0E2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D03A7E5281D62FD00F0B0E2 /* CustomButton.swift */; };
 		0D0B59FA281FE1AD00A312BB /* CustomUIview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B59F9281FE1AD00A312BB /* CustomUIview.swift */; };
-		0D2AFB9D28269759009C46B1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AFB9C28269759009C46B1 /* Extensions.swift */; };
+		0D0B5A252820077900A312BB /* CustomLoginH1Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B5A242820077900A312BB /* CustomLoginH1Label.swift */; };
 		0D4D5D2B2822524600BDE150 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4D5D2A2822524600BDE150 /* Validations.swift */; };
 		0D8EC768282132AD007CA59A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8EC767282132AD007CA59A /* R.generated.swift */; };
 		0D8EC76D28213D4F007CA59A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8EC76C28213D4F007CA59A /* Colors.swift */; };
-		0D8EC76F28216AE6007CA59A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8EC76E28216AE6007CA59A /* SignupViewController.swift */; };
+		0D8EC76F28216AE6007CA59A /* SIgnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8EC76E28216AE6007CA59A /* SIgnUpViewController.swift */; };
 		0D8EC7722821743A007CA59A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D8EC7742821743A007CA59A /* Localizable.strings */; };
+		0D92436E2822AD7A0089A75E /* ContactDetailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92436D2822AD7A0089A75E /* ContactDetailsTVCell.swift */; };
+		0D9243702822B3FF0089A75E /* SectionName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92436F2822B3FF0089A75E /* SectionName.swift */; };
+		0D9243722822B55A0089A75E /* ProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9243712822B55A0089A75E /* ProfileScreen.storyboard */; };
+		0D9243742822BF680089A75E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9243732822BF680089A75E /* Settings.storyboard */; };
+		0D9243762822CA6E0089A75E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9243752822CA6E0089A75E /* SettingsViewController.swift */; };
+		0D9243782822CB680089A75E /* SettingsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9243772822CB680089A75E /* SettingsTVCell.swift */; };
+		0D92437A2822CCC80089A75E /* SettingModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9243792822CCC80089A75E /* SettingModelClass.swift */; };
+		0D92437C2822D62D0089A75E /* AccountTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92437B2822D62D0089A75E /* AccountTVCell.swift */; };
+		0DAEFADF28228C3E005E9662 /* TutorialScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAEFADE28228C3E005E9662 /* TutorialScreens.storyboard */; };
+		0DAEFAE2282290B9005E9662 /* TutorialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEFAE1282290B9005E9662 /* TutorialScreenViewController.swift */; };
 		0DB195352820FB8800C63287 /* CustomTextFieldPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB195342820FB8800C63287 /* CustomTextFieldPassword.swift */; };
 		0DB195372821017200C63287 /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB195362821017200C63287 /* CustomSwitch.swift */; };
+		0DB290DC28239FA9002801C0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB290DB28239FA9002801C0 /* Extensions.swift */; };
+		0DB290E02823B2D7002801C0 /* OnBoardingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB290DF2823B2D7002801C0 /* OnBoardingScreen.storyboard */; };
+		0DB290E22823C262002801C0 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB290E12823C262002801C0 /* OnBoardingViewController.swift */; };
+		0DB290E42823C319002801C0 /* OnBoardingModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB290E32823C319002801C0 /* OnBoardingModelClass.swift */; };
+		0DB290E62823CAF9002801C0 /* OnBoardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB290E52823CAF9002801C0 /* OnBoardingCell.swift */; };
+		0DB6F3702824E64600B79135 /* CoordinatorBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6F36F2824E64600B79135 /* CoordinatorBoard.swift */; };
+		0DB6F3722824E65900B79135 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6F3712824E65900B79135 /* AppCoordinator.swift */; };
+		0DB6F3742824FC6700B79135 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6F3732824FC6700B79135 /* AuthenticationCoordinator.swift */; };
+		0DB8AD6028238D7100AE9192 /* CustomLabelSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8AD5F28238D7100AE9192 /* CustomLabelSettings.swift */; };
 		0DBD5D55281D022200D42AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD5D54281D022200D42AFF /* AppDelegate.swift */; };
 		0DBD5D57281D022200D42AFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD5D56281D022200D42AFF /* SceneDelegate.swift */; };
 		0DBD5D59281D022200D42AFF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD5D58281D022200D42AFF /* LoginViewController.swift */; };
@@ -28,25 +47,27 @@
 		0DBD5D6C281D022400D42AFF /* IOSHomebookingServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD5D6B281D022400D42AFF /* IOSHomebookingServicesTests.swift */; };
 		0DBD5D76281D022400D42AFF /* IOSHomebookingServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD5D75281D022400D42AFF /* IOSHomebookingServicesUITests.swift */; };
 		0DBD5D78281D022400D42AFF /* IOSHomebookingServicesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD5D77281D022400D42AFF /* IOSHomebookingServicesUITestsLaunchTests.swift */; };
-		0DF79AB028265A4400BC5FF2 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A9D28265A4400BC5FF2 /* Poppins-ExtraLight.ttf */; };
-		0DF79AB128265A4400BC5FF2 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A9E28265A4400BC5FF2 /* Poppins-ThinItalic.ttf */; };
-		0DF79AB228265A4400BC5FF2 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A9F28265A4400BC5FF2 /* Poppins-ExtraLightItalic.ttf */; };
-		0DF79AB328265A4400BC5FF2 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AA028265A4400BC5FF2 /* Poppins-BoldItalic.ttf */; };
-		0DF79AB428265A4400BC5FF2 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AA128265A4400BC5FF2 /* Poppins-Light.ttf */; };
-		0DF79AB528265A4400BC5FF2 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AA228265A4400BC5FF2 /* Poppins-Medium.ttf */; };
-		0DF79AB628265A4400BC5FF2 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AA328265A4400BC5FF2 /* Poppins-SemiBoldItalic.ttf */; };
-		0DF79AB728265A4400BC5FF2 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AA428265A4400BC5FF2 /* Poppins-ExtraBoldItalic.ttf */; };
-		0DF79AB828265A4400BC5FF2 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AA528265A4400BC5FF2 /* Poppins-ExtraBold.ttf */; };
-		0DF79AB928265A4400BC5FF2 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AA628265A4400BC5FF2 /* Poppins-BlackItalic.ttf */; };
-		0DF79ABA28265A4400BC5FF2 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AA728265A4400BC5FF2 /* OFL.txt */; };
-		0DF79ABB28265A4400BC5FF2 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AA828265A4400BC5FF2 /* Poppins-Regular.ttf */; };
-		0DF79ABC28265A4400BC5FF2 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AA928265A4400BC5FF2 /* Poppins-LightItalic.ttf */; };
-		0DF79ABD28265A4400BC5FF2 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AAA28265A4400BC5FF2 /* Poppins-Bold.ttf */; };
-		0DF79ABE28265A4400BC5FF2 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AAB28265A4400BC5FF2 /* Poppins-Black.ttf */; };
-		0DF79ABF28265A4400BC5FF2 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AAC28265A4400BC5FF2 /* Poppins-Thin.ttf */; };
-		0DF79AC028265A4400BC5FF2 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AAD28265A4400BC5FF2 /* Poppins-SemiBold.ttf */; };
-		0DF79AC128265A4400BC5FF2 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AAE28265A4400BC5FF2 /* Poppins-Italic.ttf */; };
-		0DF79AC228265A4400BC5FF2 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79AAF28265A4400BC5FF2 /* Poppins-MediumItalic.ttf */; };
+		0DC1B1F22829226400BD4644 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1B1F12829226400BD4644 /* WelcomeScreenViewController.swift */; };
+		0DF79A8928263F2F00BC5FF2 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7628263F2F00BC5FF2 /* Poppins-ExtraLight.ttf */; };
+		0DF79A8A28263F2F00BC5FF2 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7728263F2F00BC5FF2 /* Poppins-ThinItalic.ttf */; };
+		0DF79A8B28263F2F00BC5FF2 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7828263F2F00BC5FF2 /* Poppins-ExtraLightItalic.ttf */; };
+		0DF79A8C28263F2F00BC5FF2 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7928263F2F00BC5FF2 /* Poppins-BoldItalic.ttf */; };
+		0DF79A8D28263F2F00BC5FF2 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7A28263F2F00BC5FF2 /* Poppins-Light.ttf */; };
+		0DF79A8E28263F2F00BC5FF2 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7B28263F2F00BC5FF2 /* Poppins-Medium.ttf */; };
+		0DF79A8F28263F2F00BC5FF2 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7C28263F2F00BC5FF2 /* Poppins-SemiBoldItalic.ttf */; };
+		0DF79A9028263F2F00BC5FF2 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7D28263F2F00BC5FF2 /* Poppins-ExtraBoldItalic.ttf */; };
+		0DF79A9128263F2F00BC5FF2 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7E28263F2F00BC5FF2 /* Poppins-ExtraBold.ttf */; };
+		0DF79A9228263F2F00BC5FF2 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A7F28263F2F00BC5FF2 /* Poppins-BlackItalic.ttf */; };
+		0DF79A9328263F2F00BC5FF2 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A8028263F2F00BC5FF2 /* OFL.txt */; };
+		0DF79A9428263F2F00BC5FF2 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A8128263F2F00BC5FF2 /* Poppins-Regular.ttf */; };
+		0DF79A9528263F2F00BC5FF2 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A8228263F2F00BC5FF2 /* Poppins-LightItalic.ttf */; };
+		0DF79A9628263F2F00BC5FF2 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A8328263F2F00BC5FF2 /* Poppins-Bold.ttf */; };
+		0DF79A9728263F2F00BC5FF2 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A8428263F2F00BC5FF2 /* Poppins-Black.ttf */; };
+		0DF79A9828263F2F00BC5FF2 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A8528263F2F00BC5FF2 /* Poppins-Thin.ttf */; };
+		0DF79A9928263F2F00BC5FF2 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A8628263F2F00BC5FF2 /* Poppins-SemiBold.ttf */; };
+		0DF79A9A28263F2F00BC5FF2 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A8728263F2F00BC5FF2 /* Poppins-Italic.ttf */; };
+		0DF79A9B28263F2F00BC5FF2 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF79A8828263F2F00BC5FF2 /* Poppins-MediumItalic.ttf */; };
+		0DFA180A28229E6700616710 /* BasicDetailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA180928229E6700616710 /* BasicDetailsTVCell.swift */; };
 		2E007A8A32B3A47A73B4FF43 /* Pods_IOSHomebookingServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82842496D9BC29E7770FD98 /* Pods_IOSHomebookingServices.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,14 +93,33 @@
 		0D03A7E3281D2A9A00F0B0E2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0D03A7E5281D62FD00F0B0E2 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0D0B59F9281FE1AD00A312BB /* CustomUIview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIview.swift; sourceTree = "<group>"; };
-		0D2AFB9C28269759009C46B1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0D0B5A242820077900A312BB /* CustomLoginH1Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginH1Label.swift; sourceTree = "<group>"; };
 		0D4D5D2A2822524600BDE150 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		0D8EC767282132AD007CA59A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		0D8EC76C28213D4F007CA59A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		0D8EC76E28216AE6007CA59A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		0D8EC76E28216AE6007CA59A /* SIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIgnUpViewController.swift; sourceTree = "<group>"; };
 		0D8EC7732821743A007CA59A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0D92436D2822AD7A0089A75E /* ContactDetailsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsTVCell.swift; sourceTree = "<group>"; };
+		0D92436F2822B3FF0089A75E /* SectionName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionName.swift; sourceTree = "<group>"; };
+		0D9243712822B55A0089A75E /* ProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileScreen.storyboard; sourceTree = "<group>"; };
+		0D9243732822BF680089A75E /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		0D9243752822CA6E0089A75E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0D9243772822CB680089A75E /* SettingsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVCell.swift; sourceTree = "<group>"; };
+		0D9243792822CCC80089A75E /* SettingModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModelClass.swift; sourceTree = "<group>"; };
+		0D92437B2822D62D0089A75E /* AccountTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTVCell.swift; sourceTree = "<group>"; };
+		0DAEFADE28228C3E005E9662 /* TutorialScreens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TutorialScreens.storyboard; sourceTree = "<group>"; };
+		0DAEFAE1282290B9005E9662 /* TutorialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialScreenViewController.swift; sourceTree = "<group>"; };
 		0DB195342820FB8800C63287 /* CustomTextFieldPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldPassword.swift; sourceTree = "<group>"; };
 		0DB195362821017200C63287 /* CustomSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwitch.swift; sourceTree = "<group>"; };
+		0DB290DB28239FA9002801C0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0DB290DF2823B2D7002801C0 /* OnBoardingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoardingScreen.storyboard; sourceTree = "<group>"; };
+		0DB290E12823C262002801C0 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		0DB290E32823C319002801C0 /* OnBoardingModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingModelClass.swift; sourceTree = "<group>"; };
+		0DB290E52823CAF9002801C0 /* OnBoardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCell.swift; sourceTree = "<group>"; };
+		0DB6F36F2824E64600B79135 /* CoordinatorBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorBoard.swift; sourceTree = "<group>"; };
+		0DB6F3712824E65900B79135 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0DB6F3732824FC6700B79135 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		0DB8AD5F28238D7100AE9192 /* CustomLabelSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelSettings.swift; sourceTree = "<group>"; };
 		0DBD5D51281D022200D42AFF /* IOSHomebookingServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSHomebookingServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBD5D54281D022200D42AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DBD5D56281D022200D42AFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,25 +133,27 @@
 		0DBD5D71281D022400D42AFF /* IOSHomebookingServicesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSHomebookingServicesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBD5D75281D022400D42AFF /* IOSHomebookingServicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSHomebookingServicesUITests.swift; sourceTree = "<group>"; };
 		0DBD5D77281D022400D42AFF /* IOSHomebookingServicesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSHomebookingServicesUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0DF79A9D28265A4400BC5FF2 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
-		0DF79A9E28265A4400BC5FF2 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
-		0DF79A9F28265A4400BC5FF2 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		0DF79AA028265A4400BC5FF2 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
-		0DF79AA128265A4400BC5FF2 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
-		0DF79AA228265A4400BC5FF2 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
-		0DF79AA328265A4400BC5FF2 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		0DF79AA428265A4400BC5FF2 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		0DF79AA528265A4400BC5FF2 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
-		0DF79AA628265A4400BC5FF2 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
-		0DF79AA728265A4400BC5FF2 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
-		0DF79AA828265A4400BC5FF2 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
-		0DF79AA928265A4400BC5FF2 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
-		0DF79AAA28265A4400BC5FF2 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		0DF79AAB28265A4400BC5FF2 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
-		0DF79AAC28265A4400BC5FF2 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
-		0DF79AAD28265A4400BC5FF2 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		0DF79AAE28265A4400BC5FF2 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
-		0DF79AAF28265A4400BC5FF2 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0DC1B1F12829226400BD4644 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		0DF79A7628263F2F00BC5FF2 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		0DF79A7728263F2F00BC5FF2 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		0DF79A7828263F2F00BC5FF2 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		0DF79A7928263F2F00BC5FF2 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0DF79A7A28263F2F00BC5FF2 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		0DF79A7B28263F2F00BC5FF2 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		0DF79A7C28263F2F00BC5FF2 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		0DF79A7D28263F2F00BC5FF2 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		0DF79A7E28263F2F00BC5FF2 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		0DF79A7F28263F2F00BC5FF2 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		0DF79A8028263F2F00BC5FF2 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		0DF79A8128263F2F00BC5FF2 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		0DF79A8228263F2F00BC5FF2 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		0DF79A8328263F2F00BC5FF2 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		0DF79A8428263F2F00BC5FF2 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		0DF79A8528263F2F00BC5FF2 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		0DF79A8628263F2F00BC5FF2 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		0DF79A8728263F2F00BC5FF2 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		0DF79A8828263F2F00BC5FF2 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0DFA180928229E6700616710 /* BasicDetailsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDetailsTVCell.swift; sourceTree = "<group>"; };
 		6903563B0E2B275DBED37021 /* Pods-IOSHomebookingServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSHomebookingServices.release.xcconfig"; path = "Target Support Files/Pods-IOSHomebookingServices/Pods-IOSHomebookingServices.release.xcconfig"; sourceTree = "<group>"; };
 		8622708ABD6E219DC681EF1C /* Pods-IOSHomebookingServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSHomebookingServices.debug.xcconfig"; path = "Target Support Files/Pods-IOSHomebookingServices/Pods-IOSHomebookingServices.debug.xcconfig"; sourceTree = "<group>"; };
 		C82842496D9BC29E7770FD98 /* Pods_IOSHomebookingServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSHomebookingServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,9 +190,42 @@
 			children = (
 				0D8EC76C28213D4F007CA59A /* Colors.swift */,
 				0D4D5D2A2822524600BDE150 /* Validations.swift */,
-				0D2AFB9C28269759009C46B1 /* Extensions.swift */,
+				0DB290DB28239FA9002801C0 /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0DAEFAE02822909F005E9662 /* TutorialScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0DAEFAE1282290B9005E9662 /* TutorialScreenViewController.swift */,
+				0DFA180928229E6700616710 /* BasicDetailsTVCell.swift */,
+				0D92436D2822AD7A0089A75E /* ContactDetailsTVCell.swift */,
+				0D92436F2822B3FF0089A75E /* SectionName.swift */,
+			);
+			path = TutorialScreen;
+			sourceTree = "<group>";
+		};
+		0DB290DE2823B180002801C0 /* TutorialScreens */ = {
+			isa = PBXGroup;
+			children = (
+				0DB290DF2823B2D7002801C0 /* OnBoardingScreen.storyboard */,
+				0DB290E12823C262002801C0 /* OnBoardingViewController.swift */,
+				0DB290E32823C319002801C0 /* OnBoardingModelClass.swift */,
+				0DB290E52823CAF9002801C0 /* OnBoardingCell.swift */,
+				0DC1B1F12829226400BD4644 /* WelcomeScreenViewController.swift */,
+			);
+			path = TutorialScreens;
+			sourceTree = "<group>";
+		};
+		0DB6F36E2824E63000B79135 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0DB6F36F2824E64600B79135 /* CoordinatorBoard.swift */,
+				0DB6F3712824E65900B79135 /* AppCoordinator.swift */,
+				0DB6F3732824FC6700B79135 /* AuthenticationCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		0DBD5D48281D022200D42AFF = {
@@ -180,17 +255,27 @@
 		0DBD5D53281D022200D42AFF /* IOSHomebookingServices */ = {
 			isa = PBXGroup;
 			children = (
-				0DF79A9C28265A4400BC5FF2 /* Fonts */,
+				0DF79A7428263F1900BC5FF2 /* PoppinsFont */,
+				0DB6F36E2824E63000B79135 /* Coordinator */,
+				0DB290DE2823B180002801C0 /* TutorialScreens */,
+				0DAEFAE02822909F005E9662 /* TutorialScreen */,
 				0D8EC76B28213D3F007CA59A /* Extensions */,
 				0DBD5D84281D041100D42AFF /* CustomControls */,
 				0DBD5D54281D022200D42AFF /* AppDelegate.swift */,
 				0DBD5D56281D022200D42AFF /* SceneDelegate.swift */,
 				0DBD5D58281D022200D42AFF /* LoginViewController.swift */,
-				0D8EC76E28216AE6007CA59A /* SignupViewController.swift */,
+				0D8EC76E28216AE6007CA59A /* SIgnUpViewController.swift */,
 				0DBD5D5F281D022400D42AFF /* LaunchScreen.storyboard */,
-				0DBD5D5A281D022200D42AFF /* Main.storyboard */,
 				0DBD5D5D281D022400D42AFF /* Assets.xcassets */,
 				0DBD5D62281D022400D42AFF /* Info.plist */,
+				0DAEFADE28228C3E005E9662 /* TutorialScreens.storyboard */,
+				0D9243712822B55A0089A75E /* ProfileScreen.storyboard */,
+				0D9243732822BF680089A75E /* Settings.storyboard */,
+				0DBD5D5A281D022200D42AFF /* Main.storyboard */,
+				0D9243752822CA6E0089A75E /* SettingsViewController.swift */,
+				0D9243772822CB680089A75E /* SettingsTVCell.swift */,
+				0D9243792822CCC80089A75E /* SettingModelClass.swift */,
+				0D92437B2822D62D0089A75E /* AccountTVCell.swift */,
 			);
 			path = IOSHomebookingServices;
 			sourceTree = "<group>";
@@ -219,36 +304,46 @@
 				0D03A7E3281D2A9A00F0B0E2 /* CustomTextField.swift */,
 				0D03A7E5281D62FD00F0B0E2 /* CustomButton.swift */,
 				0D0B59F9281FE1AD00A312BB /* CustomUIview.swift */,
+				0D0B5A242820077900A312BB /* CustomLoginH1Label.swift */,
 				0DB195342820FB8800C63287 /* CustomTextFieldPassword.swift */,
 				0DB195362821017200C63287 /* CustomSwitch.swift */,
+				0DB8AD5F28238D7100AE9192 /* CustomLabelSettings.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
 		};
-		0DF79A9C28265A4400BC5FF2 /* Fonts */ = {
+		0DF79A7428263F1900BC5FF2 /* PoppinsFont */ = {
 			isa = PBXGroup;
 			children = (
-				0DF79A9D28265A4400BC5FF2 /* Poppins-ExtraLight.ttf */,
-				0DF79A9E28265A4400BC5FF2 /* Poppins-ThinItalic.ttf */,
-				0DF79A9F28265A4400BC5FF2 /* Poppins-ExtraLightItalic.ttf */,
-				0DF79AA028265A4400BC5FF2 /* Poppins-BoldItalic.ttf */,
-				0DF79AA128265A4400BC5FF2 /* Poppins-Light.ttf */,
-				0DF79AA228265A4400BC5FF2 /* Poppins-Medium.ttf */,
-				0DF79AA328265A4400BC5FF2 /* Poppins-SemiBoldItalic.ttf */,
-				0DF79AA428265A4400BC5FF2 /* Poppins-ExtraBoldItalic.ttf */,
-				0DF79AA528265A4400BC5FF2 /* Poppins-ExtraBold.ttf */,
-				0DF79AA628265A4400BC5FF2 /* Poppins-BlackItalic.ttf */,
-				0DF79AA728265A4400BC5FF2 /* OFL.txt */,
-				0DF79AA828265A4400BC5FF2 /* Poppins-Regular.ttf */,
-				0DF79AA928265A4400BC5FF2 /* Poppins-LightItalic.ttf */,
-				0DF79AAA28265A4400BC5FF2 /* Poppins-Bold.ttf */,
-				0DF79AAB28265A4400BC5FF2 /* Poppins-Black.ttf */,
-				0DF79AAC28265A4400BC5FF2 /* Poppins-Thin.ttf */,
-				0DF79AAD28265A4400BC5FF2 /* Poppins-SemiBold.ttf */,
-				0DF79AAE28265A4400BC5FF2 /* Poppins-Italic.ttf */,
-				0DF79AAF28265A4400BC5FF2 /* Poppins-MediumItalic.ttf */,
+				0DF79A7528263F2F00BC5FF2 /* Poppins */,
 			);
-			path = Fonts;
+			path = PoppinsFont;
+			sourceTree = "<group>";
+		};
+		0DF79A7528263F2F00BC5FF2 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				0DF79A7628263F2F00BC5FF2 /* Poppins-ExtraLight.ttf */,
+				0DF79A7728263F2F00BC5FF2 /* Poppins-ThinItalic.ttf */,
+				0DF79A7828263F2F00BC5FF2 /* Poppins-ExtraLightItalic.ttf */,
+				0DF79A7928263F2F00BC5FF2 /* Poppins-BoldItalic.ttf */,
+				0DF79A7A28263F2F00BC5FF2 /* Poppins-Light.ttf */,
+				0DF79A7B28263F2F00BC5FF2 /* Poppins-Medium.ttf */,
+				0DF79A7C28263F2F00BC5FF2 /* Poppins-SemiBoldItalic.ttf */,
+				0DF79A7D28263F2F00BC5FF2 /* Poppins-ExtraBoldItalic.ttf */,
+				0DF79A7E28263F2F00BC5FF2 /* Poppins-ExtraBold.ttf */,
+				0DF79A7F28263F2F00BC5FF2 /* Poppins-BlackItalic.ttf */,
+				0DF79A8028263F2F00BC5FF2 /* OFL.txt */,
+				0DF79A8128263F2F00BC5FF2 /* Poppins-Regular.ttf */,
+				0DF79A8228263F2F00BC5FF2 /* Poppins-LightItalic.ttf */,
+				0DF79A8328263F2F00BC5FF2 /* Poppins-Bold.ttf */,
+				0DF79A8428263F2F00BC5FF2 /* Poppins-Black.ttf */,
+				0DF79A8528263F2F00BC5FF2 /* Poppins-Thin.ttf */,
+				0DF79A8628263F2F00BC5FF2 /* Poppins-SemiBold.ttf */,
+				0DF79A8728263F2F00BC5FF2 /* Poppins-Italic.ttf */,
+				0DF79A8828263F2F00BC5FF2 /* Poppins-MediumItalic.ttf */,
+			);
+			path = Poppins;
 			sourceTree = "<group>";
 		};
 		5AAE2E4545809353EA295CCE /* Frameworks */ = {
@@ -375,29 +470,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DF79ABC28265A4400BC5FF2 /* Poppins-LightItalic.ttf in Resources */,
-				0DF79ABD28265A4400BC5FF2 /* Poppins-Bold.ttf in Resources */,
-				0DF79ABA28265A4400BC5FF2 /* OFL.txt in Resources */,
-				0DF79AB728265A4400BC5FF2 /* Poppins-ExtraBoldItalic.ttf in Resources */,
-				0DF79AB628265A4400BC5FF2 /* Poppins-SemiBoldItalic.ttf in Resources */,
-				0DF79ABE28265A4400BC5FF2 /* Poppins-Black.ttf in Resources */,
-				0DF79AB028265A4400BC5FF2 /* Poppins-ExtraLight.ttf in Resources */,
-				0DF79AB428265A4400BC5FF2 /* Poppins-Light.ttf in Resources */,
-				0DF79AB228265A4400BC5FF2 /* Poppins-ExtraLightItalic.ttf in Resources */,
-				0DF79ABF28265A4400BC5FF2 /* Poppins-Thin.ttf in Resources */,
+				0DAEFADF28228C3E005E9662 /* TutorialScreens.storyboard in Resources */,
 				0DBD5D61281D022400D42AFF /* LaunchScreen.storyboard in Resources */,
-				0DF79ABB28265A4400BC5FF2 /* Poppins-Regular.ttf in Resources */,
+				0DF79A9A28263F2F00BC5FF2 /* Poppins-Italic.ttf in Resources */,
+				0DF79A8A28263F2F00BC5FF2 /* Poppins-ThinItalic.ttf in Resources */,
+				0D9243722822B55A0089A75E /* ProfileScreen.storyboard in Resources */,
 				0D8EC7722821743A007CA59A /* Localizable.strings in Resources */,
-				0DF79AB128265A4400BC5FF2 /* Poppins-ThinItalic.ttf in Resources */,
-				0DF79AB928265A4400BC5FF2 /* Poppins-BlackItalic.ttf in Resources */,
-				0DF79AC028265A4400BC5FF2 /* Poppins-SemiBold.ttf in Resources */,
 				0DBD5D5E281D022400D42AFF /* Assets.xcassets in Resources */,
+				0DF79A9228263F2F00BC5FF2 /* Poppins-BlackItalic.ttf in Resources */,
+				0DF79A9828263F2F00BC5FF2 /* Poppins-Thin.ttf in Resources */,
+				0DF79A9928263F2F00BC5FF2 /* Poppins-SemiBold.ttf in Resources */,
+				0DF79A8B28263F2F00BC5FF2 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				0D9243742822BF680089A75E /* Settings.storyboard in Resources */,
+				0DF79A9428263F2F00BC5FF2 /* Poppins-Regular.ttf in Resources */,
+				0DF79A8C28263F2F00BC5FF2 /* Poppins-BoldItalic.ttf in Resources */,
+				0DF79A9B28263F2F00BC5FF2 /* Poppins-MediumItalic.ttf in Resources */,
+				0DB290E02823B2D7002801C0 /* OnBoardingScreen.storyboard in Resources */,
 				0DBD5D5C281D022200D42AFF /* Main.storyboard in Resources */,
-				0DF79AC128265A4400BC5FF2 /* Poppins-Italic.ttf in Resources */,
-				0DF79AB328265A4400BC5FF2 /* Poppins-BoldItalic.ttf in Resources */,
-				0DF79AB528265A4400BC5FF2 /* Poppins-Medium.ttf in Resources */,
-				0DF79AC228265A4400BC5FF2 /* Poppins-MediumItalic.ttf in Resources */,
-				0DF79AB828265A4400BC5FF2 /* Poppins-ExtraBold.ttf in Resources */,
+				0DF79A8F28263F2F00BC5FF2 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				0DF79A9728263F2F00BC5FF2 /* Poppins-Black.ttf in Resources */,
+				0DF79A9028263F2F00BC5FF2 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				0DF79A8928263F2F00BC5FF2 /* Poppins-ExtraLight.ttf in Resources */,
+				0DF79A8E28263F2F00BC5FF2 /* Poppins-Medium.ttf in Resources */,
+				0DF79A9328263F2F00BC5FF2 /* OFL.txt in Resources */,
+				0DF79A9528263F2F00BC5FF2 /* Poppins-LightItalic.ttf in Resources */,
+				0DF79A9128263F2F00BC5FF2 /* Poppins-ExtraBold.ttf in Resources */,
+				0DF79A8D28263F2F00BC5FF2 /* Poppins-Light.ttf in Resources */,
+				0DF79A9628263F2F00BC5FF2 /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,17 +583,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DB6F3722824E65900B79135 /* AppCoordinator.swift in Sources */,
+				0DB290DC28239FA9002801C0 /* Extensions.swift in Sources */,
+				0D9243762822CA6E0089A75E /* SettingsViewController.swift in Sources */,
 				0DB195372821017200C63287 /* CustomSwitch.swift in Sources */,
 				0D8EC76D28213D4F007CA59A /* Colors.swift in Sources */,
 				0DBD5D59281D022200D42AFF /* LoginViewController.swift in Sources */,
+				0D9243782822CB680089A75E /* SettingsTVCell.swift in Sources */,
+				0D92436E2822AD7A0089A75E /* ContactDetailsTVCell.swift in Sources */,
+				0DB290E62823CAF9002801C0 /* OnBoardingCell.swift in Sources */,
+				0DFA180A28229E6700616710 /* BasicDetailsTVCell.swift in Sources */,
 				0D4D5D2B2822524600BDE150 /* Validations.swift in Sources */,
+				0D0B5A252820077900A312BB /* CustomLoginH1Label.swift in Sources */,
+				0DAEFAE2282290B9005E9662 /* TutorialScreenViewController.swift in Sources */,
+				0DB6F3742824FC6700B79135 /* AuthenticationCoordinator.swift in Sources */,
 				0D03A7E6281D62FD00F0B0E2 /* CustomButton.swift in Sources */,
+				0DB6F3702824E64600B79135 /* CoordinatorBoard.swift in Sources */,
+				0D92437C2822D62D0089A75E /* AccountTVCell.swift in Sources */,
 				0D03A7E4281D2A9A00F0B0E2 /* CustomTextField.swift in Sources */,
-				0D8EC76F28216AE6007CA59A /* SignupViewController.swift in Sources */,
+				0D8EC76F28216AE6007CA59A /* SIgnUpViewController.swift in Sources */,
+				0D92437A2822CCC80089A75E /* SettingModelClass.swift in Sources */,
 				0DB195352820FB8800C63287 /* CustomTextFieldPassword.swift in Sources */,
+				0DC1B1F22829226400BD4644 /* WelcomeScreenViewController.swift in Sources */,
+				0D9243702822B3FF0089A75E /* SectionName.swift in Sources */,
+				0DB8AD6028238D7100AE9192 /* CustomLabelSettings.swift in Sources */,
 				0DBD5D55281D022200D42AFF /* AppDelegate.swift in Sources */,
-				0D2AFB9D28269759009C46B1 /* Extensions.swift in Sources */,
+				0DB290E22823C262002801C0 /* OnBoardingViewController.swift in Sources */,
 				0DBD5D57281D022200D42AFF /* SceneDelegate.swift in Sources */,
+				0DB290E42823C319002801C0 /* OnBoardingModelClass.swift in Sources */,
 				0D0B59FA281FE1AD00A312BB /* CustomUIview.swift in Sources */,
 				0D8EC768282132AD007CA59A /* R.generated.swift in Sources */,
 				0D03A7E2281D124100F0B0E2 /* CustomLabel.swift in Sources */,
