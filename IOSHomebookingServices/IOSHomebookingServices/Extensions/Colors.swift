@@ -21,5 +21,6 @@ extension UIColor {
     static let blackAndWhite = R.color.blackAndWhiteColor() ?? UIColor.gray
     static let darkRed = R.color.borderColor() ?? UIColor.red
     static let switchColorGray = R.color.switchCollor() ?? UIColor.gray
-
+    static let greenCOlor = R.color.editButtonColor() ?? UIColor.green
+    static let lightGreenColor = R.color.lightGreenColor() ?? UIColor.green
 }

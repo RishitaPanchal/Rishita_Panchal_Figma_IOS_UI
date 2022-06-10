@@ -12,6 +12,7 @@ import UIKit
 enum Storyboard: String {
     case main = "Main"
     case OnBoardingScreen = "OnBoardingScreen"
+    case CoreDataBase = "CoreDataBase"
 }
 
 // MARK: Coordinator Board Protocol

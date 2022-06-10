@@ -47,4 +47,10 @@ class AuthenticationCoordinator: Coordinator {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    func redirectToCoreDBVC() {
+        let vc = CRUDViewController.instantiateFromStoryBoard(from: .CoreDataBase)
+        vc.coordinator = self
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

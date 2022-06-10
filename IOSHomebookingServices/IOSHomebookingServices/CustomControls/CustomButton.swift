@@ -91,6 +91,52 @@ class CustomLoginButtonWelcomeScreen: CustomButton {
 }
 
 
+class CustomDeleteButton: CustomButton {
+    
+    // MARK: Initializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        applyBackground()
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        applyBackground()
+    }
+    
+    /// function to init view of button
+    func applyBackground() {
+        self.layer.cornerRadius = 15.0
+        self.layer.backgroundColor = UIColor.white.cgColor
+        self.titleLabel?.font = R.font.poppinsBold(size: 14.0)
+        self.tintColor = UIColor.darkRed
+    }
+    
+}
+
+class CustomEditButton: CustomButton {
+    
+    // MARK: Initializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        applyBackground()
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        applyBackground()
+    }
+    
+    /// function to init view of button
+    func applyBackground() {
+        self.layer.cornerRadius = 15.0
+        self.layer.backgroundColor = UIColor.white.cgColor
+        self.titleLabel?.font = R.font.poppinsBold(size: 14.0)
+        self.tintColor = UIColor.greenCOlor
+    }
+    
+}
+
 class CustomSignupButtonWelcomeScreen: CustomButton {
     
     // MARK: Initializers

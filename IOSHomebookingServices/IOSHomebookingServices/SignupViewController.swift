@@ -7,6 +7,7 @@
 
 import UIKit
 import UserNotifications
+import CoreData
 
 class SIgnUpViewController: BaseViewController<AuthenticationCoordinator, LoginViewModel> {
 
@@ -16,6 +17,7 @@ class SIgnUpViewController: BaseViewController<AuthenticationCoordinator, LoginV
     @IBOutlet weak var txtPhone: CustomTextField!
     @IBOutlet weak var txtEmail: CustomTextField!
     @IBOutlet weak var txtLocation: CustomTextField!
+    var registrationData = [NSManagedObject]()
     
     // MARK: - Overridden methods
     override func viewDidLoad() {
@@ -35,10 +37,41 @@ class SIgnUpViewController: BaseViewController<AuthenticationCoordinator, LoginV
         txtEmail.delegate = self
         txtLocation.delegate = self
     }
-        
+    
+    func checkEmptyFields() -> Bool{
+        (txtPhone.text == "" || txtEmail.text == "" || txtUsername.text == "" || txtSurname.text == "") ? false : true
+    }
+    
     // MARK: IBActions
     @IBAction func goToSignUp(_ sender: UIButton) {
         print("hello")
+    }
+    
+    @IBAction func saveData(_ sender: UIButton) {
+        if checkEmptyFields() {
+            let dict = [
+                    "userName": txtUsername.text,
+                    "surname": txtSurname.text,
+                    "phone": txtPhone.text,
+                    "email": txtEmail.text,
+                    "location": txtLocation.text
+                ]
+            DatabaseHelper.shared.save(object: dict) { status in
+                (status) ? coordinator?.redirectToCoreDBVC() : showAlert(message: "Ooops!! Something went wrong!!")
+            }
+            DatabaseHelper.shared.retriveData() { data in
+            self.registrationData.append(data)
+            }
+        } else {
+            print("Empty fields")
+        }
+    }
+    
+    
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: "Result", message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 
 }

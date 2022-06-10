@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N21-FS-tUS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="guS-Oi-c7X">
+            <objects>
+                <viewController id="fOf-wi-Jxb" customClass="NotificationViewController" customModule="IOSHomebookingServices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UGY-4X-6Qu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="I3G-vL-ReI">
+                                <rect key="frame" x="41.5" y="436" width="331" height="78"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRe-ib-25c">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Local Notification">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" red="0.21062357809999999" green="0.00083879477489999998" blue="0.46346691400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="callNotification:" destination="fOf-wi-Jxb" eventType="touchUpInside" id="Cai-5X-5aD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmg-Tj-2iD">
+                                        <rect key="frame" x="0.0" y="44" width="331" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Push Notification">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" red="0.21062357809999999" green="0.00083879477489999998" blue="0.46346691400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="6sk-1w-OOp" kind="show" id="sQi-mC-n2r"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cyP-0O-AQw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I3G-vL-ReI" firstAttribute="width" secondItem="cyP-0O-AQw" secondAttribute="width" multiplier="0.8" id="63h-nb-a1F"/>
+                            <constraint firstItem="I3G-vL-ReI" firstAttribute="centerY" secondItem="cyP-0O-AQw" secondAttribute="centerY" id="APh-2z-ckY"/>
+                            <constraint firstItem="I3G-vL-ReI" firstAttribute="height" secondItem="cyP-0O-AQw" secondAttribute="height" multiplier="0.101415" id="bnk-mi-JPN"/>
+                            <constraint firstItem="I3G-vL-ReI" firstAttribute="centerX" secondItem="cyP-0O-AQw" secondAttribute="centerX" id="zLt-6y-1Lz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lia-uu-OYC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NIH-3i-YoF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3105.7971014492755" y="23.4375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iMj-9V-0D5">
+            <objects>
+                <viewController storyboardIdentifier="CRUDViewController" id="6sk-1w-OOp" customClass="CRUDViewController" customModule="IOSHomebookingServices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Juk-LD-weF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CtB-X4-gOL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" name="lightGrayTextfieldBg"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ShowUsersTableViewCell" rowHeight="157" id="yxP-Ko-v5m" customClass="ShowUsersTableViewCell" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="157"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yxP-Ko-v5m" id="eSv-q5-Q6Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3W-vi-O7M" customClass="CustomViewTableView" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="10" width="394" height="137"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageprofile" translatesAutoresizingMaskIntoConstraints="NO" id="uDP-a7-STI">
+                                                            <rect key="frame" x="20" y="30.5" width="78" height="76"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="76" id="IyI-3a-H5M"/>
+                                                                <constraint firstAttribute="width" constant="78" id="ZrP-9z-tgG"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrJ-Hu-waI" customClass="CustomCoreNameLabel" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                            <rect key="frame" x="118" y="30.5" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUL-Nl-G4D" customClass="CustomCoreEmailLabel" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                            <rect key="frame" x="118" y="57.5" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJx-L6-kaV" customClass="CustomDeleteButton" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                            <rect key="frame" x="343" y="96" width="43" height="31"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system" title=""/>
+                                                            <connections>
+                                                                <action selector="performDelete:" destination="yxP-Ko-v5m" eventType="touchUpInside" id="7ro-66-5oG"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qda-RD-Msv" customClass="CustomEditButton" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                            <rect key="frame" x="280" y="96" width="55" height="31"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="EDIT"/>
+                                                            <connections>
+                                                                <action selector="performEdit:" destination="yxP-Ko-v5m" eventType="touchUpInside" id="1ek-ac-ftC"/>
+                                                            </connections>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6c-7a-CTa" customClass="CustomCoreEmailLabel" customModule="IOSHomebookingServices" customModuleProvider="target">
+                                                            <rect key="frame" x="118" y="85" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="eJx-L6-kaV" secondAttribute="trailing" constant="8" id="0FK-IO-LAh"/>
+                                                        <constraint firstItem="ZrJ-Hu-waI" firstAttribute="leading" secondItem="uDP-a7-STI" secondAttribute="trailing" constant="20" id="4ao-ra-OFj"/>
+                                                        <constraint firstItem="b6c-7a-CTa" firstAttribute="top" secondItem="dUL-Nl-G4D" secondAttribute="bottom" constant="6.5" id="6bk-0u-Y3K"/>
+                                                        <constraint firstItem="dUL-Nl-G4D" firstAttribute="leading" secondItem="ZrJ-Hu-waI" secondAttribute="leading" id="9Gk-cw-rO1"/>
+                                                        <constraint firstAttribute="bottom" secondItem="qda-RD-Msv" secondAttribute="bottom" constant="10" id="E94-1H-6hK"/>
+                                                        <constraint firstAttribute="height" constant="157" id="Hni-RO-wDm"/>
+                                                        <constraint firstItem="ZrJ-Hu-waI" firstAttribute="top" secondItem="uDP-a7-STI" secondAttribute="top" id="Jzc-nJ-E71"/>
+                                                        <constraint firstAttribute="width" constant="414" id="ZHI-qo-EsM"/>
+                                                        <constraint firstItem="uDP-a7-STI" firstAttribute="centerY" secondItem="K3W-vi-O7M" secondAttribute="centerY" id="avQ-Z0-J47"/>
+                                                        <constraint firstItem="eJx-L6-kaV" firstAttribute="leading" secondItem="qda-RD-Msv" secondAttribute="trailing" constant="8" symbolic="YES" id="eVA-c3-l50"/>
+                                                        <constraint firstAttribute="bottom" secondItem="eJx-L6-kaV" secondAttribute="bottom" constant="10" id="ibX-c2-r1g"/>
+                                                        <constraint firstItem="b6c-7a-CTa" firstAttribute="leading" secondItem="dUL-Nl-G4D" secondAttribute="leading" id="o7m-do-qCL"/>
+                                                        <constraint firstItem="uDP-a7-STI" firstAttribute="leading" secondItem="K3W-vi-O7M" secondAttribute="leading" constant="20" id="owo-LC-rVc"/>
+                                                        <constraint firstItem="dUL-Nl-G4D" firstAttribute="top" secondItem="ZrJ-Hu-waI" secondAttribute="bottom" constant="6" id="z4O-5u-RuJ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="lightGrayTextfieldBg"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="K3W-vi-O7M" secondAttribute="bottom" constant="10" id="22x-zQ-p4f"/>
+                                            <constraint firstItem="K3W-vi-O7M" firstAttribute="leading" secondItem="yxP-Ko-v5m" secondAttribute="leading" constant="10" id="7bD-Hw-oCZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="K3W-vi-O7M" secondAttribute="trailing" constant="10" id="XwN-lE-OhO"/>
+                                            <constraint firstItem="K3W-vi-O7M" firstAttribute="top" secondItem="yxP-Ko-v5m" secondAttribute="top" constant="10" id="zt7-rl-Qbm"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="btnDelete" destination="eJx-L6-kaV" id="FSu-98-NZA"/>
+                                            <outlet property="txtEmail" destination="dUL-Nl-G4D" id="XEl-XC-uKa"/>
+                                            <outlet property="txtFullName" destination="ZrJ-Hu-waI" id="tBh-zO-wr6"/>
+                                            <outlet property="txtPhone" destination="b6c-7a-CTa" id="hU4-TG-tMQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6sk-1w-OOp" id="Zg7-JU-Jm6"/>
+                                    <outlet property="delegate" destination="6sk-1w-OOp" id="KfD-7V-Qht"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Tg-gD-P5V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CtB-X4-gOL" firstAttribute="top" secondItem="0Tg-gD-P5V" secondAttribute="top" id="ZVq-2Q-Rdc"/>
+                            <constraint firstItem="0Tg-gD-P5V" firstAttribute="bottom" secondItem="CtB-X4-gOL" secondAttribute="bottom" id="bkI-WG-bzo"/>
+                            <constraint firstItem="0Tg-gD-P5V" firstAttribute="trailing" secondItem="CtB-X4-gOL" secondAttribute="trailing" id="fHA-t8-io0"/>
+                            <constraint firstItem="CtB-X4-gOL" firstAttribute="leading" secondItem="0Tg-gD-P5V" secondAttribute="leading" id="ti3-AW-kkw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lzq-1t-of8"/>
+                    <connections>
+                        <outlet property="tableView" destination="CtB-X4-gOL" id="X9w-vy-8uQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49V-r3-J75" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3800.0000000000005" y="22.767857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="POa-79-CaP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N21-FS-tUS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QE8-gc-t3p">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fOf-wi-Jxb" kind="relationship" relationship="rootViewController" id="Jnh-Er-nfK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F3P-DT-71F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2195.6521739130435" y="23.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imageprofile" width="85" height="85"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <namedColor name="lightGrayTextfieldBg">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -147,7 +147,7 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="sign up"/>
                                                                 <connections>
                                                                     <action selector="goToSIgnUpVC:" destination="WkE-Cn-CVo" eventType="touchUpInside" id="KaI-qC-sYt"/>
-                                                                    <segue destination="PgV-jv-8ok" kind="show" id="rVs-Or-3if"/>
+                                                                    <segue destination="zrU-2u-wc1" kind="show" id="gBe-Ui-ofK"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -373,7 +373,7 @@
                                                             <color key="baseForegroundColor" red="1" green="0.4490017201" blue="0.50492845360000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="performSignUp:" destination="oSy-eZ-8BF" eventType="touchUpInside" id="RX4-aT-2Ga"/>
+                                                            <action selector="saveData:" destination="oSy-eZ-8BF" eventType="touchUpInside" id="Kw2-UM-dQq"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need support?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4x-nB-eOp" customClass="CustomLabelNeedSupport" customModule="IOSHomebookingServices" customModuleProvider="target">
@@ -471,55 +471,15 @@
             </objects>
             <point key="canvasLocation" x="1517" y="24"/>
         </scene>
-        <!--Notification View Controller-->
-        <scene sceneID="vRI-9B-4MP">
+        <!--CoreDataBase-->
+        <scene sceneID="6L6-pM-hH4">
             <objects>
-                <viewController id="PgV-jv-8ok" customClass="NotificationViewController" customModule="IOSHomebookingServices" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="73i-wi-c58">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3TY-Yw-apS">
-                                <rect key="frame" x="42.666666666666657" y="449.33333333333331" width="342.66666666666674" height="81.333333333333314"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IG-B0-0IU">
-                                        <rect key="frame" x="0.0" y="0.0" width="342.66666666666669" height="35.666666666666664"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Local Notification">
-                                            <backgroundConfiguration key="background">
-                                                <color key="strokeColor" red="0.21062357809999999" green="0.00083879477489999998" blue="0.46346691400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="callNotification:" destination="PgV-jv-8ok" eventType="touchUpInside" id="VmB-2N-f3k"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9R-xs-8bv">
-                                        <rect key="frame" x="0.0" y="45.666666666666686" width="342.66666666666669" height="35.666666666666657"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Push Notification">
-                                            <backgroundConfiguration key="background">
-                                                <color key="strokeColor" red="0.21062357809999999" green="0.00083879477489999998" blue="0.46346691400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                        </buttonConfiguration>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="TUW-GD-Tmb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="3TY-Yw-apS" firstAttribute="width" secondItem="TUW-GD-Tmb" secondAttribute="width" multiplier="0.8" id="MdW-Hv-P4l"/>
-                            <constraint firstItem="3TY-Yw-apS" firstAttribute="height" secondItem="TUW-GD-Tmb" secondAttribute="height" multiplier="0.101415" id="Nqk-5S-AXX"/>
-                            <constraint firstItem="3TY-Yw-apS" firstAttribute="centerX" secondItem="TUW-GD-Tmb" secondAttribute="centerX" id="iim-8H-Wid"/>
-                            <constraint firstItem="3TY-Yw-apS" firstAttribute="centerY" secondItem="TUW-GD-Tmb" secondAttribute="centerY" id="kkk-4y-FhL"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="i6C-3X-2fz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3GS-3A-GAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="CoreDataBase" id="zrU-2u-wc1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aB9-uD-IJ1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzU-1q-4es" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2703" y="43"/>
+            <point key="canvasLocation" x="796" y="461"/>
         </scene>
         <!--NavigationController-->
         <scene sceneID="syT-lX-AMs">
@@ -529,7 +489,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZBo-vd-rV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2173" y="85"/>
+            <point key="canvasLocation" x="1769" y="461"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7hY-xO-Lai">

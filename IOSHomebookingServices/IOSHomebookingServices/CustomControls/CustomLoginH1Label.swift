@@ -112,6 +112,7 @@ class CustomWelcomeLabel: CustomLabel {
     }
     
 }
+
 class CustomWelcomeDescriptionLable: CustomLabel {
     
     // MARK: Initializers
@@ -133,6 +134,47 @@ class CustomWelcomeDescriptionLable: CustomLabel {
     
 }
 
+class CustomCoreNameLabel: CustomLabel {
+    
+    // MARK: Initializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        initFontStyles()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        initFontStyles()
+    }
+    
+    // MARK: Functions
+    func initFontStyles() {
+        self.font = R.font.poppinsSemiBold(size: 16.0)
+        self.textColor = UIColor.black
+    }
+    
+}
+
+class CustomCoreEmailLabel: CustomLabel {
+    
+    // MARK: Initializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        initFontStyles()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        initFontStyles()
+    }
+    
+    // MARK: Functions
+    func initFontStyles() {
+        self.font = R.font.poppinsRegular(size: 14.0)
+        self.textColor = UIColor.black
+    }
+    
+}
 
 
 

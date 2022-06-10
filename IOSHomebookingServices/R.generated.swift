@@ -90,8 +90,10 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 6 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 7 storyboards.
   struct storyboard {
+    /// Storyboard `CoreDataBase`.
+    static let coreDataBase = _R.storyboard.coreDataBase()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
@@ -104,6 +106,13 @@ struct R: Rswift.Validatable {
     static let settings = _R.storyboard.settings()
     /// Storyboard `TutorialScreens`.
     static let tutorialScreens = _R.storyboard.tutorialScreens()
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "CoreDataBase", bundle: ...)`
+    static func coreDataBase(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.coreDataBase)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
@@ -151,7 +160,7 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 18 colors.
+  /// This `R.color` struct is generated, and contains static references to 20 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
@@ -165,8 +174,12 @@ struct R: Rswift.Validatable {
     static let buttonBackground = Rswift.ColorResource(bundle: R.hostingBundle, name: "ButtonBackground")
     /// Color `Color`.
     static let color = Rswift.ColorResource(bundle: R.hostingBundle, name: "Color")
+    /// Color `EditButtonColor`.
+    static let editButtonColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "EditButtonColor")
     /// Color `HeaderLabel`.
     static let headerLabel = Rswift.ColorResource(bundle: R.hostingBundle, name: "HeaderLabel")
+    /// Color `LightGreenColor`.
+    static let lightGreenColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "LightGreenColor")
     /// Color `TextfieldBackground`.
     static let textfieldBackground = Rswift.ColorResource(bundle: R.hostingBundle, name: "TextfieldBackground")
     /// Color `ViewControllerBackground`.
@@ -245,11 +258,29 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "EditButtonColor", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func editButtonColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.editButtonColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIColor(named: "HeaderLabel", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
     static func headerLabel(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.headerLabel, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "LightGreenColor", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func lightGreenColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.lightGreenColor, compatibleWith: traitCollection)
     }
     #endif
 
@@ -401,10 +432,26 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(watchOS)
+    /// `UIColor(named: "EditButtonColor", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func editButtonColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.editButtonColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
     /// `UIColor(named: "HeaderLabel", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
     static func headerLabel(_: Void = ()) -> UIKit.UIColor? {
       return UIKit.UIColor(named: R.color.headerLabel.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "LightGreenColor", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func lightGreenColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.lightGreenColor.name)
     }
     #endif
 
@@ -849,7 +896,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 35 images.
+  /// This `R.image` struct is generated, and contains static references to 36 images.
   struct image {
     /// Image `BackbackButton`.
     static let backbackButton = Rswift.ImageResource(bundle: R.hostingBundle, name: "BackbackButton")
@@ -905,6 +952,8 @@ struct R: Rswift.Validatable {
     static let eye = Rswift.ImageResource(bundle: R.hostingBundle, name: "eye")
     /// Image `faceBookIconLogin`.
     static let faceBookIconLogin = Rswift.ImageResource(bundle: R.hostingBundle, name: "faceBookIconLogin")
+    /// Image `imageprofile`.
+    static let imageprofile = Rswift.ImageResource(bundle: R.hostingBundle, name: "imageprofile")
     /// Image `location`.
     static let location = Rswift.ImageResource(bundle: R.hostingBundle, name: "location")
     /// Image `passwordIcon`.
@@ -1112,6 +1161,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "imageprofile", bundle: ..., traitCollection: ...)`
+    static func imageprofile(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.imageprofile, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "location", bundle: ..., traitCollection: ...)`
     static func location(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.location, compatibleWith: traitCollection)
@@ -1201,12 +1257,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 4 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 5 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `Accounts`.
     static let accounts: Rswift.ReuseIdentifier<AccountTVCell> = Rswift.ReuseIdentifier(identifier: "Accounts")
     /// Reuse identifier `OnBoardingCell`.
     static let onBoardingCell: Rswift.ReuseIdentifier<OnBoardingCell> = Rswift.ReuseIdentifier(identifier: "OnBoardingCell")
+    /// Reuse identifier `ShowUsersTableViewCell`.
+    static let showUsersTableViewCell: Rswift.ReuseIdentifier<ShowUsersTableViewCell> = Rswift.ReuseIdentifier(identifier: "ShowUsersTableViewCell")
     /// Reuse identifier `TableCellOne`.
     static let tableCellOne: Rswift.ReuseIdentifier<BasicDetailsTVCell> = Rswift.ReuseIdentifier(identifier: "TableCellOne")
     /// Reuse identifier `settings`.
@@ -1440,6 +1498,9 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       #if os(iOS) || os(tvOS)
+      try coreDataBase.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try launchScreen.validate()
       #endif
       #if os(iOS) || os(tvOS)
@@ -1458,6 +1519,31 @@ struct _R: Rswift.Validatable {
       try tutorialScreens.validate()
       #endif
     }
+
+    #if os(iOS) || os(tvOS)
+    struct coreDataBase: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = UIKit.UINavigationController
+
+      let bundle = R.hostingBundle
+      let crudViewController = StoryboardViewControllerResource<CRUDViewController>(identifier: "CRUDViewController")
+      let name = "CoreDataBase"
+
+      func crudViewController(_: Void = ()) -> CRUDViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: crudViewController)
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "imageprofile", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'imageprofile' is used in storyboard 'CoreDataBase', but couldn't be loaded.") }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "trash") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'trash' is used in storyboard 'CoreDataBase', but couldn't be loaded.") } }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "lightGrayTextfieldBg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'lightGrayTextfieldBg' is used in storyboard 'CoreDataBase', but couldn't be loaded.") }
+        }
+        if _R.storyboard.coreDataBase().crudViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'crudViewController' could not be loaded from storyboard 'CoreDataBase' as 'CRUDViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
