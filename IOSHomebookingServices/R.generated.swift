@@ -499,8 +499,21 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 19 files.
+  /// This `R.entitlements` struct is generated, and contains static references to 1 properties.
+  struct entitlements {
+    static let apsEnvironment = infoPlistString(path: [], key: "aps-environment") ?? "development"
+
+    fileprivate init() {}
+  }
+
+  /// This `R.file` struct is generated, and contains static references to 23 files.
   struct file {
+    /// Resource file `AppLogo.pdf`.
+    static let appLogoPdf = Rswift.FileResource(bundle: R.hostingBundle, name: "AppLogo", pathExtension: "pdf")
+    /// Resource file `GoogleService-Info.plist`.
+    static let googleServiceInfoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info", pathExtension: "plist")
+    /// Resource file `GooglegoogleButton.png`.
+    static let googlegoogleButtonPng = Rswift.FileResource(bundle: R.hostingBundle, name: "GooglegoogleButton", pathExtension: "png")
     /// Resource file `OFL.txt`.
     static let oflTxt = Rswift.FileResource(bundle: R.hostingBundle, name: "OFL", pathExtension: "txt")
     /// Resource file `Poppins-Black.ttf`.
@@ -539,6 +552,26 @@ struct R: Rswift.Validatable {
     static let poppinsThinTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Poppins-Thin", pathExtension: "ttf")
     /// Resource file `Poppins-ThinItalic.ttf`.
     static let poppinsThinItalicTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Poppins-ThinItalic", pathExtension: "ttf")
+    /// Resource file `dee-copper-and-wild-yf61jhXNmYo-unsplash.jpg`.
+    static let deeCopperAndWildYf61jhXNmYoUnsplashJpg = Rswift.FileResource(bundle: R.hostingBundle, name: "dee-copper-and-wild-yf61jhXNmYo-unsplash", pathExtension: "jpg")
+
+    /// `bundle.url(forResource: "AppLogo", withExtension: "pdf")`
+    static func appLogoPdf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.appLogoPdf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "GoogleService-Info", withExtension: "plist")`
+    static func googleServiceInfoPlist(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.googleServiceInfoPlist
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "GooglegoogleButton", withExtension: "png")`
+    static func googlegoogleButtonPng(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.googlegoogleButtonPng
+      return fileResource.bundle.url(forResource: fileResource)
+    }
 
     /// `bundle.url(forResource: "OFL", withExtension: "txt")`
     static func oflTxt(_: Void = ()) -> Foundation.URL? {
@@ -651,6 +684,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "Poppins-ThinItalic", withExtension: "ttf")`
     static func poppinsThinItalicTtf(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.poppinsThinItalicTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "dee-copper-and-wild-yf61jhXNmYo-unsplash", withExtension: "jpg")`
+    static func deeCopperAndWildYf61jhXNmYoUnsplashJpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.deeCopperAndWildYf61jhXNmYoUnsplashJpg
       return fileResource.bundle.url(forResource: fileResource)
     }
 
@@ -810,7 +849,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 33 images.
+  /// This `R.image` struct is generated, and contains static references to 35 images.
   struct image {
     /// Image `BackbackButton`.
     static let backbackButton = Rswift.ImageResource(bundle: R.hostingBundle, name: "BackbackButton")
@@ -820,6 +859,8 @@ struct R: Rswift.Validatable {
     static let facebookfacebook1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Facebookfacebook (1)")
     /// Image `GooglegoogleButton (1)`.
     static let googlegoogleButton1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "GooglegoogleButton (1)")
+    /// Image `GooglegoogleButton`.
+    static let googlegoogleButton = Rswift.ImageResource(bundle: R.hostingBundle, name: "GooglegoogleButton")
     /// Image `Group 84back`.
     static let group84back = Rswift.ImageResource(bundle: R.hostingBundle, name: "Group 84back")
     /// Image `Icon material-lock-outlinepassword`.
@@ -854,6 +895,8 @@ struct R: Rswift.Validatable {
     static let arrowGo = Rswift.ImageResource(bundle: R.hostingBundle, name: "arrowGo")
     /// Image `avatorprofileImage`.
     static let avatorprofileImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "avatorprofileImage")
+    /// Image `dee-copper-and-wild-yf61jhXNmYo-unsplash.jpg`.
+    static let deeCopperAndWildYf61jhXNmYoUnsplashJpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "dee-copper-and-wild-yf61jhXNmYo-unsplash.jpg")
     /// Image `email`.
     static let email = Rswift.ImageResource(bundle: R.hostingBundle, name: "email")
     /// Image `eyeSlash`.
@@ -904,6 +947,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "GooglegoogleButton (1)", bundle: ..., traitCollection: ...)`
     static func googlegoogleButton1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.googlegoogleButton1, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "GooglegoogleButton", bundle: ..., traitCollection: ...)`
+    static func googlegoogleButton(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.googlegoogleButton, compatibleWith: traitCollection)
     }
     #endif
 
@@ -1023,6 +1073,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "avatorprofileImage", bundle: ..., traitCollection: ...)`
     static func avatorprofileImage(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.avatorprofileImage, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "dee-copper-and-wild-yf61jhXNmYo-unsplash.jpg", bundle: ..., traitCollection: ...)`
+    static func deeCopperAndWildYf61jhXNmYoUnsplashJpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.deeCopperAndWildYf61jhXNmYoUnsplashJpg, compatibleWith: traitCollection)
     }
     #endif
 

@@ -9,5 +9,7 @@ target 'IOSHomebookingServices' do
   pod 'R.swift'
   pod 'TPKeyboardAvoidingSwift'
   pod 'Alamofire'
+  pod 'FirebaseMessaging'
+  pod 'FirebaseAnalytics'
 
 end

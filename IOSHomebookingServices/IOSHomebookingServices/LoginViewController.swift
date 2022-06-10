@@ -14,7 +14,7 @@ class LoginViewController: BaseViewController<AuthenticationCoordinator, LoginVi
     @IBOutlet weak var txtPassword: CustomTextFieldPassword!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var response: String? = nil
-
+    
     // MARK: - Overridden method
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +73,12 @@ class LoginViewController: BaseViewController<AuthenticationCoordinator, LoginVi
     
     // MARK: - IBActions
     @IBAction func goToSIgnUpVC(_ sender: UIButton) {
-        self.coordinator?.goTosignUpVC()
+//        self.coordinator?.goTosignUpVC()
+//        notification.setupAction(identifier: "like.action", title: "Like", options: .foreground)
+//        notification.setupAction(identifier: "seen.action", title: "Seen", options: .foreground)
+//        notification.replyAction(identifier: "reply.action", title: "Reply", textInputButtonTitle: "OK", textInputPlaceHolder: "Enter reply")
+//        notification.showAction()
+//        notification.createNotification()
     }
     
     @IBAction func performLogin(_ sender: UIButton) {
