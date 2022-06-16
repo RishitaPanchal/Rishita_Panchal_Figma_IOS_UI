@@ -57,7 +57,7 @@ class SIgnUpViewController: BaseViewController<AuthenticationCoordinator, LoginV
                     "location": txtLocation.text
                 ]
             DatabaseHelper.shared.save(object: dict) { status in
-                (status) ? coordinator?.redirectToCoreDBVC() : showAlert(message: "Ooops!! Something went wrong!!")
+                (status) ? coordinator?.redirectToRouterVC() : showAlert(message: "Ooops!! Something went wrong!!")
             }
             DatabaseHelper.shared.retriveData() { data in
             self.registrationData.append(data)
@@ -66,8 +66,7 @@ class SIgnUpViewController: BaseViewController<AuthenticationCoordinator, LoginV
             print("Empty fields")
         }
     }
-    
-    
+
     func showAlert(message: String) {
         let alert = UIAlertController(title: "Result", message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))

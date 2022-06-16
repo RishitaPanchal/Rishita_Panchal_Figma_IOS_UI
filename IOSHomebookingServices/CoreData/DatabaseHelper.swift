@@ -14,11 +14,12 @@ class DatabaseHelper {
     // MARK: - Instance variables
     static var shared = DatabaseHelper()
     let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
-
+    let registration =  Registration()
+    
     // MARK: - Functions (CRUD operations)
     func save(object: [String: String?], completion: (Bool) -> Void) {
         guard let context = context else { return }
-        let user = NSEntityDescription.insertNewObject(forEntityName: "Registration", into: context) as? Registration
+        let user = NSEntityDescription.insertNewObject(forEntityName: R.string.localizable.registration(), into: context) as? Registration
         user?.rid = "\(Int16.random(in: 1...10))"
         user?.username = object["userName"] ?? "nil"
         user?.surname = object["surname"] ?? "nil"
@@ -40,7 +41,7 @@ class DatabaseHelper {
                 completion(data)
             }
         } catch {
-            print("Failed to retrive!!")
+            print(R.string.localizable.failedToDelete())
         }
     }
     
@@ -50,12 +51,12 @@ class DatabaseHelper {
             return false
         }
         context?.delete(studentDetails)
-        saveContext()
+        try? context?.save()
         return true
     }
     
     func getDataFromID(id: String) -> Registration? {
-        let fetchRequest = NSFetchRequest<Registration>(entityName: "Registration")
+        let fetchRequest = NSFetchRequest<Registration>(entityName: R.string.localizable.registration())
         let predicate = NSPredicate(format: "rid == %@", id)
         fetchRequest.predicate = predicate
         do {
@@ -72,48 +73,40 @@ class DatabaseHelper {
             for object in result {
                 context?.delete(object as NSManagedObject)
             }
-            saveContext()
+            try? context?.save()
         }
     }
-    
-    func saveContext() {
-        do {
-            try context?.save()
-        } catch {
-            print("Data not saved")
-        }
-    }
-    
+
     func updateData(id: String, email: String, phone: String) -> Bool {
         let studentDetails = getDataFromID(id: id)
         guard let studentDetails = studentDetails else { return false }
-        if email == "nil" && phone == "nil" {
+        if email == "nil" || phone == "nil" {
             if email == "nil" {
-                print("Empty email")
+                print(R.string.localizable.emptyEmail())
                 studentDetails.setValue(phone, forKey: "phone")
             } else if phone == "nil" {
-                print("Empty phone")
+                print(R.string.localizable.emptyPhone())
                 studentDetails.setValue(email, forKey: "email")
             }
         } else {
             studentDetails.setValue(phone, forKey: "phone")
             studentDetails.setValue(email, forKey: "email")
         }
-        saveContext()
+        try? context?.save()
         return true
     }
     
     func addAlertBox(viewController: UIViewController, data: @escaping (String?, String?) ->  Void) {
-        let alertController = UIAlertController(title: "New Detailes", message: "", preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: R.string.localizable.alertTitle(), message: "", preferredStyle: UIAlertController.Style.alert)
         alertController.addTextField { (textField : UITextField!) -> Void in
-            textField.placeholder = "Enter your email"
+            textField.placeholder = R.string.localizable.enterEmail()
         }
-        let saveAction = UIAlertAction(title: "Save", style: UIAlertAction.Style.default, handler: { alert -> Void in
+        let saveAction = UIAlertAction(title: R.string.localizable.alertSaveAction(), style: UIAlertAction.Style.default, handler: { alert -> Void in
             let email = alertController.textFields![0] as UITextField
             let phone = alertController.textFields![1] as UITextField
             if email.text != "" || phone.text != "" {
                 if email.text == "" {
-                    data(phone.text, nil)
+                    data(nil, phone.text)
                 } else if phone.text == "" {
                     data(email.text, nil)
                 } else {
@@ -121,15 +114,15 @@ class DatabaseHelper {
                 }
             }
         })
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: {
+        let cancelAction = UIAlertAction(title: R.string.localizable.alertCancelAction(), style: UIAlertAction.Style.default, handler: {
                 (action : UIAlertAction!) -> Void in
         })
         alertController.addTextField { (textField : UITextField!) -> Void in
-            textField.placeholder = "Enter your phone"
+            textField.placeholder = R.string.localizable.enterPhone()
         }
         alertController.addAction(saveAction)
         alertController.addAction(cancelAction)
         viewController.present(alertController, animated: true, completion: nil)
     }
-    
+
 }

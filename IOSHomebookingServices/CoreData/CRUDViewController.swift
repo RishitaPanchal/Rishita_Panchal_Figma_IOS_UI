@@ -41,7 +41,7 @@ class CRUDViewController: BaseViewController<AuthenticationCoordinator, LoginVie
     }
     
     @objc func backClicked() {
-       print("Back pressed")
+        coordinator?.redirectToPersonDetailes()
     }
     
     func setNavigationBarTintColor() {
@@ -72,7 +72,7 @@ extension CRUDViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ShowUsersTableViewCell", for: indexPath) as? ShowUsersTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.showUsersTableViewCell, for: indexPath) else { return UITableViewCell() }
         ShowUsersTableViewCell.initData(cell: cell, tableView: tableView, indexpath: indexPath, data: registrationData)
         cell.delegate = self
         cell.indexPath = indexPath
@@ -86,7 +86,7 @@ extension CRUDViewController: UITableViewDataSource {
                 self.tableView.deleteRows(at: [indexPath], with: .automatic)
                 self.tableView.reloadData()
             } else {
-                print("Failed to delete")
+                print(R.string.localizable.failedToDelete())
             }
         }
         deleteAction.backgroundColor = .red
@@ -96,6 +96,7 @@ extension CRUDViewController: UITableViewDataSource {
     
 }
 
+// MARK: - Exntension Removedata Protocol
 extension CRUDViewController: RemoveDataProtocol {
     
     func removeData(index: Int) {
@@ -103,7 +104,7 @@ extension CRUDViewController: RemoveDataProtocol {
             self.registrationData.remove(at: index)
             self.tableView.reloadData()
         } else {
-            print("Failed to delete")
+            print(R.string.localizable.failedToDelete())
         }
     }
     
@@ -112,7 +113,7 @@ extension CRUDViewController: RemoveDataProtocol {
             if DatabaseHelper.shared.updateData(id: self?.registrationData[index].value(forKey: "rid") as? String ?? "nil", email: email ?? "nil", phone: phone ?? "nil") {
                 self?.tableView.reloadData()
             } else {
-                print("Failed to delete")
+                print(R.string.localizable.failedToDelete())
             }
         }
     }

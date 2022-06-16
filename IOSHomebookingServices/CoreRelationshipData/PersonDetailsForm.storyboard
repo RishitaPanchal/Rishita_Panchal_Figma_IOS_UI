@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cTC-xC-n9I">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Person Details View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PersonDetailsViewController" id="Y6W-OH-hqX" customClass="PersonDetailsViewController" customModule="IOSHomebookingServices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5v-FC-HPq">
+                                <rect key="frame" x="20" y="536" width="374" height="49.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GO"/>
+                                <connections>
+                                    <action selector="addYourVehicles:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PGf-Sv-x3X"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="PBD-5A-Bx8">
+                                <rect key="frame" x="20" y="238" width="374" height="277"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="caR-de-eCq">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9q7-sP-ML9">
+                                        <rect key="frame" x="0.0" y="57" width="374" height="49.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vehicle 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="67L-ST-nj2">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="49.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hgl-0e-Rhv">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="49.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wPw-MN-zBA">
+                                        <rect key="frame" x="0.0" y="113.5" width="374" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vehicle 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="odj-13-hWz">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYJ-7g-YhV">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hWV-gh-RNT">
+                                        <rect key="frame" x="0.0" y="170.5" width="374" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vehicle 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HdN-nd-SXd">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hk4-Kq-UBP">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bW3-OS-p3f">
+                                        <rect key="frame" x="0.0" y="227.5" width="374" height="49.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vehicle 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JAV-pl-4dT">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="49.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Imj-Fk-nHw">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="49.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="lightGrayTextfieldBg"/>
+                        <constraints>
+                            <constraint firstItem="j5v-FC-HPq" firstAttribute="trailing" secondItem="PBD-5A-Bx8" secondAttribute="trailing" id="0Rn-8c-ZVm"/>
+                            <constraint firstItem="PBD-5A-Bx8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="3mu-JS-dBC"/>
+                            <constraint firstItem="PBD-5A-Bx8" firstAttribute="height" relation="greaterThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.3" constant="45" id="49j-4J-JuL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PBD-5A-Bx8" secondAttribute="trailing" constant="20" id="Jl2-bO-jC4"/>
+                            <constraint firstItem="j5v-FC-HPq" firstAttribute="leading" secondItem="PBD-5A-Bx8" secondAttribute="leading" id="fJf-ZE-FNs"/>
+                            <constraint firstItem="PBD-5A-Bx8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="150" id="mL5-9c-UTc"/>
+                            <constraint firstItem="j5v-FC-HPq" firstAttribute="top" secondItem="PBD-5A-Bx8" secondAttribute="bottom" constant="51.5" id="xW6-uS-mPS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="w6D-GA-oSN"/>
+                    <connections>
+                        <outlet property="txtUsername" destination="caR-de-eCq" id="Ujk-2k-OD6"/>
+                        <outlet property="txtVehicleFour" destination="JAV-pl-4dT" id="QVT-BY-s55"/>
+                        <outlet property="txtVehicleOne" destination="67L-ST-nj2" id="o5D-eG-hPh"/>
+                        <outlet property="txtVehicleThree" destination="HdN-nd-SXd" id="m6q-Lg-4G5"/>
+                        <outlet property="txtVehicleTwo" destination="odj-13-hWz" id="Pkq-qk-tXx"/>
+                        <outlet property="txtVehicleTypeFour" destination="Imj-Fk-nHw" id="zKd-Dw-KbQ"/>
+                        <outlet property="txtVehicleTypeOne" destination="Hgl-0e-Rhv" id="Xm1-Xz-dJ3"/>
+                        <outlet property="txtVehicleTypeThree" destination="hk4-Kq-UBP" id="Jze-3e-xi8"/>
+                        <outlet property="txtVehicleTypeTwo" destination="SYJ-7g-YhV" id="FcC-UA-H0W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892.75362318840587" y="23.4375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JWm-Pp-6Q6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cTC-xC-n9I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RLb-J7-5rw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="H8g-1W-OVJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yhz-ER-o9Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="23.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="lightGrayTextfieldBg">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

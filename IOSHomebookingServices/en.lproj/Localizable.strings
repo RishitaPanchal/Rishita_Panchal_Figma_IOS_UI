@@ -20,5 +20,24 @@
 "description3" = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed  ";
 
 // MARK: - API Calling
-
 "error" = "Oops!! Something went wrong...";
+
+
+// MARK: - Core Data
+"dataNotSaved" = "Oops! Something went wrong to saving a data...";
+"nullMessage" = "Unexpectedly found nil..";
+"successfullyAddedd" = "Yeah.. You have successfully added your data!!";
+"emptyEmail" = "Email field is empty.. means you are not supposed to update Email";
+"emptyPhone" = "Phone field is empty.. means you are not supposed to update Phone";
+"alertTitle" = "Details for update";
+"enterEmail" = "Enter Email";
+"enterPhone" = "Enter Phone";
+"alertSaveAction" = "Save";
+"alertCancelAction" = "Cancel";
+"failedToDelete" = "Oops!! Delete operations is failed..";
+
+/// Entity Names
+"person" = "Person";
+"vehicle" = "Vehicle";
+"registration" = "Registration";
+

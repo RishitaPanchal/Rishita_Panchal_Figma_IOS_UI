@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20G314" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Buisness" representedClassName="Buisness" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="people" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PersonBuisness" inverseName="job" inverseEntity="PersonBuisness"/>
+        <fetchedProperty name="contractors" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="PersonBuisness" predicateString="type LIKE [c] &quot;contractor&quot; AND job == $FETCH_SOURCE"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="toVehicle" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vehicle" inverseName="toPerson" inverseEntity="Vehicle"/>
+    </entity>
+    <entity name="PersonBuisness" representedClassName="PersonBuisness" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="job" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Buisness" inverseName="people" inverseEntity="Buisness"/>
+    </entity>
     <entity name="Registration" representedClassName="Registration" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String"/>
         <attribute name="location" optional="YES" attributeType="String"/>
@@ -7,8 +24,22 @@
         <attribute name="rid" optional="YES" attributeType="String"/>
         <attribute name="surname" optional="YES" attributeType="String"/>
         <attribute name="username" optional="YES" attributeType="String"/>
+        <fetchedProperty name="userInSameLocation" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Registration" predicateString="location == $FETCH_SOURCE.location"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Vehicle" representedClassName="Vehicle" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="personId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="toPerson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="toVehicle" inverseEntity="Person"/>
     </entity>
     <elements>
-        <element name="Registration" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="Person" positionX="-63" positionY="27" width="128" height="74"/>
+        <element name="Registration" positionX="-63" positionY="-18" width="128" height="140"/>
+        <element name="Vehicle" positionX="-54" positionY="36" width="128" height="104"/>
+        <element name="Buisness" positionX="-63" positionY="54" width="128" height="80"/>
+        <element name="PersonBuisness" positionX="-54" positionY="63" width="128" height="74"/>
     </elements>
 </model>

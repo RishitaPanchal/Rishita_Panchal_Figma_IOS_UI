@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D035901285B62D3006BCE52 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D035900285B62D3006BCE52 /* BaseRepository.swift */; };
 		0D03A7E2281D124100F0B0E2 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D03A7E1281D124100F0B0E2 /* CustomLabel.swift */; };
 		0D03A7E4281D2A9A00F0B0E2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D03A7E3281D2A9A00F0B0E2 /* CustomTextField.swift */; };
 		0D03A7E6281D62FD00F0B0E2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D03A7E5281D62FD00F0B0E2 /* CustomButton.swift */; };
 		0D0B59FA281FE1AD00A312BB /* CustomUIview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B59F9281FE1AD00A312BB /* CustomUIview.swift */; };
 		0D0B5A252820077900A312BB /* CustomLoginH1Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B5A242820077900A312BB /* CustomLoginH1Label.swift */; };
+		0D398B9F285C77320068A006 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D398B9E285C77320068A006 /* Model.swift */; };
+		0D398BA1285C79F90068A006 /* PersonEntityOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D398BA0285C79F90068A006 /* PersonEntityOperations.swift */; };
+		0D398BA3285C7D8E0068A006 /* VehicleEntityOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D398BA2285C7D8E0068A006 /* VehicleEntityOperations.swift */; };
+		0D398BAB285C94380068A006 /* PersonDetailsForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D398BAA285C94380068A006 /* PersonDetailsForm.storyboard */; };
+		0D398BAD285C96EF0068A006 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D398BAC285C96EF0068A006 /* PersonDetailsViewController.swift */; };
 		0D4D5D2B2822524600BDE150 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4D5D2A2822524600BDE150 /* Validations.swift */; };
 		0D7C8F4E28584DBE00415061 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D7C8F4C28584DBE00415061 /* DataModel.xcdatamodeld */; };
 		0D7C8F5628587FE400415061 /* Registration+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7C8F5428587FE400415061 /* Registration+CoreDataClass.swift */; };
@@ -60,6 +66,9 @@
 		0DBD5D76281D022400D42AFF /* IOSHomebookingServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD5D75281D022400D42AFF /* IOSHomebookingServicesUITests.swift */; };
 		0DBD5D78281D022400D42AFF /* IOSHomebookingServicesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD5D77281D022400D42AFF /* IOSHomebookingServicesUITestsLaunchTests.swift */; };
 		0DC1B1F22829226400BD4644 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1B1F12829226400BD4644 /* WelcomeScreenViewController.swift */; };
+		0DD6AC152860647C0014FDDF /* FetchedProperties.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD6AC142860647C0014FDDF /* FetchedProperties.storyboard */; };
+		0DD6AC17286064C80014FDDF /* FetchedPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6AC16286064C80014FDDF /* FetchedPropertiesViewController.swift */; };
+		0DD6AC1D286089A90014FDDF /* FetchedPropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6AC1C286089A90014FDDF /* FetchedPropertiesTableViewCell.swift */; };
 		0DDB58D6284F243B005B2434 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB58D5284F243B005B2434 /* BaseViewController.swift */; };
 		0DDB58DA284F4F13005B2434 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB58D9284F4F13005B2434 /* LoginViewModel.swift */; };
 		0DDB58DC284F7846005B2434 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB58DB284F7846005B2434 /* BaseViewModel.swift */; };
@@ -111,11 +120,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D035900285B62D3006BCE52 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		0D03A7E1281D124100F0B0E2 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		0D03A7E3281D2A9A00F0B0E2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0D03A7E5281D62FD00F0B0E2 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0D0B59F9281FE1AD00A312BB /* CustomUIview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIview.swift; sourceTree = "<group>"; };
 		0D0B5A242820077900A312BB /* CustomLoginH1Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginH1Label.swift; sourceTree = "<group>"; };
+		0D398B9E285C77320068A006 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0D398BA0285C79F90068A006 /* PersonEntityOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEntityOperations.swift; sourceTree = "<group>"; };
+		0D398BA2285C7D8E0068A006 /* VehicleEntityOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleEntityOperations.swift; sourceTree = "<group>"; };
+		0D398BAA285C94380068A006 /* PersonDetailsForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonDetailsForm.storyboard; sourceTree = "<group>"; };
+		0D398BAC285C96EF0068A006 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
 		0D4D5D2A2822524600BDE150 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		0D7C8F4D28584DBE00415061 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		0D7C8F5428587FE400415061 /* Registration+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Registration+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -168,6 +183,9 @@
 		0DBD5D75281D022400D42AFF /* IOSHomebookingServicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSHomebookingServicesUITests.swift; sourceTree = "<group>"; };
 		0DBD5D77281D022400D42AFF /* IOSHomebookingServicesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSHomebookingServicesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0DC1B1F12829226400BD4644 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		0DD6AC142860647C0014FDDF /* FetchedProperties.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FetchedProperties.storyboard; sourceTree = "<group>"; };
+		0DD6AC16286064C80014FDDF /* FetchedPropertiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedPropertiesViewController.swift; sourceTree = "<group>"; };
+		0DD6AC1C286089A90014FDDF /* FetchedPropertiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedPropertiesTableViewCell.swift; sourceTree = "<group>"; };
 		0DDB58D5284F243B005B2434 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0DDB58D9284F4F13005B2434 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0DDB58DB284F7846005B2434 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -231,6 +249,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0358FF285B62BA006BCE52 /* CoreRelationshipData */ = {
+			isa = PBXGroup;
+			children = (
+				0D035900285B62D3006BCE52 /* BaseRepository.swift */,
+				0D398B9E285C77320068A006 /* Model.swift */,
+				0D398BA0285C79F90068A006 /* PersonEntityOperations.swift */,
+				0D398BA2285C7D8E0068A006 /* VehicleEntityOperations.swift */,
+				0D398BAA285C94380068A006 /* PersonDetailsForm.storyboard */,
+				0D398BAC285C96EF0068A006 /* PersonDetailsViewController.swift */,
+			);
+			path = CoreRelationshipData;
+			sourceTree = "<group>";
+		};
 		0D7C8F5328587FCC00415061 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +330,8 @@
 		0DBD5D48281D022200D42AFF = {
 			isa = PBXGroup;
 			children = (
+				0DD6AC13286064630014FDDF /* FetchedProperties */,
+				0D0358FF285B62BA006BCE52 /* CoreRelationshipData */,
 				0D7C8F5328587FCC00415061 /* CoreData */,
 				0D7C8F4C28584DBE00415061 /* DataModel.xcdatamodeld */,
 				0DF597AA285375E100777EB7 /* GoogleService-Info.plist */,
@@ -386,6 +419,16 @@
 				0DB8AD5F28238D7100AE9192 /* CustomLabelSettings.swift */,
 			);
 			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		0DD6AC13286064630014FDDF /* FetchedProperties */ = {
+			isa = PBXGroup;
+			children = (
+				0DD6AC142860647C0014FDDF /* FetchedProperties.storyboard */,
+				0DD6AC16286064C80014FDDF /* FetchedPropertiesViewController.swift */,
+				0DD6AC1C286089A90014FDDF /* FetchedPropertiesTableViewCell.swift */,
+			);
+			path = FetchedProperties;
 			sourceTree = "<group>";
 		};
 		0DDB58D4284F2419005B2434 /* BaseSetups */ = {
@@ -582,6 +625,7 @@
 				0DF79A9228263F2F00BC5FF2 /* Poppins-BlackItalic.ttf in Resources */,
 				0DF79A9828263F2F00BC5FF2 /* Poppins-Thin.ttf in Resources */,
 				0DF79A9928263F2F00BC5FF2 /* Poppins-SemiBold.ttf in Resources */,
+				0D398BAB285C94380068A006 /* PersonDetailsForm.storyboard in Resources */,
 				0DF79A8B28263F2F00BC5FF2 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				0D9BE53B2859AA1B00961ECE /* CoreDataBase.storyboard in Resources */,
 				0DFEFEC7285717340023DDC0 /* dee-copper-and-wild-yf61jhXNmYo-unsplash.jpg in Resources */,
@@ -591,6 +635,7 @@
 				0DFEFEC52857132C0023DDC0 /* GooglegoogleButton.png in Resources */,
 				0DF79A8C28263F2F00BC5FF2 /* Poppins-BoldItalic.ttf in Resources */,
 				0DF79A9B28263F2F00BC5FF2 /* Poppins-MediumItalic.ttf in Resources */,
+				0DD6AC152860647C0014FDDF /* FetchedProperties.storyboard in Resources */,
 				0DB290E02823B2D7002801C0 /* OnBoardingScreen.storyboard in Resources */,
 				0DBD5D5C281D022200D42AFF /* Main.storyboard in Resources */,
 				0DF79A8F28263F2F00BC5FF2 /* Poppins-SemiBoldItalic.ttf in Resources */,
@@ -711,6 +756,7 @@
 				0D0B5A252820077900A312BB /* CustomLoginH1Label.swift in Sources */,
 				0DAEFAE2282290B9005E9662 /* TutorialScreenViewController.swift in Sources */,
 				0DDB58D6284F243B005B2434 /* BaseViewController.swift in Sources */,
+				0D398BA3285C7D8E0068A006 /* VehicleEntityOperations.swift in Sources */,
 				0DB6F3742824FC6700B79135 /* AuthenticationCoordinator.swift in Sources */,
 				0D03A7E6281D62FD00F0B0E2 /* CustomButton.swift in Sources */,
 				0DB6F3702824E64600B79135 /* CoordinatorBoard.swift in Sources */,
@@ -718,11 +764,15 @@
 				0DDB58DC284F7846005B2434 /* BaseViewModel.swift in Sources */,
 				0D03A7E4281D2A9A00F0B0E2 /* CustomTextField.swift in Sources */,
 				0D9BE53D2859AA9D00961ECE /* CoreDataBaseCoordinator.swift in Sources */,
+				0D398BA1285C79F90068A006 /* PersonEntityOperations.swift in Sources */,
+				0DD6AC17286064C80014FDDF /* FetchedPropertiesViewController.swift in Sources */,
 				0D8EC76F28216AE6007CA59A /* SIgnUpViewController.swift in Sources */,
+				0D398BAD285C96EF0068A006 /* PersonDetailsViewController.swift in Sources */,
 				0D9BE53928599E3300961ECE /* ShowUsersTableViewCell.swift in Sources */,
 				0D92437A2822CCC80089A75E /* SettingModelClass.swift in Sources */,
 				0D7C8F5728587FE400415061 /* Registration+CoreDataProperties.swift in Sources */,
 				0DB195352820FB8800C63287 /* CustomTextFieldPassword.swift in Sources */,
+				0D398B9F285C77320068A006 /* Model.swift in Sources */,
 				0DC1B1F22829226400BD4644 /* WelcomeScreenViewController.swift in Sources */,
 				0D9243702822B3FF0089A75E /* SectionName.swift in Sources */,
 				0DB8AD6028238D7100AE9192 /* CustomLabelSettings.swift in Sources */,
@@ -731,10 +781,12 @@
 				0D7C8F5B2858817500415061 /* DatabaseHelper.swift in Sources */,
 				0DBD5D57281D022200D42AFF /* SceneDelegate.swift in Sources */,
 				0DB290E42823C319002801C0 /* OnBoardingModelClass.swift in Sources */,
+				0D035901285B62D3006BCE52 /* BaseRepository.swift in Sources */,
 				0DDB58DE284F7AEE005B2434 /* Dynamic.swift in Sources */,
 				0D0B59FA281FE1AD00A312BB /* CustomUIview.swift in Sources */,
 				0D8EC768282132AD007CA59A /* R.generated.swift in Sources */,
 				0DA1FC1D28508219008D4433 /* BaseApiCalling.swift in Sources */,
+				0DD6AC1D286089A90014FDDF /* FetchedPropertiesTableViewCell.swift in Sources */,
 				0D03A7E2281D124100F0B0E2 /* CustomLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

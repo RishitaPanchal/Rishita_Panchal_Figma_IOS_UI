@@ -13,6 +13,8 @@ enum Storyboard: String {
     case main = "Main"
     case OnBoardingScreen = "OnBoardingScreen"
     case CoreDataBase = "CoreDataBase"
+    case CoreDataRelationShip = "PersonDetailsForm"
+    case CoreDataFetchedProperties = "FetchedProperties"
 }
 
 // MARK: Coordinator Board Protocol

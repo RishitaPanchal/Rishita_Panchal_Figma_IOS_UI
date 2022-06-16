@@ -53,4 +53,22 @@ class AuthenticationCoordinator: Coordinator {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    func redirectToRouterVC() {
+        let vc = NotificationViewController.instantiateFromStoryBoard(from: .CoreDataBase)
+        vc.coordinator = self
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func redirectToPersonDetailes() {
+        let vc = PersonDetailsViewController.instantiateFromStoryBoard(from: .CoreDataRelationShip)
+        vc.coordinator = self
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func redirectToFetchedPropertiesDemo() {
+        let vc = FetchedPropertiesViewController.instantiateFromStoryBoard(from: .CoreDataFetchedProperties)
+        vc.coordinator = self
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

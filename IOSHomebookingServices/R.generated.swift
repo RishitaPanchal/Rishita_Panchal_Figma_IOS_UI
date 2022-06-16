@@ -90,16 +90,20 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 7 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 9 storyboards.
   struct storyboard {
     /// Storyboard `CoreDataBase`.
     static let coreDataBase = _R.storyboard.coreDataBase()
+    /// Storyboard `FetchedProperties`.
+    static let fetchedProperties = _R.storyboard.fetchedProperties()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
     /// Storyboard `OnBoardingScreen`.
     static let onBoardingScreen = _R.storyboard.onBoardingScreen()
+    /// Storyboard `PersonDetailsForm`.
+    static let personDetailsForm = _R.storyboard.personDetailsForm()
     /// Storyboard `ProfileScreen`.
     static let profileScreen = _R.storyboard.profileScreen()
     /// Storyboard `Settings`.
@@ -111,6 +115,13 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "CoreDataBase", bundle: ...)`
     static func coreDataBase(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.coreDataBase)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "FetchedProperties", bundle: ...)`
+    static func fetchedProperties(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.fetchedProperties)
     }
     #endif
 
@@ -132,6 +143,13 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "OnBoardingScreen", bundle: ...)`
     static func onBoardingScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.onBoardingScreen)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "PersonDetailsForm", bundle: ...)`
+    static func personDetailsForm(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.personDetailsForm)
     }
     #endif
 
@@ -1257,10 +1275,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 5 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 6 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `Accounts`.
     static let accounts: Rswift.ReuseIdentifier<AccountTVCell> = Rswift.ReuseIdentifier(identifier: "Accounts")
+    /// Reuse identifier `FetchedPropertiesTableViewCell`.
+    static let fetchedPropertiesTableViewCell: Rswift.ReuseIdentifier<FetchedPropertiesTableViewCell> = Rswift.ReuseIdentifier(identifier: "FetchedPropertiesTableViewCell")
     /// Reuse identifier `OnBoardingCell`.
     static let onBoardingCell: Rswift.ReuseIdentifier<OnBoardingCell> = Rswift.ReuseIdentifier(identifier: "OnBoardingCell")
     /// Reuse identifier `ShowUsersTableViewCell`.
@@ -1275,12 +1295,32 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 10 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 24 localization keys.
     struct localizable {
       /// en translation:   Back
       ///
       /// Locales: en
       static let back = Rswift.StringResource(key: "back", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Cancel
+      ///
+      /// Locales: en
+      static let alertCancelAction = Rswift.StringResource(key: "alertCancelAction", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Details for update
+      ///
+      /// Locales: en
+      static let alertTitle = Rswift.StringResource(key: "alertTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Email field is empty.. means you are not supposed to update Email
+      ///
+      /// Locales: en
+      static let emptyEmail = Rswift.StringResource(key: "emptyEmail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Enter Email
+      ///
+      /// Locales: en
+      static let enterEmail = Rswift.StringResource(key: "enterEmail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Enter Phone
+      ///
+      /// Locales: en
+      static let enterPhone = Rswift.StringResource(key: "enterPhone", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Lorem ipsum
       ///
       /// Locales: en
@@ -1305,10 +1345,34 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en
       static let description3 = Rswift.StringResource(key: "description3", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Oops! Something went wrong to saving a data...
+      ///
+      /// Locales: en
+      static let dataNotSaved = Rswift.StringResource(key: "dataNotSaved", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Oops!! Delete operations is failed..
+      ///
+      /// Locales: en
+      static let failedToDelete = Rswift.StringResource(key: "failedToDelete", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Oops!! Something went wrong...
       ///
       /// Locales: en
       static let error = Rswift.StringResource(key: "error", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Person
+      ///
+      /// Locales: en
+      static let person = Rswift.StringResource(key: "person", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Phone field is empty.. means you are not supposed to update Phone
+      ///
+      /// Locales: en
+      static let emptyPhone = Rswift.StringResource(key: "emptyPhone", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Registration
+      ///
+      /// Locales: en
+      static let registration = Rswift.StringResource(key: "registration", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Save
+      ///
+      /// Locales: en
+      static let alertSaveAction = Rswift.StringResource(key: "alertSaveAction", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: TItle
       ///
       /// Locales: en
@@ -1317,6 +1381,18 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en
       static let appname = Rswift.StringResource(key: "appname", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Unexpectedly found nil..
+      ///
+      /// Locales: en
+      static let nullMessage = Rswift.StringResource(key: "nullMessage", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Vehicle
+      ///
+      /// Locales: en
+      static let vehicle = Rswift.StringResource(key: "vehicle", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Yeah.. You have successfully added your data!!
+      ///
+      /// Locales: en
+      static let successfullyAddedd = Rswift.StringResource(key: "successfullyAddedd", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
 
       /// en translation:   Back
       ///
@@ -1331,6 +1407,81 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("back", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Cancel
+      ///
+      /// Locales: en
+      static func alertCancelAction(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("alertCancelAction", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "alertCancelAction"
+        }
+
+        return NSLocalizedString("alertCancelAction", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Details for update
+      ///
+      /// Locales: en
+      static func alertTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("alertTitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "alertTitle"
+        }
+
+        return NSLocalizedString("alertTitle", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Email field is empty.. means you are not supposed to update Email
+      ///
+      /// Locales: en
+      static func emptyEmail(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("emptyEmail", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "emptyEmail"
+        }
+
+        return NSLocalizedString("emptyEmail", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Enter Email
+      ///
+      /// Locales: en
+      static func enterEmail(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("enterEmail", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "enterEmail"
+        }
+
+        return NSLocalizedString("enterEmail", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Enter Phone
+      ///
+      /// Locales: en
+      static func enterPhone(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("enterPhone", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "enterPhone"
+        }
+
+        return NSLocalizedString("enterPhone", bundle: bundle, comment: "")
       }
 
       /// en translation: Lorem ipsum
@@ -1423,6 +1574,36 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("description3", bundle: bundle, comment: "")
       }
 
+      /// en translation: Oops! Something went wrong to saving a data...
+      ///
+      /// Locales: en
+      static func dataNotSaved(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("dataNotSaved", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "dataNotSaved"
+        }
+
+        return NSLocalizedString("dataNotSaved", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Oops!! Delete operations is failed..
+      ///
+      /// Locales: en
+      static func failedToDelete(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("failedToDelete", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "failedToDelete"
+        }
+
+        return NSLocalizedString("failedToDelete", bundle: bundle, comment: "")
+      }
+
       /// en translation: Oops!! Something went wrong...
       ///
       /// Locales: en
@@ -1436,6 +1617,66 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("error", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Person
+      ///
+      /// Locales: en
+      static func person(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("person", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "person"
+        }
+
+        return NSLocalizedString("person", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Phone field is empty.. means you are not supposed to update Phone
+      ///
+      /// Locales: en
+      static func emptyPhone(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("emptyPhone", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "emptyPhone"
+        }
+
+        return NSLocalizedString("emptyPhone", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Registration
+      ///
+      /// Locales: en
+      static func registration(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("registration", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "registration"
+        }
+
+        return NSLocalizedString("registration", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Save
+      ///
+      /// Locales: en
+      static func alertSaveAction(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("alertSaveAction", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "alertSaveAction"
+        }
+
+        return NSLocalizedString("alertSaveAction", bundle: bundle, comment: "")
       }
 
       /// en translation: TItle
@@ -1466,6 +1707,51 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("appname", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Unexpectedly found nil..
+      ///
+      /// Locales: en
+      static func nullMessage(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("nullMessage", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "nullMessage"
+        }
+
+        return NSLocalizedString("nullMessage", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Vehicle
+      ///
+      /// Locales: en
+      static func vehicle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("vehicle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "vehicle"
+        }
+
+        return NSLocalizedString("vehicle", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Yeah.. You have successfully added your data!!
+      ///
+      /// Locales: en
+      static func successfullyAddedd(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("successfullyAddedd", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "successfullyAddedd"
+        }
+
+        return NSLocalizedString("successfullyAddedd", bundle: bundle, comment: "")
       }
 
       fileprivate init() {}
@@ -1501,6 +1787,9 @@ struct _R: Rswift.Validatable {
       try coreDataBase.validate()
       #endif
       #if os(iOS) || os(tvOS)
+      try fetchedProperties.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try launchScreen.validate()
       #endif
       #if os(iOS) || os(tvOS)
@@ -1508,6 +1797,9 @@ struct _R: Rswift.Validatable {
       #endif
       #if os(iOS) || os(tvOS)
       try onBoardingScreen.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try personDetailsForm.validate()
       #endif
       #if os(iOS) || os(tvOS)
       try profileScreen.validate()
@@ -1527,18 +1819,45 @@ struct _R: Rswift.Validatable {
       let bundle = R.hostingBundle
       let crudViewController = StoryboardViewControllerResource<CRUDViewController>(identifier: "CRUDViewController")
       let name = "CoreDataBase"
+      let notificationViewController = StoryboardViewControllerResource<NotificationViewController>(identifier: "NotificationViewController")
 
       func crudViewController(_: Void = ()) -> CRUDViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: crudViewController)
+      }
+
+      func notificationViewController(_: Void = ()) -> NotificationViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: notificationViewController)
       }
 
       static func validate() throws {
         if UIKit.UIImage(named: "imageprofile", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'imageprofile' is used in storyboard 'CoreDataBase', but couldn't be loaded.") }
         if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "trash") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'trash' is used in storyboard 'CoreDataBase', but couldn't be loaded.") } }
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "ViewControllerBackground", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'ViewControllerBackground' is used in storyboard 'CoreDataBase', but couldn't be loaded.") }
           if UIKit.UIColor(named: "lightGrayTextfieldBg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'lightGrayTextfieldBg' is used in storyboard 'CoreDataBase', but couldn't be loaded.") }
         }
         if _R.storyboard.coreDataBase().crudViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'crudViewController' could not be loaded from storyboard 'CoreDataBase' as 'CRUDViewController'.") }
+        if _R.storyboard.coreDataBase().notificationViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'notificationViewController' could not be loaded from storyboard 'CoreDataBase' as 'NotificationViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct fetchedProperties: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let fetchedPropertiesViewController = StoryboardViewControllerResource<FetchedPropertiesViewController>(identifier: "FetchedPropertiesViewController")
+      let name = "FetchedProperties"
+
+      func fetchedPropertiesViewController(_: Void = ()) -> FetchedPropertiesViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: fetchedPropertiesViewController)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+        if _R.storyboard.fetchedProperties().fetchedPropertiesViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'fetchedPropertiesViewController' could not be loaded from storyboard 'FetchedProperties' as 'FetchedPropertiesViewController'.") }
       }
 
       fileprivate init() {}
@@ -1626,6 +1945,29 @@ struct _R: Rswift.Validatable {
         if _R.storyboard.onBoardingScreen().onBoardingScreen() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'onBoardingScreen' could not be loaded from storyboard 'OnBoardingScreen' as 'UIKit.UIViewController'.") }
         if _R.storyboard.onBoardingScreen().onBoardingViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'onBoardingViewController' could not be loaded from storyboard 'OnBoardingScreen' as 'OnBoardingViewController'.") }
         if _R.storyboard.onBoardingScreen().welcomeScreenViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'welcomeScreenViewController' could not be loaded from storyboard 'OnBoardingScreen' as 'WelcomeScreenViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct personDetailsForm: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = UIKit.UINavigationController
+
+      let bundle = R.hostingBundle
+      let name = "PersonDetailsForm"
+      let personDetailsViewController = StoryboardViewControllerResource<PersonDetailsViewController>(identifier: "PersonDetailsViewController")
+
+      func personDetailsViewController(_: Void = ()) -> PersonDetailsViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: personDetailsViewController)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "lightGrayTextfieldBg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'lightGrayTextfieldBg' is used in storyboard 'PersonDetailsForm', but couldn't be loaded.") }
+        }
+        if _R.storyboard.personDetailsForm().personDetailsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'personDetailsViewController' could not be loaded from storyboard 'PersonDetailsForm' as 'PersonDetailsViewController'.") }
       }
 
       fileprivate init() {}
